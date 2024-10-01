@@ -1,0 +1,16 @@
+﻿@model List<DDEdu.Models.menu>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+        @foreach (var i in Model)
+        {
+            <li class="nav-item ">
+                <a class="nav-link click-scroll" href=@i.link>@i.name</a>
+            </li>
+        }
+    </ul>
+
+    <div class="d-none d-lg-block">
+        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+    </div>
+</div>

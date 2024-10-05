@@ -1,0 +1,18 @@
+﻿@model List<DDEdu.Models.menuRight>
+
+@{
+    // Lấy đường dẫn hiện tại của trang
+    var currentUrl = Request.Url.AbsolutePath.ToLower();
+}
+
+<!-- Phần "My courses" và "Login" nằm bên phải -->
+<ul class="navbar-nav ms-auto">
+    @foreach (var menu in Model)
+    {
+        // Kiểm tra xem mục này có trùng với URL hiện tại không
+        bool isActive = currentUrl.Contains(menu.meta.ToLower());
+        <li class="nav-item @(isActive ? "active" : "")">
+            <a class="nav-link" href="@menu.meta"> @menu.name</a>
+        </li>
+    }
+</ul>

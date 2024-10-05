@@ -1,0 +1,8 @@
+﻿@model List<DDEdu.Models.category>
+<ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+    @foreach (var i in Model)
+    {
+        <li><a class="dropdown-item" href="@i.meta">@i.name</a></li>
+    }
+</ul>
+

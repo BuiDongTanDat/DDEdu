@@ -24,15 +24,34 @@ warning 6002: The table/view 'DDEdu.dbo.category' does not have a primary key de
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="name" Type="varchar" MaxLength="255" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="detail" Type="nvarchar" MaxLength="255" />
+          <Property Name="startOn" Type="date" />
+          <Property Name="endDate" Type="date" />
           <Property Name="maxStudent" Type="int" />
-          <Property Name="currStuddent" Type="int" />
-          <Property Name="startOn" Type="smalldatetime" />
-          <Property Name="endDate" Type="smalldatetime" />
-          <Property Name="teacher" Type="varchar" MaxLength="255" />
+          <Property Name="currrStudent" Type="int" />
           <Property Name="tuition" Type="int" />
-          <Property Name="desc" Type="varchar" MaxLength="255" />
           <Property Name="idCategory" Type="int" />
+          <Property Name="meta" Type="nvarchar" MaxLength="255" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="image" Type="nvarchar" MaxLength="255" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="logo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="logoImage" Type="nvarchar" MaxLength="255" />
+          <Property Name="logoName" Type="nvarchar" MaxLength="255" />
+          <Property Name="meta" Type="nvarchar" MaxLength="255" />
+          <Property Name="link" Type="nvarchar" MaxLength="255" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="text" Type="nvarchar" MaxLength="255" />
+          <Property Name="desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="hotline" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="menu">
           <Key>
@@ -60,9 +79,33 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
           <Property Name="order" Type="int" />
           <Property Name="datebegin" Type="smalldatetime" />
         </EntityType>
+        <EntityType Name="newPost">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="title" Type="nvarchar" MaxLength="255" />
+          <Property Name="desc" Type="nvarchar" MaxLength="255" />
+          <Property Name="detail" Type="nvarchar" MaxLength="255" />
+          <Property Name="image" Type="nvarchar" MaxLength="255" />
+          <Property Name="postDate" Type="date" />
+          <Property Name="hide" Type="bit" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="slide">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="255" />
+          <Property Name="hide" Type="bit" />
+        </EntityType>
         <EntityContainer Name="DDEduModelStoreContainer">
           <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="category" EntityType="Self.category" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [category].[id] AS [id], 
@@ -74,6 +117,19 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
     [category].[idMenu] AS [idMenu]
     FROM [dbo].[category] AS [category]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="logo" EntityType="Self.logo" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [logo].[id] AS [id], 
+    [logo].[logoImage] AS [logoImage], 
+    [logo].[logoName] AS [logoName], 
+    [logo].[meta] AS [meta], 
+    [logo].[link] AS [link], 
+    [logo].[hide] AS [hide], 
+    [logo].[text] AS [text], 
+    [logo].[desc] AS [desc], 
+    [logo].[hotline] AS [hotline]
+    FROM [dbo].[logo] AS [logo]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="menuRight" EntityType="Self.menuRight" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [menuRight].[id] AS [id], 
@@ -84,6 +140,13 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
     [menuRight].[order] AS [order], 
     [menuRight].[datebegin] AS [datebegin]
     FROM [dbo].[menuRight] AS [menuRight]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="slide" EntityType="Self.slide" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [slide].[id] AS [id], 
+    [slide].[name] AS [name], 
+    [slide].[hide] AS [hide]
+    FROM [dbo].[slide] AS [slide]</DefiningQuery>
           </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
@@ -104,25 +167,13 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
         </EntityType>
         <EntityContainer Name="DDEdu_DB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="menus" EntityType="Self.menu" />
-          <EntitySet Name="courses" EntityType="DDEduModel.course" />
           <EntitySet Name="categories" EntityType="DDEduModel.category" />
           <EntitySet Name="menuRights" EntityType="DDEduModel.menuRight" />
+          <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
+          <EntitySet Name="slides" EntityType="DDEduModel.slide" />
+          <EntitySet Name="courses" EntityType="DDEduModel.course" />
+          <EntitySet Name="newPosts" EntityType="DDEduModel.newPost" />
         </EntityContainer>
-        <EntityType Name="course">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="maxStudent" Type="Int32" />
-          <Property Name="currStuddent" Type="Int32" />
-          <Property Name="startOn" Type="DateTime" Precision="0" />
-          <Property Name="endDate" Type="DateTime" Precision="0" />
-          <Property Name="teacher" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="tuition" Type="Int32" />
-          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <Property Name="idCategory" Type="Int32" />
-        </EntityType>
         <EntityType Name="category">
           <Key>
             <PropertyRef Name="id" />
@@ -147,6 +198,59 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
           <Property Name="order" Type="Int32" />
           <Property Name="datebegin" Type="DateTime" Precision="0" />
         </EntityType>
+        <EntityType Name="logo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hotline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="slide">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="course">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="startOn" Type="DateTime" Precision="0" />
+          <Property Name="endDate" Type="DateTime" Precision="0" />
+          <Property Name="maxStudent" Type="Int32" />
+          <Property Name="currrStudent" Type="Int32" />
+          <Property Name="tuition" Type="Int32" />
+          <Property Name="idCategory" Type="Int32" />
+          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="newPost">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="postDate" Type="DateTime" Precision="0" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -163,22 +267,6 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
                 <ScalarProperty Name="hide" ColumnName="hide" />
                 <ScalarProperty Name="order" ColumnName="order" />
                 <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="courses">
-            <EntityTypeMapping TypeName="DDEduModel.course">
-              <MappingFragment StoreEntitySet="course">
-                <ScalarProperty Name="idCategory" ColumnName="idCategory" />
-                <ScalarProperty Name="desc" ColumnName="desc" />
-                <ScalarProperty Name="tuition" ColumnName="tuition" />
-                <ScalarProperty Name="teacher" ColumnName="teacher" />
-                <ScalarProperty Name="endDate" ColumnName="endDate" />
-                <ScalarProperty Name="startOn" ColumnName="startOn" />
-                <ScalarProperty Name="currStuddent" ColumnName="currStuddent" />
-                <ScalarProperty Name="maxStudent" ColumnName="maxStudent" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -204,6 +292,63 @@ warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key d
                 <ScalarProperty Name="meta" ColumnName="meta" />
                 <ScalarProperty Name="link" ColumnName="link" />
                 <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="logoes">
+            <EntityTypeMapping TypeName="DDEduModel.logo">
+              <MappingFragment StoreEntitySet="logo">
+                <ScalarProperty Name="hotline" ColumnName="hotline" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="text" ColumnName="text" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="logoName" ColumnName="logoName" />
+                <ScalarProperty Name="logoImage" ColumnName="logoImage" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="slides">
+            <EntityTypeMapping TypeName="DDEduModel.slide">
+              <MappingFragment StoreEntitySet="slide">
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="courses">
+            <EntityTypeMapping TypeName="DDEduModel.course">
+              <MappingFragment StoreEntitySet="course">
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+                <ScalarProperty Name="tuition" ColumnName="tuition" />
+                <ScalarProperty Name="currrStudent" ColumnName="currrStudent" />
+                <ScalarProperty Name="maxStudent" ColumnName="maxStudent" />
+                <ScalarProperty Name="endDate" ColumnName="endDate" />
+                <ScalarProperty Name="startOn" ColumnName="startOn" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="newPosts">
+            <EntityTypeMapping TypeName="DDEduModel.newPost">
+              <MappingFragment StoreEntitySet="newPost">
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="postDate" ColumnName="postDate" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="detail" ColumnName="detail" />
+                <ScalarProperty Name="desc" ColumnName="desc" />
+                <ScalarProperty Name="title" ColumnName="title" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -57,5 +57,42 @@ namespace DDEdu.Controllers
                     select t;
             return PartialView(v.ToList());
         }
+
+        //Lấy menu cho footer - vì footer định dạng danh sách menu khác với menu chính
+        public ActionResult getMenuFooter()
+        {
+            var menus = from t in _db.menus
+                        where t.hide == true
+                        orderby t.order ascending
+                        select t;
+            return PartialView(menus.ToList());
+        }
+
+
+        //Lấy logo
+        public ActionResult getLogo()
+        {
+            var logo = _db.logoes.FirstOrDefault(t => t.hide == true);
+            return PartialView(logo);
+        }
+
+        public ActionResult getFooter() {
+
+            var logo = _db.logoes.FirstOrDefault(t => t.hide == true);
+            return PartialView(logo);
+
+        }
+
+        public ActionResult getLogo_Welcome()
+        {
+
+            var logo = _db.logoes.FirstOrDefault(t => t.hide == true);
+            return PartialView(logo);
+
+        }
+
+
+
+
     }
 }

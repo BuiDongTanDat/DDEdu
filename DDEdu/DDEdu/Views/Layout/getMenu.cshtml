@@ -5,32 +5,34 @@
         var currentUrl = Request.Url.AbsolutePath.ToLower();
     }
 
-   
-            @foreach (var menu in Model)
+<ul class="navbar-nav ms-lg-5 me-lg-auto">
+    @foreach (var menu in Model)
+    {
+        var categoryHtml = Html.Action("getCategory", "Layout", new { idForMenu = menu.id });
+
+        // Kiểm tra xem có subcategory không
+        bool hasSubCategory = !String.IsNullOrEmpty(categoryHtml?.ToString());
+
+        // Kiểm tra xem mục này có trùng với URL hiện tại không
+        bool isActive = currentUrl.Contains(menu.meta.ToLower());
+
+        <li class="nav-item @(hasSubCategory ? "dropdown" : "") ">
+            <a class="nav-link @(hasSubCategory ? "dropdown-toggle" : "") @(isActive ? "active" : "")"
+               href="@menu.meta">
+                @menu.name
+            </a>
+
+            @if (hasSubCategory)
             {
-                var categoryHtml = Html.Action("getCategory", "Layout", new { idForMenu = menu.id });
-
-                // Kiểm tra xem có subcategory không
-                bool hasSubCategory = !String.IsNullOrEmpty(categoryHtml?.ToString());
-
-                // Kiểm tra xem mục này có trùng với URL hiện tại không
-                bool isActive = currentUrl.Contains(menu.meta.ToLower());
-
-                <li class="nav-item @(hasSubCategory ? "dropdown" : "") ">
-                    <a class="nav-link @(hasSubCategory ? "dropdown-toggle" : "") @(isActive ? "active" : "")"
-                       href="@menu.meta">
-                        @menu.name
-                    </a>
-
-                    @if (hasSubCategory)
-                    {
-                        @: @categoryHtml
-                    }
-                </li>
+                //Nếu menu cha có menu con thì thêm menu con vào
+                @: @categoryHtml
             }
-       
+        </li>
+    }
+</ul>
 
 
 
 
-  
+
+

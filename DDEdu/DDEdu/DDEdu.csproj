@@ -159,10 +159,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DDEdu_DB.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\logo.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\menu.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\menuRight.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\newPost.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\slide.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -190,6 +199,7 @@
     <Content Include="Content\images\businesswoman-using-tablet-analysis.jpg" />
     <Content Include="Content\images\colleagues-working-cozy-office-medium-shot.jpg" />
     <Content Include="Content\images\faq_graphic.jpg" />
+    <Content Include="Content\images\logo-icon.png" />
     <Content Include="Content\images\rear-view-young-college-student.jpg" />
     <Content Include="Content\images\topics\colleagues-working-cozy-office-medium-shot.png" />
     <Content Include="Content\images\topics\undraw_Compose_music_re_wpiw.png" />
@@ -270,6 +280,14 @@
     <Content Include="Views\MyCourses\Index.cshtml" />
     <Content Include="Views\Layout\getCategory.cshtml" />
     <Content Include="Views\Layout\getMenuRight.cshtml" />
+    <Content Include="Views\Layout\getLogo.cshtml" />
+    <Content Include="Views\Default\getSlide.cshtml" />
+    <Content Include="Views\Layout\getMenuFooter.cshtml" />
+    <Content Include="Views\Layout\getFooter.cshtml" />
+    <Content Include="Views\Layout\getLogo_Welcome.cshtml" />
+    <Content Include="Views\Default\getCategoryDF.cshtml" />
+    <Content Include="Views\Default\getCourse.cshtml" />
+    <Content Include="Views\Default\getNew.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

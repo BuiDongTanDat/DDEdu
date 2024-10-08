@@ -14,22 +14,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="courses">
-      <EntityTypeMapping TypeName="DDEduModel.course">
-        <MappingFragment StoreEntitySet="course">
-          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
-          <ScalarProperty Name="desc" ColumnName="desc" />
-          <ScalarProperty Name="tuition" ColumnName="tuition" />
-          <ScalarProperty Name="teacher" ColumnName="teacher" />
-          <ScalarProperty Name="endDate" ColumnName="endDate" />
-          <ScalarProperty Name="startOn" ColumnName="startOn" />
-          <ScalarProperty Name="currStuddent" ColumnName="currStuddent" />
-          <ScalarProperty Name="maxStudent" ColumnName="maxStudent" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="categories">
       <EntityTypeMapping TypeName="DDEduModel.category">
         <MappingFragment StoreEntitySet="category">
@@ -52,6 +36,63 @@
           <ScalarProperty Name="meta" ColumnName="meta" />
           <ScalarProperty Name="link" ColumnName="link" />
           <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logoes">
+      <EntityTypeMapping TypeName="DDEduModel.logo">
+        <MappingFragment StoreEntitySet="logo">
+          <ScalarProperty Name="hotline" ColumnName="hotline" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="logoName" ColumnName="logoName" />
+          <ScalarProperty Name="logoImage" ColumnName="logoImage" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="slides">
+      <EntityTypeMapping TypeName="DDEduModel.slide">
+        <MappingFragment StoreEntitySet="slide">
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="courses">
+      <EntityTypeMapping TypeName="DDEduModel.course">
+        <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="idCategory" ColumnName="idCategory" />
+          <ScalarProperty Name="tuition" ColumnName="tuition" />
+          <ScalarProperty Name="currrStudent" ColumnName="currrStudent" />
+          <ScalarProperty Name="maxStudent" ColumnName="maxStudent" />
+          <ScalarProperty Name="endDate" ColumnName="endDate" />
+          <ScalarProperty Name="startOn" ColumnName="startOn" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="newPosts">
+      <EntityTypeMapping TypeName="DDEduModel.newPost">
+        <MappingFragment StoreEntitySet="newPost">
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="title" ColumnName="title" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>

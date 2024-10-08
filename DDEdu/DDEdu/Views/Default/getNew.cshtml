@@ -1,0 +1,26 @@
+﻿@model List<DDEdu.Models.newPost>
+
+<div class="col-lg-8 col-12">
+    <h3 class="mb-4"><a href="@ViewBag.meta">OUR NEWS</a></h3>
+</div>
+<div class="row">
+    @foreach (var i in Model)
+    {
+        <div class="col-lg-4 col-12 new">
+            <div class="news d-flex">
+                <!-- Hình ảnh bên trái -->
+                <img src="~/Content/images/@i.image" class="news-img" alt="news image">
+                <!-- Nội dung bên phải -->
+                <div>
+                    <div class="title"><a href="@ViewBag.meta/@i.id">@i.title</a></div>
+                    <div class="desc">@i.desc</div>
+                    <div class="posted-date">Posted: @i.postDate.Value.ToString("dd/MM/yyyy")</div>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+<div class="col-lg-12 col-12">
+    <a href="@ViewBag.meta" class="view-more">View More</a>
+</div>

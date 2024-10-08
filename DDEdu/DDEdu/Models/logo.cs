@@ -12,20 +12,16 @@ namespace DDEdu.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class course
+    public partial class logo
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public string desc { get; set; }
-        public string detail { get; set; }
-        public Nullable<System.DateTime> startOn { get; set; }
-        public Nullable<System.DateTime> endDate { get; set; }
-        public Nullable<int> maxStudent { get; set; }
-        public Nullable<int> currrStudent { get; set; }
-        public Nullable<int> tuition { get; set; }
-        public Nullable<int> idCategory { get; set; }
+        public string logoImage { get; set; }
+        public string logoName { get; set; }
         public string meta { get; set; }
+        public string link { get; set; }
         public Nullable<bool> hide { get; set; }
-        public string image { get; set; }
+        public string text { get; set; }
+        public string desc { get; set; }
+        public string hotline { get; set; }
     }
 }

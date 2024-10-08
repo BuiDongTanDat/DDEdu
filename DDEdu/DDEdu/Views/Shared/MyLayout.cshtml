@@ -28,20 +28,12 @@
 </head>
 
 <body id="top">
-
+    <main>
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <!-- Logo và tên thương hiệu -->
-            <a class="navbar-brand" href="Default">
-                <i class="bi-back"></i>
-                <span>DDEdu</span>
-            </a>
-
-            <!-- Icon hiện trên màn hình nhỏ -->
-            <div class="d-lg-none ms-auto me-4">
-                <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
-            </div>
+            @{Html.RenderAction("getLogo", "Layout"); }
 
             <!-- Nút toggle cho mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -51,59 +43,21 @@
 
             <!-- Phần menu chính -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                    @{Html.RenderAction("getMenu", "Layout"); }
-                </ul>
+
+                @{Html.RenderAction("getMenu", "Layout"); }
+
                 @{Html.RenderAction("getMenuRight", "Layout"); }
             </div>
-</nav>
+    </nav>
 
 
-    <div class="col-lg-12 col-12 mx-auto">
-        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="d-block w-100" alt="First Slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="d-block w-100" alt="Second Slide">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/businesswoman-using-tablet-analysis.jpg" class="d-block w-100" alt="Third Slide">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    </div>
 
     @RenderBody();
 
+    </main>
 
-    <footer class="site-footer section-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-3 col-12 mb-4 pb-2">
-                    <a class="navbar-brand mb-2" href="index.html">
-                        <i class="bi-back"></i>
-                        <span>DDEdu</span>
-                    </a>
-                </div>
-
-                <ul class="navbar-nav ms-lg-5 me-lg-auto">
-                    @{Html.RenderAction("getMenu", "Layout"); }
-                </ul>
-
-            </div>
-        </div>
+    <footer class="site-footer">
+        @{Html.RenderAction("getFooter", "Layout"); }
     </footer>
 
 

@@ -1,0 +1,129 @@
+﻿@model DDEdu.Models.course
+
+
+@{
+    ViewBag.Title = Model.name;
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<header class="site-header d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+
+            <div class="col-lg-5 col-12 mb-5">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/@ViewBag.metaCourses">@ViewBag.metaCourses.ToUpper()</a></li>
+
+                        <li class="breadcrumb-item active" aria-current="page">@Model.meta.ToUpper()</li>
+                    </ol>
+                </nav>
+
+                <h2 class="text-white">Introduction to <br> @Model.name</h2>
+
+                <div class="d-flex align-items-center mt-5">
+                    <a href="#" class="btn custom-btn custom-border-btn smoothscroll me-4"> Join this course</a>
+
+                    <a href="#" class="custom-icon bi-bookmark smoothscroll"></a>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-12">
+                <div class="topics-detail-block bg-white shadow-lg">
+                    <img src="~/Content/images/@Model.image" class="topics-detail-block-image img-fluid">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+<section class="topics-detail-section section-padding" id="topics-detail">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-12 m-auto">
+                <h3 class="mb-4">About @Model.name</h3>
+
+                <p>@Model.desc</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="detail-tab" data-bs-toggle="tab"
+                        data-bs-target="#detail" type="button" role="tab" aria-controls="detail"
+                        aria-selected="true">
+                    Detail
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review"
+                        type="button" role="tab" aria-controls="review" aria-selected="false">
+                    Review
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="relative-tab" data-bs-toggle="tab"
+                        data-bs-target="#relative" type="button" role="tab" aria-controls="relative"
+                        aria-selected="false">
+                    Related Courses
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <!-- Detail Content -->
+            <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                <div class="row">
+                    <!-- Cột bên trái -->
+                    <div class="col-md-6 col-12" style="text-align: justify">
+                        <p>
+                            <b>Course name:</b> @Model.name <br />
+                            <b>Category:</b> @Model.meta.ToUpper() <br />
+                            <b>Start on:</b> @Model.startOn.Value.ToString("dd/MM/yyyy")<br />
+                            <b>End date:</b> @Model.endDate.Value.ToString("dd/MM/yyyy") <br />
+                            <b>Max member:</b> @Model.maxStudent <br />
+                            <b>Studying member:</b> @Model.currrStudent <br />
+                            <b>Tuition:</b> <span style="color: red">@Model.tuition</span> VND <br />
+                        </p>
+                    </div>
+
+                    <!-- Cột bên phải -->
+                    <div class="col-md-6 col-12" style="text-align: justify">
+                        <p>
+                            <b>Target of course:</b> <br />
+                            @Model.detail
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Review Content -->
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-12">
+                        <h4>User Reviews</h4>
+                        <p>
+                            This function is ongoing update or there is no review for this This function is ongoing update
+                            or there is no review for thisThis function is ongoing update or there is no review for this
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Relative Courses Content -->
+            <div class="tab-pane fade" id="relative" role="tabpanel" aria-labelledby="relative-tab">
+                <div class="row mt-3">
+                    @Html.Action("getRelativeCourses", "Courses", new { idCourse = Model.id, metaRelative = Model.meta, metaCourse = ViewBag.metaCourses })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

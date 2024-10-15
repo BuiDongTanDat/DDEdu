@@ -32,8 +32,7 @@ namespace DDEdu.Controllers
         
         //Lấy Category
         public ActionResult getCategoryDF()
-        {
-            
+        {  
             ViewBag.meta = "courses";
             var v = from t in _db.categories
                     where t.hide == true
@@ -43,13 +42,25 @@ namespace DDEdu.Controllers
         }
 
         //Lấy Course theo category tương ứng
-        public ActionResult getCourse(int id)
+        //Lấy 3 course mới nhất, course đang diễn ra thì
+        //không quá 10 ngày kể từ ngày bắt đầu --> Xem mô tả bên CourseController
+        public ActionResult getCourse(int id, string meta)
         {
-            var v = from t in _db.courses
+            ViewBag.meta = meta;
+
+            var currentDate = DateTime.Now; // Lấy ngày và giờ hiện tại
+            var tenDaysAgo = currentDate.AddDays(-10); // Lấy ngày cách 10 ngày trước
+
+
+            var v = (from t in _db.courses
                     where t.hide == true && t.idCategory == id
-                    orderby t.id ascending
-                    select t;
+                    && (t.startOn > currentDate // Khóa học sắp diễn ra
+                               || (t.startOn <= currentDate && t.startOn >= tenDaysAgo))
+                     orderby t.startOn descending
+                    select t).Take(3);  //Lấy ra 3 courses cho mỗi danh mục hiển thị lên HOME
             return PartialView(v.ToList());
+
+           
         }
 
 

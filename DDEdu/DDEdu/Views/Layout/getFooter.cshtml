@@ -1,16 +1,22 @@
 ﻿@model DDEdu.Models.logo
 
-    <div class="container">
-        <div class="row">
-            <!-- Logo bên trái -->
-            <div class="col-lg-2 col-12 ">
-                @{Html.RenderAction("getLogo", "Layout"); }
-            </div>
 
-            <!-- Menu bên phải -->
-            <div class="col-lg-4 col-12 menuBar">
-                @{Html.RenderAction("getMenuFooter", "Layout"); }
-            </div>
-            <div class="contact">@Model.hotline</div>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-lg-3 col-12 mb-4 pb-2">
+            @{Html.RenderAction("getLogo", "Layout"); }
         </div>
+
+        <div class="col-lg-3 col-md-4 col-6">
+            <h6 class="site-footer-title mb-3">Resources</h6>
+            @{Html.RenderAction("getMenuFooter", "Layout"); }
+        </div>
+
+        @{ Html.RenderAction("getContactInfoForFooter", "Contact");}
+
     </div>
+</div>
+

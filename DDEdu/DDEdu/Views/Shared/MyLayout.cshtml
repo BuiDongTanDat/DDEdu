@@ -45,18 +45,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
 
                 @{Html.RenderAction("getMenu", "Layout"); }
-
-                @{Html.RenderAction("getMenuRight", "Layout"); }
+                <div class=" ms-auto">
+                    <a href="#top" class="login-button">LOGIN</a>
+                </div>
             </div>
     </nav>
 
 
 
-    @RenderBody();
+    @RenderBody()
 
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer section-padding">
         @{Html.RenderAction("getFooter", "Layout"); }
     </footer>
 
@@ -67,6 +68,7 @@
     <script src="~/Scripts/js/jquery.sticky.js"></script>
     <script src="~/Scripts/js/click-scroll.js"></script>
     <script src="~/Scripts/js/custom.js"></script>
+    <script src="~/Scripts/js/clickNews.js"></script>
 
 </body>
 

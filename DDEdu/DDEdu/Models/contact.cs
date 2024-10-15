@@ -12,14 +12,15 @@ namespace DDEdu.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class menuRight
+    public partial class contact
     {
         public int id { get; set; }
-        public string name { get; set; }
-        public string link { get; set; }
+        public string email { get; set; }
+        public string address { get; set; }
+        public string addressGPS { get; set; }
+        public string hotline { get; set; }
         public string meta { get; set; }
         public Nullable<bool> hide { get; set; }
-        public Nullable<int> order { get; set; }
-        public Nullable<System.DateTime> datebegin { get; set; }
+        public string name { get; set; }
     }
 }

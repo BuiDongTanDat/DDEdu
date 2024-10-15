@@ -141,6 +141,9 @@
     <Compile Include="Models\category.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\contact.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\course.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
@@ -163,9 +166,6 @@
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\menu.cs">
-      <DependentUpon>DDEdu_DB.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\menuRight.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\newPost.cs">
@@ -201,18 +201,18 @@
     <Content Include="Content\images\faq_graphic.jpg" />
     <Content Include="Content\images\logo-icon.png" />
     <Content Include="Content\images\rear-view-young-college-student.jpg" />
-    <Content Include="Content\images\topics\colleagues-working-cozy-office-medium-shot.png" />
-    <Content Include="Content\images\topics\undraw_Compose_music_re_wpiw.png" />
-    <Content Include="Content\images\topics\undraw_Educator_re_ju47.png" />
-    <Content Include="Content\images\topics\undraw_Finance_re_gnv2.png" />
-    <Content Include="Content\images\topics\undraw_Graduation_re_gthn.png" />
-    <Content Include="Content\images\topics\undraw_Group_video_re_btu7.png" />
-    <Content Include="Content\images\topics\undraw_happy_music_g6wc.png" />
-    <Content Include="Content\images\topics\undraw_online_ad_re_ol62.png" />
-    <Content Include="Content\images\topics\undraw_Podcast_audience_re_4i5q.png" />
-    <Content Include="Content\images\topics\undraw_Redesign_feedback_re_jvm0.png" />
-    <Content Include="Content\images\topics\undraw_Remote_design_team_re_urdx.png" />
-    <Content Include="Content\images\topics\undraw_viral_tweet_gndb.png" />
+    <Content Include="Content\images\colleagues-working-cozy-office-medium-shot.png" />
+    <Content Include="Content\images\undraw_Compose_music_re_wpiw.png" />
+    <Content Include="Content\images\undraw_Educator_re_ju47.png" />
+    <Content Include="Content\images\undraw_Finance_re_gnv2.png" />
+    <Content Include="Content\images\undraw_Graduation_re_gthn.png" />
+    <Content Include="Content\images\undraw_Group_video_re_btu7.png" />
+    <Content Include="Content\images\undraw_happy_music_g6wc.png" />
+    <Content Include="Content\images\undraw_online_ad_re_ol62.png" />
+    <Content Include="Content\images\undraw_Podcast_audience_re_4i5q.png" />
+    <Content Include="Content\images\undraw_Redesign_feedback_re_jvm0.png" />
+    <Content Include="Content\images\undraw_Remote_design_team_re_urdx.png" />
+    <Content Include="Content\images\undraw_viral_tweet_gndb.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -253,6 +253,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\js\bootstrap.bundle.min.js" />
     <Content Include="Scripts\js\click-scroll.js" />
+    <Content Include="Scripts\js\clickNews.js" />
     <Content Include="Scripts\js\custom.js" />
     <Content Include="Scripts\js\jquery.min.js" />
     <Content Include="Scripts\js\jquery.sticky.js" />
@@ -279,7 +280,6 @@
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\MyCourses\Index.cshtml" />
     <Content Include="Views\Layout\getCategory.cshtml" />
-    <Content Include="Views\Layout\getMenuRight.cshtml" />
     <Content Include="Views\Layout\getLogo.cshtml" />
     <Content Include="Views\Default\getSlide.cshtml" />
     <Content Include="Views\Layout\getMenuFooter.cshtml" />
@@ -288,6 +288,17 @@
     <Content Include="Views\Default\getCategoryDF.cshtml" />
     <Content Include="Views\Default\getCourse.cshtml" />
     <Content Include="Views\Default\getNew.cshtml" />
+    <Content Include="Views\Courses\getViewByCategory.cshtml" />
+    <Content Include="Views\Courses\getAllCourseByCategory.cshtml" />
+    <Content Include="Views\Courses\getDetail.cshtml" />
+    <Content Include="Views\Courses\getRelativeCourses.cshtml" />
+    <Content Include="Views\News\getAllNews.cshtml" />
+    <Content Include="Views\News\getAllNewsByType.cshtml" />
+    <Content Include="Views\News\getType.cshtml" />
+    <Content Include="Views\News\getNewDetail.cshtml" />
+    <Content Include="Views\News\getMoreNew.cshtml" />
+    <Content Include="Views\Contact\getContactInfo.cshtml" />
+    <Content Include="Views\Contact\getContactInfoForFooter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

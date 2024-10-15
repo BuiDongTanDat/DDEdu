@@ -1,0 +1,95 @@
+﻿@model DDEdu.Models.newPost
+
+@{
+    ViewBag.Title = Model.title;
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+<header class="site-header-new d-flex flex-column justify-content-center align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 col-12">
+                <div class="topics-detail-block bg-white shadow-lg">
+                    <img src="~/Content/images/@Model.image" class="">
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 mb-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/@Model.meta">@Model.meta.ToUpper()</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">@Model.type.ToUpper()</li>
+                    </ol>
+                </nav>
+                <h2 class="text-white">@Model.title</h2>
+                <div class="text-white new-detail-posted">Posted on: @Model.postDate.Value.ToString("dd/MM/yyyy")<br /> Author: @Model.author</div>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<section class="topics-detail-section section-padding" id="topics-detail">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-8 col-12 m-auto">
+                <h3 class="mb-4">@Model.title</h3>
+                <p>
+                    <i>
+                        @Model.desc
+                    </i>
+
+                </p>
+                <p>
+                    @Model.detail
+                </p>
+
+            </div>
+        </div>
+</section>
+
+<section class="section-padding">
+    <div class="container">
+        <!-- Tabs -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#review"
+                        type="button" role="tab" aria-controls="review" aria-selected="true">
+                    Review
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="read-more-tab" data-bs-toggle="tab" data-bs-target="#read-more"
+                        type="button" role="tab" aria-controls="read-more" aria-selected="false">
+                    Read More
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <!-- Read More Content -->
+            <div class="tab-pane fade show active" id="read-more" role="tabpanel" aria-labelledby="read-more-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-12">
+                        <h4>People also looking for:</h4>
+                        @Html.Action("getMoreNew", "News", new { id = Model.id })
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Content -->
+            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <div class="row mt-3">
+                    <div class="col-lg-12">
+                        <h4>User Reviews</h4>
+                        <p>Review 1: Very informative and helpful course!</p>
+                        <p>Review 2: Great course for beginners!</p>
+                        <p>This review section will add Facebook comment or something similar soon</p>
+                        <!-- Add more reviews here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

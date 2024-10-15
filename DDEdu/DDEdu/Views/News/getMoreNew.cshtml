@@ -1,0 +1,23 @@
+﻿@model List<DDEdu.Models.newPost>
+
+<div class="row" id="news-container">
+    @foreach (var post in Model)
+    {
+        <div class="col-lg-8 col-12 new-page news-item @(Array.IndexOf(Model.ToArray(), post) >= 3 ? "d-none" : "")">
+            <div class="d-flex">
+                <div class="new-img-container-page">
+                    <img src="~/Content/images/@post.image" class="news-img" alt="news image">
+                </div>
+
+                <div>
+                    <div class="title">
+                        <a href="/@post.meta/@post.id">@post.title</a>
+                    </div>
+                    <div class="desc">@post.desc</div>
+                    <div class="posted-date">Posted: @post.postDate.Value.ToString("dd/MM/yyyy")</div>
+                </div>
+            </div>
+        </div>
+
+    }
+</div>

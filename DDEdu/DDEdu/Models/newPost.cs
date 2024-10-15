@@ -22,5 +22,7 @@ namespace DDEdu.Models
         public Nullable<System.DateTime> postDate { get; set; }
         public Nullable<bool> hide { get; set; }
         public string meta { get; set; }
+        public string type { get; set; }
+        public string author { get; set; }
     }
 }

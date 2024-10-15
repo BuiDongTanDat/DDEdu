@@ -2,16 +2,16 @@
 
 
 <div class="col-lg-8 col-12">
-    <h3 class="mb-4"><a href="@ViewBag.meta">EXPLORE OUR COURSES</a></h3>
+    <h3 class="mb-4"><a href="/@ViewBag.meta">EXPLORE OUR COURSES</a></h3>
 </div>
 @foreach (var cate in Model)
 {
     <div class="col-lg-8 col-12">
-        <h5><a href="/@ViewBag.meta/@cate.meta">@cate.name</a></h5>
+        <h5><a class="category" href="/@ViewBag.meta/@cate.meta">@cate.name</a></h5>
     </div>
     <hr>
     <div class="row">
-        @Html.Action("getCourse", "Default", new {id = cate.id})
+        @Html.Action("getCourse", "Default", new { id = cate.id, meta = ViewBag.meta })
     </div>
 }
 

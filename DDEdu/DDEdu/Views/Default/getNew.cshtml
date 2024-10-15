@@ -6,10 +6,13 @@
 <div class="row">
     @foreach (var i in Model)
     {
-        <div class="col-lg-4 col-12 new">
+        <div class="col-lg-5 col-12 new">
             <div class="news d-flex">
-                <!-- Hình ảnh bên trái -->
-                <img src="~/Content/images/@i.image" class="news-img" alt="news image">
+                <div class="new-img-container">
+                    <!-- Hình ảnh bên trái -->
+                    <img src="~/Content/images/@i.image" class="news-img" alt="news image">
+                </div>
+                
                 <!-- Nội dung bên phải -->
                 <div>
                     <div class="title"><a href="@ViewBag.meta/@i.id">@i.title</a></div>

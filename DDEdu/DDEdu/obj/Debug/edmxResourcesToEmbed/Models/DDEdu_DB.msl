@@ -27,19 +27,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="menuRights">
-      <EntityTypeMapping TypeName="DDEduModel.menuRight">
-        <MappingFragment StoreEntitySet="menuRight">
-          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-          <ScalarProperty Name="order" ColumnName="order" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="link" ColumnName="link" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="logoes">
       <EntityTypeMapping TypeName="DDEduModel.logo">
         <MappingFragment StoreEntitySet="logo">
@@ -86,6 +73,8 @@
     <EntitySetMapping Name="newPosts">
       <EntityTypeMapping TypeName="DDEduModel.newPost">
         <MappingFragment StoreEntitySet="newPost">
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="type" ColumnName="type" />
           <ScalarProperty Name="meta" ColumnName="meta" />
           <ScalarProperty Name="hide" ColumnName="hide" />
           <ScalarProperty Name="postDate" ColumnName="postDate" />
@@ -93,6 +82,20 @@
           <ScalarProperty Name="detail" ColumnName="detail" />
           <ScalarProperty Name="desc" ColumnName="desc" />
           <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contacts">
+      <EntityTypeMapping TypeName="DDEduModel.contact">
+        <MappingFragment StoreEntitySet="contact">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hotline" ColumnName="hotline" />
+          <ScalarProperty Name="addressGPS" ColumnName="addressGPS" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>

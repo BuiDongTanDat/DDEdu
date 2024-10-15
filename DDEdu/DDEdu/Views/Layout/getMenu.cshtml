@@ -8,7 +8,7 @@
 <ul class="navbar-nav ms-lg-5 me-lg-auto">
     @foreach (var menu in Model)
     {
-        var categoryHtml = Html.Action("getCategory", "Layout", new { idForMenu = menu.id });
+        var categoryHtml = Html.Action("getCategory", "Layout", new { idForMenu = menu.id , metatitle = menu.meta});
 
         // Kiểm tra xem có subcategory không
         bool hasSubCategory = !String.IsNullOrEmpty(categoryHtml?.ToString());
@@ -18,7 +18,7 @@
 
         <li class="nav-item @(hasSubCategory ? "dropdown" : "") ">
             <a class="nav-link @(hasSubCategory ? "dropdown-toggle" : "") @(isActive ? "active" : "")"
-               href="@menu.meta">
+               href="/@menu.meta">
                 @menu.name
             </a>
 

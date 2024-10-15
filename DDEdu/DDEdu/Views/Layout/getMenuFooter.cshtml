@@ -5,14 +5,14 @@
     var currentUrl = Request.Url.AbsolutePath.ToLower();
 }
 
-<ul class="menu-list ">
+<ul class="site-footer-links">
     @foreach (var menu in Model)
     {
         // Kiểm tra xem mục này có trùng với URL hiện tại không
         bool isActive = currentUrl.Contains(menu.meta.ToLower());
 
-        <li class="nav-item">
-            <a class="nav-link @(isActive ? "active" : "")"
+        <li class="content-footer">
+            <a class="content-footer @(isActive ? "active" : "")"
                href="@menu.meta">
                 @menu.name
             </a>

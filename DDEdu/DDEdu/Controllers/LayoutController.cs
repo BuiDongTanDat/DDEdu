@@ -31,8 +31,9 @@ namespace DDEdu.Controllers
 
 
         //Lấy danh mục con cho danh mục cha
-        public ActionResult getCategory(int idForMenu)
+        public ActionResult getCategory(int idForMenu, string metatitle)
         {
+            ViewBag.meta = metatitle;
             var v = from t in _db.categories
                     where t.hide == true && t.idMenu == idForMenu
                     orderby t.order ascending
@@ -43,20 +44,10 @@ namespace DDEdu.Controllers
             {
                 return null;
             }
-
+            
             return PartialView(v.ToList());
         }
 
-
-        //Lấy các menu nằm bên góc phải
-        public ActionResult getMenuRight()
-        {
-            var v = from t in _db.menuRights
-                    where t.hide == true
-                    orderby t.order ascending
-                    select t;
-            return PartialView(v.ToList());
-        }
 
         //Lấy menu cho footer - vì footer định dạng danh sách menu khác với menu chính
         public ActionResult getMenuFooter()

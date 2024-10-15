@@ -1,0 +1,14 @@
+﻿@model DDEdu.Models.contact
+
+
+<div class="col-lg-5 col-12 mx-auto mt-5 mt-lg-0">
+    <iframe class="google-map" src="@Model.addressGPS" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h5 class="mt-4 mb-2">@Model.name</h5>
+
+    <p>
+            <b>Address: </b>@Model.address <br />
+            <b>Email: </b><a href="mailto:@Model.email" class="contact-i">@Model.email </a><br />
+            <b>Hotline: </b> <a href="tel: @Model.hotline" class="contact-i"> @Model.hotline</a>
+    </p>
+</div>

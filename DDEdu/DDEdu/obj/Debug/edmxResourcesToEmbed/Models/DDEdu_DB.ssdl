@@ -14,14 +14,29 @@ warning 6002: The table/view 'DDEdu.dbo.category' does not have a primary key de
     <Property Name="order" Type="int" />
     <Property Name="idMenu" Type="int" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="address" Type="nvarchar" MaxLength="255" />
+    <Property Name="addressGPS" Type="nvarchar(max)" />
+    <Property Name="hotline" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" />
+  </EntityType>
   <EntityType Name="course">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="255" />
-    <Property Name="desc" Type="nvarchar" MaxLength="255" />
-    <Property Name="detail" Type="nvarchar" MaxLength="255" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="detail" Type="nvarchar(max)" />
     <Property Name="startOn" Type="date" />
     <Property Name="endDate" Type="date" />
     <Property Name="maxStudent" Type="int" />
@@ -60,32 +75,20 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Property Name="order" Type="int" />
     <Property Name="datebegin" Type="smalldatetime" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'DDEdu.dbo.menuRight' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
-  <EntityType Name="menuRight">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="name" Type="varchar" MaxLength="255" />
-    <Property Name="link" Type="varchar" MaxLength="255" />
-    <Property Name="meta" Type="varchar" MaxLength="255" />
-    <Property Name="hide" Type="bit" />
-    <Property Name="order" Type="int" />
-    <Property Name="datebegin" Type="smalldatetime" />
-  </EntityType>
   <EntityType Name="newPost">
     <Key>
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="title" Type="nvarchar" MaxLength="255" />
-    <Property Name="desc" Type="nvarchar" MaxLength="255" />
-    <Property Name="detail" Type="nvarchar" MaxLength="255" />
+    <Property Name="title" Type="nvarchar(max)" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="detail" Type="nvarchar(max)" />
     <Property Name="image" Type="nvarchar" MaxLength="255" />
     <Property Name="postDate" Type="date" />
     <Property Name="hide" Type="bit" />
     <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nvarchar" MaxLength="255" />
+    <Property Name="author" Type="nvarchar" MaxLength="255" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -112,6 +115,18 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     [category].[idMenu] AS [idMenu]
     FROM [dbo].[category] AS [category]</DefiningQuery>
     </EntitySet>
+    <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [contact].[id] AS [id], 
+    [contact].[email] AS [email], 
+    [contact].[address] AS [address], 
+    [contact].[addressGPS] AS [addressGPS], 
+    [contact].[hotline] AS [hotline], 
+    [contact].[meta] AS [meta], 
+    [contact].[hide] AS [hide], 
+    [contact].[name] AS [name]
+    FROM [dbo].[contact] AS [contact]</DefiningQuery>
+    </EntitySet>
     <EntitySet Name="logo" EntityType="Self.logo" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [logo].[id] AS [id], 
@@ -124,17 +139,6 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     [logo].[desc] AS [desc], 
     [logo].[hotline] AS [hotline]
     FROM [dbo].[logo] AS [logo]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="menuRight" EntityType="Self.menuRight" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [menuRight].[id] AS [id], 
-    [menuRight].[name] AS [name], 
-    [menuRight].[link] AS [link], 
-    [menuRight].[meta] AS [meta], 
-    [menuRight].[hide] AS [hide], 
-    [menuRight].[order] AS [order], 
-    [menuRight].[datebegin] AS [datebegin]
-    FROM [dbo].[menuRight] AS [menuRight]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="slide" EntityType="Self.slide" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 

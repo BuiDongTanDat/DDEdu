@@ -1,0 +1,32 @@
+﻿@model List<string>
+
+<div class="tabs">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        @foreach (var type in Model)
+        {
+            <li class="nav-item" role="presentation">
+                <button class="nav-link @(type == Model.First() ? "active" : "")" id="@type-tab"
+                        data-bs-toggle="tab" data-bs-target="#@type"
+                        type="button" role="tab" aria-controls="@type"
+                        aria-selected="@(type == Model.First() ? "true" : "false")">
+                    @type.ToUpper()
+                </button>
+            </li>
+        }
+    </ul>
+</div>
+
+<div class="tab-content" id="myTabContent">
+    @foreach (var type in Model)
+    {
+        <div class="tab-pane fade @(type == Model.First() ? "show active" : "")" id="@type"
+             role="tabpanel" aria-labelledby="@type-tab">
+            <div class="row" id="news-container-@type">
+                @Html.Action("getAllNewsByType", "News", new { type = type })
+            </div>
+            <div class="col-lg-12 col-12">
+                <a class="view-more view-more-btn" data-type="@type">View More</a>
+            </div>
+        </div>
+    }
+</div>

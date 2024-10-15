@@ -15,11 +15,11 @@
   <EntityContainer Name="DDEdu_DB" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="menus" EntityType="Self.menu" />
     <EntitySet Name="categories" EntityType="DDEduModel.category" />
-    <EntitySet Name="menuRights" EntityType="DDEduModel.menuRight" />
     <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
     <EntitySet Name="slides" EntityType="DDEduModel.slide" />
     <EntitySet Name="courses" EntityType="DDEduModel.course" />
     <EntitySet Name="newPosts" EntityType="DDEduModel.newPost" />
+    <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
   </EntityContainer>
   <EntityType Name="category">
     <Key>
@@ -32,18 +32,6 @@
     <Property Name="hide" Type="Boolean" />
     <Property Name="order" Type="Int32" />
     <Property Name="idMenu" Type="Int32" />
-  </EntityType>
-  <EntityType Name="menuRight">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="order" Type="Int32" />
-    <Property Name="datebegin" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="logo">
     <Key>
@@ -73,8 +61,8 @@
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" />
     <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="startOn" Type="DateTime" Precision="0" />
     <Property Name="endDate" Type="DateTime" Precision="0" />
     <Property Name="maxStudent" Type="Int32" />
@@ -90,12 +78,27 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="detail" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="postDate" Type="DateTime" Precision="0" />
     <Property Name="hide" Type="Boolean" />
     <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="addressGPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hotline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

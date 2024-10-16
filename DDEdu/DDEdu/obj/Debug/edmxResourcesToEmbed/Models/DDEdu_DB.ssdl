@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="DDEduModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'DDEdu.dbo.category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="aboutus">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="255" />
+    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="icon" Type="nvarchar" MaxLength="255" />
+    <Property Name="isquestion" Type="bit" />
+    <Property Name="img" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
+  </EntityType>
   <EntityType Name="category">
     <Key>
       <PropertyRef Name="id" />
@@ -100,21 +110,27 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     <Property Name="name" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
   </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="255" />
+    <Property Name="password" Type="nvarchar" MaxLength="255" />
+    <Property Name="fullname" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="birth" Type="date" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
+    <Property Name="isAdmin" Type="bit" />
+    <Property Name="dateBegin" Type="date" />
+  </EntityType>
   <EntityContainer Name="DDEduModelStoreContainer">
+    <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="category" EntityType="Self.category" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [category].[id] AS [id], 
-    [category].[name] AS [name], 
-    [category].[link] AS [link], 
-    [category].[meta] AS [meta], 
-    [category].[hide] AS [hide], 
-    [category].[order] AS [order], 
-    [category].[idMenu] AS [idMenu]
-    FROM [dbo].[category] AS [category]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [contact].[id] AS [id], 

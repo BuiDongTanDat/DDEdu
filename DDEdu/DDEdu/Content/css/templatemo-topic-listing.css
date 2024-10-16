@@ -736,7 +736,8 @@ blockquote {
   TIMELINE              
 -----------------------------------------*/
 .timeline-section {
-    background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');
+    /*Lấy ảnh từ bên phần AboutUs Controller*/
+    /*background-image: url('../images/colleagues-working-cozy-office-medium-shot.jpg');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1522,21 +1523,25 @@ h4 {
 
 
 .login-button {
-    display: inline-block;
-    background: #ffffff;
-    color: rgb(0, 0, 0);
-    padding: 7px 50px;
+    display: block;
+    width: auto;
+    background: rgb(255, 255, 255);
+    border: none;
+    border-radius: var(--border-radius-large);
+    color: #0f415e;
+    font-family: var(--title-font-family);
+    font-size: smaller;
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
-    border-radius: 10px;
-    height: auto;
-    box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
-    transition: 0.2s ease;
-    border-radius: 10px;
+    align-items:center;
+    align-content:center;
 }
 
-.login-button:hover {
-        border-radius: 10px;
-        transform: scale(1.05);
+    .login-button:hover {
         color: #0f415e;
         background: linear-gradient(30deg, #7fffd4 0%, #80d0c7 100%);
     }
@@ -1618,8 +1623,117 @@ h4 {
 
 .contact-form {
     background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
-    ;
     padding: 50px;
     border-radius: 80px 10px 80px 10px;
     box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.1);
 }
+
+.forgot {
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+    .forgot:hover {
+        text-decoration: underline;
+        color: #ffffff;
+    }
+
+.title-form {
+    color: white;
+    margin-top: 0px;
+}
+
+.checkinput {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    margin: 0px 10px 50px 20px;
+    appearance: none;
+    border: 2px solid #0f415e;
+    padding-left: 20px;
+}
+
+    /* Khi checkbox được chọn */
+    .checkinput:checked {
+        background-color: #0f415e;
+    }
+
+
+
+
+.site-header-user {
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    align-items: center;
+    margin: 200px auto; /* Căn giữa với khoảng cách 200px trên/dưới và tự động cho bên trái/bên phải */
+    width: fit-content; /* Đặt chiều rộng phù hợp với nội dung bên trong */
+}
+
+.site-header .container {
+    height: auto;
+}
+
+.site-header-user img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px; /* Giữ nguyên độ bo tròn để tạo thành hình tròn */
+    display: block; /* Căn giữa hình ảnh */
+    margin: 0 10px 20px 0px; /* Giữa hình ảnh trong phần tử chứa */
+}
+
+.logout-button {
+    display: block;
+    background: red;
+    border: none;
+    border-radius: var(--border-radius-large);
+    color: var(--white-color);
+    font-family: var(--title-font-family);
+    font-size: smaller;
+    font-weight: var(--font-weight-semibold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+}
+
+    .logout-button:hover {
+        color: #ffffff;
+        background: rgb(194, 0, 0);
+    }
+
+.notice {
+    color: white;
+    font-size: small;
+}
+
+
+.navbar-icon-login {
+    background: #0f415e;
+    border-radius: var(--border-radius-large);
+    display: inline-block;
+    color: white;
+    font-size: var(--h5-font-size);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+    .navbar-icon-login:hover {
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
+
+.hover-login {
+    color: #13547a;
+}
+
+    .hover-login:hover {
+        text-decoration: underline;
+        color: #13547a;
+    }

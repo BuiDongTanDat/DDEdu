@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutUsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
@@ -135,8 +136,12 @@
     <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Controllers\MyCoursesController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\aboutu.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\category.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
@@ -174,6 +179,9 @@
     <Compile Include="Models\slide.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\user.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -199,6 +207,7 @@
     <Content Include="Content\images\businesswoman-using-tablet-analysis.jpg" />
     <Content Include="Content\images\colleagues-working-cozy-office-medium-shot.jpg" />
     <Content Include="Content\images\faq_graphic.jpg" />
+    <Content Include="Content\images\img-screen.jpg" />
     <Content Include="Content\images\logo-icon.png" />
     <Content Include="Content\images\rear-view-young-college-student.jpg" />
     <Content Include="Content\images\colleagues-working-cozy-office-medium-shot.png" />
@@ -299,6 +308,16 @@
     <Content Include="Views\News\getMoreNew.cshtml" />
     <Content Include="Views\Contact\getContactInfo.cshtml" />
     <Content Include="Views\Contact\getContactInfoForFooter.cshtml" />
+    <Content Include="Views\AboutUs\Index.cshtml" />
+    <Content Include="Views\AboutUs\getInto.cshtml" />
+    <Content Include="Views\AboutUs\getQuestion.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Register.cshtml" />
+    <Content Include="Views\User\UserInfo.cshtml" />
+    <Content Include="Views\User\changePassword.cshtml" />
+    <Content Include="Views\User\changeProfile.cshtml" />
+    <Content Include="Views\User\forgotPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

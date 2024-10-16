@@ -1,0 +1,20 @@
+﻿@model List<DDEdu.Models.aboutu>
+
+
+<ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+    <div class="list-progress">
+        <div class="inner"></div>
+    </div>
+    @foreach (var a in Model)
+    {
+        <li>
+            <h4 class="text-white mb-3">@a.title</h4>
+
+            <p class="text-white">@a.desc</p>
+
+            <div class="icon-holder">
+                <i class="@a.icon"></i>
+            </div>
+        </li>
+    }  
+</ul>

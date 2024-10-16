@@ -100,5 +100,33 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="aboutus">
+      <EntityTypeMapping TypeName="DDEduModel.aboutu">
+        <MappingFragment StoreEntitySet="aboutus">
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="img" ColumnName="img" />
+          <ScalarProperty Name="isquestion" ColumnName="isquestion" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="DDEduModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
+          <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="birth" ColumnName="birth" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

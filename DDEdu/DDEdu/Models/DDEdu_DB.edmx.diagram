@@ -7,11 +7,13 @@
       <Diagram DiagramId="b581168f9ec548d9be47bcad4489834e" Name="Diagram1">
         <EntityTypeShape EntityType="DDEduModel.menu" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
         <EntityTypeShape EntityType="DDEduModel.category" Width="1.5" PointX="2.5" PointY="0.75" />
-        <EntityTypeShape EntityType="DDEduModel.logo" Width="1.5" PointX="4.625" PointY="1.25" />
+        <EntityTypeShape EntityType="DDEduModel.logo" Width="1.5" PointX="4.5" PointY="1" />
         <EntityTypeShape EntityType="DDEduModel.slide" Width="1.5" PointX="2.5" PointY="3.75" />
         <EntityTypeShape EntityType="DDEduModel.course" Width="1.5" PointX="0.5" PointY="3.125" />
         <EntityTypeShape EntityType="DDEduModel.newPost" Width="1.5" PointX="6.375" PointY="0.75" />
         <EntityTypeShape EntityType="DDEduModel.contact" Width="1.5" PointX="5.375" PointY="4.75" />
+        <EntityTypeShape EntityType="DDEduModel.aboutu" Width="1.5" PointX="2.875" PointY="6.625" />
+        <EntityTypeShape EntityType="DDEduModel.user" Width="1.5" PointX="7.375" PointY="4.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

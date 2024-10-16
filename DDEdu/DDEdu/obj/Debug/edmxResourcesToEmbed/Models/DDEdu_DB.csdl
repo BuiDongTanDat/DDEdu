@@ -20,6 +20,8 @@
     <EntitySet Name="courses" EntityType="DDEduModel.course" />
     <EntitySet Name="newPosts" EntityType="DDEduModel.newPost" />
     <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
+    <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
+    <EntitySet Name="users" EntityType="DDEduModel.user" />
   </EntityContainer>
   <EntityType Name="category">
     <Key>
@@ -100,5 +102,31 @@
     <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="hide" Type="Boolean" />
     <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="aboutu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isquestion" Type="Boolean" />
+    <Property Name="img" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="fullname" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="birth" Type="DateTime" Precision="0" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isAdmin" Type="Boolean" />
+    <Property Name="dateBegin" Type="DateTime" Precision="0" />
   </EntityType>
 </Schema>

@@ -9,6 +9,44 @@ namespace DDEdu
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            //Định tuyến đến trang Quên Mật Khẩu
+            routes.MapRoute(
+            name: "toForgot",
+            url: "user/forgot",
+            defaults: new { controller = "User", action = "forgotPassword" }
+               );
+
+
+            //Định tuyến khi nhấn nút Login
+            routes.MapRoute(
+            name: "toLogin",
+            url: "user/login",
+            defaults: new { controller = "User", action = "Login" }
+               );
+
+            //Định tuyến khi nhấn nút Registry
+            routes.MapRoute(
+            name: "toRegistry",
+            url: "user/registry",
+            defaults: new { controller = "User", action = "Register" }
+               );
+
+            //Định tuyến khi nhấn nút trang Profile
+            routes.MapRoute(
+            name: "toProfile",
+            url: "user/profile",
+            defaults: new { controller = "User", action = "UserInfo" }
+               );
+
+
+            //Định tuyến cho trang AboutUs có meta là about
+            routes.MapRoute(
+            name: "AboutUs",
+            url: "about",
+            defaults: new { controller = "AboutUs", action = "Index" }
+               );
+
             // Định nghĩa cho đường dẫn /courses -> Courses/Index
             routes.MapRoute(
                 name: "CourseIndex",
@@ -36,6 +74,8 @@ namespace DDEdu
                 url: "news/{id}",
                 defaults: new { controller = "News", action = "getNewDetail" }
             );
+
+
 
             // Route mặc định
             routes.MapRoute(

@@ -124,6 +124,16 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     <Property Name="isAdmin" Type="bit" />
     <Property Name="dateBegin" Type="date" />
   </EntityType>
+  <EntityType Name="usercourse">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="idUser" Type="int" />
+    <Property Name="idCourse" Type="int" />
+    <Property Name="dateBegin" Type="date" />
+    <Property Name="meta" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityContainer Name="DDEduModelStoreContainer">
     <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
@@ -131,6 +141,7 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usercourse" EntityType="Self.usercourse" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
     [contact].[id] AS [id], 

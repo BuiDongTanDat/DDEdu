@@ -129,6 +129,16 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
           <Property Name="isAdmin" Type="bit" />
           <Property Name="dateBegin" Type="date" />
         </EntityType>
+        <EntityType Name="usercourse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="idUser" Type="int" />
+          <Property Name="idCourse" Type="int" />
+          <Property Name="dateBegin" Type="date" />
+          <Property Name="meta" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityContainer Name="DDEduModelStoreContainer">
           <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
@@ -136,6 +146,7 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
           <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="usercourse" EntityType="Self.usercourse" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [contact].[id] AS [id], 
@@ -195,6 +206,7 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
           <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
           <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
           <EntitySet Name="users" EntityType="DDEduModel.user" />
+          <EntitySet Name="usercourses" EntityType="DDEduModel.usercourse" />
         </EntityContainer>
         <EntityType Name="category">
           <Key>
@@ -301,6 +313,16 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
           <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="isAdmin" Type="Boolean" />
           <Property Name="dateBegin" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="usercourse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="idUser" Type="Int32" />
+          <Property Name="idCourse" Type="Int32" />
+          <Property Name="dateBegin" Type="DateTime" Precision="0" />
+          <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -431,6 +453,17 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
                 <ScalarProperty Name="fullname" ColumnName="fullname" />
                 <ScalarProperty Name="password" ColumnName="password" />
                 <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="usercourses">
+            <EntityTypeMapping TypeName="DDEduModel.usercourse">
+              <MappingFragment StoreEntitySet="usercourse">
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
+                <ScalarProperty Name="idCourse" ColumnName="idCourse" />
+                <ScalarProperty Name="idUser" ColumnName="idUser" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -14,7 +14,8 @@
         bool hasSubCategory = !String.IsNullOrEmpty(categoryHtml?.ToString());
 
         // Kiểm tra xem mục này có trùng với URL hiện tại không
-        bool isActive = currentUrl.Contains(menu.meta.ToLower());
+        bool isActive = currentUrl.Equals("/" + menu.meta.ToLower());
+
 
         <li class="nav-item @(hasSubCategory ? "dropdown" : "") ">
             <a class="nav-link @(hasSubCategory ? "dropdown-toggle" : "") @(isActive ? "active" : "")"

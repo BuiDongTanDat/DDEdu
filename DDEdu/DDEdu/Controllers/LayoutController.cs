@@ -82,6 +82,12 @@ namespace DDEdu.Controllers
 
         }
 
+        //Hiển thị model
+        public ActionResult getModel(string content)
+        {
+            ViewBag.content = content;
+            return PartialView();
+        }
 
 
 

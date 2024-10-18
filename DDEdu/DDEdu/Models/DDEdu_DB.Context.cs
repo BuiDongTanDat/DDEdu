@@ -34,5 +34,6 @@ namespace DDEdu.Models
         public virtual DbSet<contact> contacts { get; set; }
         public virtual DbSet<aboutu> aboutus { get; set; }
         public virtual DbSet<user> users { get; set; }
+        public virtual DbSet<usercourse> usercourses { get; set; }
     }
 }

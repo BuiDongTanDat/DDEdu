@@ -1,0 +1,8 @@
+﻿@model List<DDEdu.Models.usercourse>
+
+@foreach (var cou in Model)
+{
+    Html.RenderAction("getDetailCoursesByUser", "MyCourses", new { id = cou.idCourse, day = cou.dateBegin.Value.ToString("dd/MM/yyyy") });
+    
+}
+

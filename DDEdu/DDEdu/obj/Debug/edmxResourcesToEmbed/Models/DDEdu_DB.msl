@@ -128,5 +128,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="usercourses">
+      <EntityTypeMapping TypeName="DDEduModel.usercourse">
+        <MappingFragment StoreEntitySet="usercourse">
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
+          <ScalarProperty Name="idCourse" ColumnName="idCourse" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

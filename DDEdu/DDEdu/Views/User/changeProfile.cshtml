@@ -13,9 +13,9 @@
                     <img src="~/Content/images/undraw_Remote_design_team_re_urdx.png">
                 </div>
                 <div class="col-lg-12 col-12">
-                    <a href="@Url.Action("changePassword", "User")" class="login-button">Change Password</a>
+                    <a href="/user/changepassword" class="login-button">Change Password</a>
                     <a href="/user/profile" class="login-button">View Profile</a>
-                    <a href="@Url.Action("Logout", "User")" class="logout-button">Log Out</a>
+                    <a href="/user/logout" class="logout-button">Log Out</a>
                 </div>
             </div>
             <div class="col-lg-8 col-12">
@@ -52,9 +52,8 @@
     </div>
 </section>
 
+@*Hiển thị hộp thoại khi đổi profile thành công*@
 @if (TempData["Success"] != null)
 {
-    <script type="text/javascript">
-        alert("@TempData["Success"]");
-    </script>
+    Html.RenderAction("getModel", "Layout", new { content = TempData["Success"].ToString() });
 }

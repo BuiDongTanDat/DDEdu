@@ -144,7 +144,18 @@ namespace DDEdu.Controllers
 
         public ActionResult changePassword()
         {
-            return View();
+            //Kiểm tra người dùng đã đăng nhập
+            if (Session["User"] != null)
+            {
+                // Truyền thông tin người dùng đến view
+                return View();
+            }
+            else
+            {
+                // Nếu chưa đăng nhập, chuyển hướng đến trang đăng nhập
+                return RedirectToAction("Login");
+            }
+            
         }
 
         [HttpPost]
@@ -199,8 +210,16 @@ namespace DDEdu.Controllers
 
         public ActionResult changeProfile()
         {
-            var currentUser = (user)Session["User"];
-            return View(currentUser);
+            
+            if (Session["User"] != null)
+            {
+                // Truyền thông tin người dùng đến view
+                var currentUser = (user)Session["User"];
+                return View(currentUser);
+            }
+            else
+                return RedirectToAction("Login");
+
         }
 
 
@@ -270,14 +289,13 @@ namespace DDEdu.Controllers
 
 
                 string body = "Hi " + user.username + "! Your password have been reset.";
-                body += "New password is: " + newPassword + "\n";
+                body += "\nNew password is: " + newPassword + "\n";
                 body += "Please keep it in secrect or change your password as soon as posible in User profile";
                 body += "\nBy the way, we hope you will find your dream course in here!\n";
                 string subject = "[DDEDu English Center] Reset password successfully";
                 // Gửi email với mật khẩu mới
                 SendEmail(email, subject, body); // Gọi phương thức gửi email mà bạn đã tạo trước đó
-
-                ViewBag.notice = "* New password have been sent to your email";
+                TempData["Success"] = "New password have been sent to your email";
                 return View();
             }
             return View();

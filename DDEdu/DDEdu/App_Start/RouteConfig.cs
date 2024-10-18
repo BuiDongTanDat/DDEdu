@@ -1,4 +1,5 @@
-﻿using System.Web.Mvc;
+﻿using DDEdu.Models;
+using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace DDEdu
@@ -9,6 +10,46 @@ namespace DDEdu
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            
+            //Định tuyến thực thi đăng ký khóa học
+            routes.MapRoute(
+            name: "unsubscribeCourse",
+            url: "courses/unsubscribe/{id}",
+            defaults: new { controller = "MyCourses", action = "unsubscribeCourse" }
+               );
+
+
+            //Định tuyến thực thi đăng ký khóa học
+            routes.MapRoute(
+            name: "registerCourse",
+            url: "courses/registercourse/{id}",
+            defaults: new { controller = "Courses", action = "RegisterCourse" }
+               );
+
+
+            //Định tuyến khi nhấn nút Log out
+            routes.MapRoute(
+            name: "toLogout",
+            url: "user/logout",
+            defaults: new { controller = "User", action = "Logout" }
+               );
+
+
+            //Định tuyến khi nhấn nút đổi mật khẩu
+            routes.MapRoute(
+            name: "toChangeProfile",
+            url: "user/changeprofile",
+            defaults: new { controller = "User", action = "changeProfile" }
+               );
+
+
+            //Định tuyến khi nhấn nút đổi mật khẩu
+            routes.MapRoute(
+            name: "toChangepassword",
+            url: "user/changePassword",
+            defaults: new { controller = "User", action = "changePassword" }
+               );
 
             //Định tuyến đến trang Quên Mật Khẩu
             routes.MapRoute(
@@ -60,6 +101,13 @@ namespace DDEdu
                 url: "courses/{metatitle}",
                 defaults: new { controller = "Courses", action = "getViewByCategory" }
             );
+
+            //Định tuyến đến trang Khóa học của tôi
+            routes.MapRoute(
+            name: "toMyCourses",
+            url: "my-courses",
+            defaults: new { controller = "MyCourses", action = "Index" }
+               );
 
             // Định nghĩa đường dẫn cho courses/{meta}/{id} để hiển thị chi tiết Course
             routes.MapRoute(

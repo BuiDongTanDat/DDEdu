@@ -7,7 +7,7 @@
         <div class="title"><a href="/@ViewBag.metaCourse/@cou.meta/@cou.id">@cou.name</a></div>
         <div class="desc">@cou.desc</div>
         <div class="desc">
-            Tuition: @cou.tuition VND<br />
+            Tuition: <b style ="color:red">@cou.tuition</b> VND<br />
             Start on: @cou.startOn.Value.ToString("dd/MM/yyyy")
         </div>
         <a href="/@ViewBag.metaCourse/@cou.meta/@cou.id" class="btn-signup">Sign Up</a>

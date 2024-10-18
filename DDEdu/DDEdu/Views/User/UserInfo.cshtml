@@ -16,9 +16,9 @@
                     <img src="~/Content/images/undraw_Remote_design_team_re_urdx.png">
                 </div>
                 <div class="col-lg-12 col-12">
-                    <a href=@Url.Action("changePassword", "User") class="login-button">Change Password</a>
-                    <a href=@Url.Action("changeProfile", "User") class="login-button">Edit profile</a>
-                    <a href=@Url.Action("Logout", "User") class="logout-button">Log Out</a>
+                    <a href="/user/changepassword" class="login-button">Change Password</a>
+                    <a href="/user/changeprofile" class="login-button">Edit Profile</a>
+                    <a href="/user/logout" class="logout-button">Log Out</a>
                 </div>
             </div>
 
@@ -29,22 +29,17 @@
                 <div class="title-form"><b>Email: </b>@Model.email</div>
                 <div class="title-form"><b>Date of Birth: </b>@Model.birth.Value.ToString("dd/MM/yyyy")</div>
                 <div class="title-form"><b>Account created: </b>@Model.dateBegin.Value.ToString("dd/MM/yyyy")</div>
-                <div class="title-form"><b>Registered courses: </b> <a href="" class="forgot">View Detail</a></div>
+                <div class="title-form"><b>Registered courses: </b> <a href="/my-courses" class="forgot">View Detail</a></div>
                 <ul class="title-form">
-                    <li class="title-form">Course 1 - 12/10/2024</li>
-                    <li class="title-form">Course 2 - 15/10/2024</li>
-                    <li class="title-form">Course 3 - 20/10/2024</li>
-                    <li class="title-form">Course 4 - 25/10/2024</li>
-                    <li class="title-form">Course 5 - 30/10/2024</li>
+                    @Html.Action("getIdInProfile", "MyCourses", new {id = Model.id})
                 </ul>
             </div>
         </div>
     </div>
 </section>
 
+@*Hiển thị hộp thoại khi đổi profile thành công*@
 @if (TempData["Success"] != null)
 {
-    <script type="text/javascript">
-        alert("@TempData["Success"]");
-    </script>
+    Html.RenderAction("getModel", "Layout", new { content = TempData["Success"].ToString() });
 }

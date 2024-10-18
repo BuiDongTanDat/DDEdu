@@ -182,6 +182,9 @@
     <Compile Include="Models\user.cs">
       <DependentUpon>DDEdu_DB.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\usercourse.cs">
+      <DependentUpon>DDEdu_DB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -318,6 +321,11 @@
     <Content Include="Views\User\changePassword.cshtml" />
     <Content Include="Views\User\changeProfile.cshtml" />
     <Content Include="Views\User\forgotPassword.cshtml" />
+    <Content Include="Views\Layout\getModel.cshtml" />
+    <Content Include="Views\MyCourses\getCoursesByUser.cshtml" />
+    <Content Include="Views\MyCourses\getDetailCoursesByUser.cshtml" />
+    <Content Include="Views\MyCourses\getIdInProfile.cshtml" />
+    <Content Include="Views\MyCourses\getListId.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

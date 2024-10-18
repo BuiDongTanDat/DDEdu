@@ -1,0 +1,24 @@
+﻿
+<!-- The Modal -->
+<div id="myModal" class="modal" style="display: none;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="bi-exclamation-triangle"></i>&#160 Notice</h3>
+        </div>
+        <div class="modal-body">
+            <p>@ViewBag.content</p>
+        </div>
+        <div class="modal-footer">
+            <button id="closeModal" class="logout-button">CLOSE</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("myModal").style.display = "block";
+    });
+
+    document.getElementById("closeModal").onclick = function () {
+        document.getElementById("myModal").style.display = "none";
+    };
+</script>

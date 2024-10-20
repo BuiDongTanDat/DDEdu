@@ -19,7 +19,8 @@ namespace DDEdu.Models
         public string desc { get; set; }
         public string icon { get; set; }
         public Nullable<bool> isquestion { get; set; }
-        public string img { get; set; }
+        public string image { get; set; }
         public string meta { get; set; }
+        public Nullable<bool> hide { get; set; }
     }
 }

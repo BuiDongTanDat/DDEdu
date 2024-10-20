@@ -23,7 +23,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.metaCourses = "courses";
             var v = from t in _db.categories
-                    where t.meta == metatitle
+                    where t.meta == metatitle && t.hide == true
                     select t;
             return View(v.FirstOrDefault());
         }
@@ -41,7 +41,7 @@ namespace DDEdu.Controllers
 
             var v = from t in _db.courses
                     where t.hide == true
-                          && t.idCategory == id
+                          && t.idCategory == id && t.hide == true
                           && (t.startOn > currentDate // Khóa học sắp diễn ra
                                || (t.startOn <= currentDate && t.startOn >= tenDaysAgo)) // Khóa học đang diễn ra không quá 10 ngày kể từ ngày bắt đầu
                     orderby t.id descending
@@ -113,10 +113,10 @@ namespace DDEdu.Controllers
                     return RedirectToAction("Index"); // Redirect to an appropriate view
                 }
 
-                if (course.currrStudent >= course.maxStudent)
+                if (course.currStudent >= course.maxStudent)
                 {
                     TempData["Success"] = "Registration failed: Course is full.";
-                    return RedirectToAction("getDetail", new { id = courseId }); // Redirect to course detail
+                    return RedirectToAction("getDetail", new { id = courseId , meta = course.meta }); // Redirect to course detail
                 }
 
                 // Xử lý đăng ký
@@ -126,10 +126,11 @@ namespace DDEdu.Controllers
                     idUser = user.id,
                     dateBegin = DateTime.Now,
                     meta = "my-course",
+                    ispaid = false,
                 };
 
                 _db.usercourses.Add(registration);
-                course.currrStudent++;
+                course.currStudent++;
                 _db.SaveChanges();
 
                 TempData["SignInComplete"] = "You are now registered for this course!";

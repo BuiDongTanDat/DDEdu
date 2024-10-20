@@ -17,5 +17,6 @@ namespace DDEdu.Models
         public int id { get; set; }
         public string name { get; set; }
         public Nullable<bool> hide { get; set; }
+        public Nullable<int> order { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace DDEdu
 
 
             
-            //Định tuyến thực thi đăng ký khóa học
+            //Định tuyến thực thi hủy đăng ký khóa học
             routes.MapRoute(
             name: "unsubscribeCourse",
             url: "courses/unsubscribe/{id}",
@@ -36,7 +36,7 @@ namespace DDEdu
                );
 
 
-            //Định tuyến khi nhấn nút đổi mật khẩu
+            //Định tuyến khi nhấn nút Đổi thông tin
             routes.MapRoute(
             name: "toChangeProfile",
             url: "user/changeprofile",
@@ -44,7 +44,7 @@ namespace DDEdu
                );
 
 
-            //Định tuyến khi nhấn nút đổi mật khẩu
+            //Định tuyến khi nhấn nút Đổi mật khẩu
             routes.MapRoute(
             name: "toChangepassword",
             url: "user/changePassword",

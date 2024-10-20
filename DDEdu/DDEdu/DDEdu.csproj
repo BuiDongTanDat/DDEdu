@@ -326,6 +326,8 @@
     <Content Include="Views\MyCourses\getDetailCoursesByUser.cshtml" />
     <Content Include="Views\MyCourses\getIdInProfile.cshtml" />
     <Content Include="Views\MyCourses\getListId.cshtml" />
+    <Content Include="Views\MyCourses\getTuitionDetail.cshtml" />
+    <Content Include="Views\MyCourses\getViewTuition.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

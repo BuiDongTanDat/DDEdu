@@ -29,11 +29,11 @@ namespace DDEdu.Models
         public virtual DbSet<category> categories { get; set; }
         public virtual DbSet<logo> logoes { get; set; }
         public virtual DbSet<slide> slides { get; set; }
-        public virtual DbSet<course> courses { get; set; }
         public virtual DbSet<newPost> newPosts { get; set; }
         public virtual DbSet<contact> contacts { get; set; }
-        public virtual DbSet<aboutu> aboutus { get; set; }
         public virtual DbSet<user> users { get; set; }
         public virtual DbSet<usercourse> usercourses { get; set; }
+        public virtual DbSet<aboutu> aboutus { get; set; }
+        public virtual DbSet<course> courses { get; set; }
     }
 }

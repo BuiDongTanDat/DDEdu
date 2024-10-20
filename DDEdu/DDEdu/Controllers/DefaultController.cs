@@ -23,7 +23,7 @@ namespace DDEdu.Controllers
         {
             var v = from t in _db.slides
                     where t.hide == true
-                    orderby t.id ascending
+                    orderby t.order ascending
                     select t;
             return PartialView(v.ToList());
         }
@@ -53,7 +53,7 @@ namespace DDEdu.Controllers
 
 
             var v = (from t in _db.courses
-                    where t.hide == true && t.idCategory == id
+                    where t.hide == true && t.idCategory == id && t.hide == true
                     && (t.startOn > currentDate // Khóa học sắp diễn ra
                                || (t.startOn <= currentDate && t.startOn >= tenDaysAgo))
                      orderby t.startOn descending

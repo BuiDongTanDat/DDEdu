@@ -1,0 +1,16 @@
+﻿@model DDEdu.Models.course
+
+<tr>
+    <td>@ViewBag.day</td>
+    <td>@Model.name</td>
+    <td>@Model.tuition VND</td>
+    @if (ViewBag.status == "False")
+    {
+        <td style="color: red">Unpaid</td>
+    }
+    else
+    {
+        <td style="color: green">Paid</td>
+    }
+
+</tr>

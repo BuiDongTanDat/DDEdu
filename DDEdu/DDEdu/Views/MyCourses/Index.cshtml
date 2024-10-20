@@ -16,8 +16,23 @@
         <div class="row">
             @Html.Action("getCoursesByUser", "MyCourses", new { id = ViewBag.idUser })
         </div>
-
-
+        <div class="col-lg-8 col-12">
+            <h3 class="mb-4">Tuition detail</h3>
+        </div>
+        <hr>
+        <table class="col-12">
+            <tr>
+                <th>Registered day</th>
+                <th>Name of course</th>
+                <th>Tuition</th>
+                <th>Status</th>
+            </tr>
+            @Html.Action("getTuitionDetail", "MyCourses", new { id = ViewBag.idUser })
+            
+            
+        </table>
     </div>
 
 </section>
+
+

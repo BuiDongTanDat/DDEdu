@@ -1,0 +1,12 @@
+﻿@model List<DDEdu.Models.usercourse>
+
+@foreach (var cou in Model)
+{
+    Html.RenderAction("getViewTuition", "MyCourses", new { id = cou.idCourse, day = cou.dateBegin.Value.ToString("dd/MM/yyyy"), status = cou.ispaid.Value.ToString() });
+
+
+}
+<tr class="total-tuition">
+    <td colspan="2">Total</td>
+    <td colspan="2"> @ViewBag.total VND</td>
+</tr>

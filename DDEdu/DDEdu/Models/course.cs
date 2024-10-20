@@ -21,7 +21,7 @@ namespace DDEdu.Models
         public Nullable<System.DateTime> startOn { get; set; }
         public Nullable<System.DateTime> endDate { get; set; }
         public Nullable<int> maxStudent { get; set; }
-        public Nullable<int> currrStudent { get; set; }
+        public Nullable<int> currStudent { get; set; }
         public Nullable<int> tuition { get; set; }
         public Nullable<int> idCategory { get; set; }
         public string meta { get; set; }

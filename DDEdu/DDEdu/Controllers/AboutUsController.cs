@@ -19,7 +19,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.meta = "about";
             var v = (from t in _db.aboutus
-                     where t.img != null
+                     where t.image != null && t.hide == true
                      orderby t.id ascending
                      select t).Take(2);
             return View(v.ToList());
@@ -31,7 +31,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.meta = "about";
             var v = (from t in _db.aboutus
-                     where t.isquestion == false
+                     where t.isquestion == false && t.hide == true
                      orderby t.id ascending
                      select t);
             return PartialView(v.ToList());
@@ -42,7 +42,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.meta = "about";
             var v = (from t in _db.aboutus
-                     where t.isquestion == true
+                     where t.isquestion == true && t.hide == true
                      orderby t.id ascending
                      select t);
             return PartialView(v.ToList());

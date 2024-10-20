@@ -4,22 +4,23 @@
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="title" Type="nvarchar" MaxLength="255" />
-    <Property Name="desc" Type="nvarchar(max)" />
+    <Property Name="desc" Type="nvarchar" MaxLength="255" />
     <Property Name="icon" Type="nvarchar" MaxLength="255" />
     <Property Name="isquestion" Type="bit" />
-    <Property Name="img" Type="nvarchar" MaxLength="255" />
+    <Property Name="image" Type="nvarchar" MaxLength="255" />
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
+    <Property Name="hide" Type="bit" />
   </EntityType>
   <EntityType Name="category">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="name" Type="varchar" MaxLength="255" />
-    <Property Name="link" Type="varchar" MaxLength="255" />
-    <Property Name="meta" Type="varchar" MaxLength="255" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" />
+    <Property Name="link" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
     <Property Name="order" Type="int" />
     <Property Name="idMenu" Type="int" />
@@ -43,14 +44,14 @@ warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key def
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="255" />
     <Property Name="desc" Type="nvarchar(max)" />
     <Property Name="detail" Type="nvarchar(max)" />
     <Property Name="startOn" Type="date" />
     <Property Name="endDate" Type="date" />
     <Property Name="maxStudent" Type="int" />
-    <Property Name="currrStudent" Type="int" />
+    <Property Name="currStudent" Type="int" />
     <Property Name="tuition" Type="int" />
     <Property Name="idCategory" Type="int" />
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
@@ -77,38 +78,37 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="name" Type="nvarchar" MaxLength="50" />
-    <Property Name="link" Type="nvarchar(max)" />
-    <Property Name="meta" Type="nvarchar(max)" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" />
+    <Property Name="link" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
     <Property Name="order" Type="int" />
-    <Property Name="datebegin" Type="smalldatetime" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="newPost">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="title" Type="nvarchar(max)" />
     <Property Name="desc" Type="nvarchar(max)" />
     <Property Name="detail" Type="nvarchar(max)" />
     <Property Name="image" Type="nvarchar" MaxLength="255" />
     <Property Name="postDate" Type="date" />
     <Property Name="hide" Type="bit" />
-    <Property Name="meta" Type="nvarchar" MaxLength="50" />
-    <Property Name="type" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="author" Type="nvarchar" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" MaxLength="255" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="slide">
     <Key>
       <PropertyRef Name="id" />
     </Key>
-    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="name" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
   </EntityType>
   <EntityType Name="user">
     <Key>
@@ -133,6 +133,7 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     <Property Name="idCourse" Type="int" />
     <Property Name="dateBegin" Type="date" />
     <Property Name="meta" Type="nvarchar" MaxLength="50" />
+    <Property Name="ispaid" Type="bit" />
   </EntityType>
   <EntityContainer Name="DDEduModelStoreContainer">
     <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
@@ -140,6 +141,7 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="slide" EntityType="Self.slide" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="usercourse" EntityType="Self.usercourse" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
@@ -166,13 +168,6 @@ warning 6002: The table/view 'DDEdu.dbo.slide' does not have a primary key defin
     [logo].[desc] AS [desc], 
     [logo].[hotline] AS [hotline]
     FROM [dbo].[logo] AS [logo]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="slide" EntityType="Self.slide" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [slide].[id] AS [id], 
-    [slide].[name] AS [name], 
-    [slide].[hide] AS [hide]
-    FROM [dbo].[slide] AS [slide]</DefiningQuery>
     </EntitySet>
   </EntityContainer>
 </Schema>

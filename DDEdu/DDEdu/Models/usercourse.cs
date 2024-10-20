@@ -19,5 +19,6 @@ namespace DDEdu.Models
         public Nullable<int> idCourse { get; set; }
         public Nullable<System.DateTime> dateBegin { get; set; }
         public string meta { get; set; }
+        public Nullable<bool> ispaid { get; set; }
     }
 }

@@ -6,7 +6,7 @@
 @model List<DDEdu.Models.aboutu>
 
 
-<section class="timeline-section section-padding" id="section_3" style="background-image: url('@Url.Content("~/Content/images/" + Model[0].img)');">
+<section class="timeline-section section-padding" id="section_3" style="background-image: url('@Url.Content("~/Content/images/" + Model[0].image)');">
 
     <br />
     <br />
@@ -46,7 +46,7 @@
             <div class="clearfix"></div>
 
             <div class="col-lg-5 col-12">
-                <img src="~/Content/images/@Model[1].img" class="img-fluid" alt="FAQs">
+                <img src="~/Content/images/@Model[1].image" class="img-fluid" alt="FAQs">
             </div>
              @Html.Action("getQuestion", "AboutUs")
 

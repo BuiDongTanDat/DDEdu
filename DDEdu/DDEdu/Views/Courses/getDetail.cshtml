@@ -28,7 +28,7 @@
                         {
                             <p class="text-danger notice-course"><i class="bi-exclamation-triangle"></i> This course have been closed.</p>
                         }
-                        else if (Model.currrStudent >= Model.maxStudent)
+                        else if (Model.currStudent >= Model.maxStudent)
                         {
                             <p class="text-danger notice-course"><i class="bi-exclamation-triangle"></i> This course is full.</p>
                         }
@@ -111,7 +111,7 @@
                             <b>Start on:</b> @Model.startOn.Value.ToString("dd/MM/yyyy")<br />
                             <b>End date:</b> @Model.endDate.Value.ToString("dd/MM/yyyy") <br />
                             <b>Max member:</b> @Model.maxStudent <br />
-                            <b>Studying member:</b> @Model.currrStudent <br />
+                            <b>Studying member:</b> @Model.currStudent <br />
                             <b>Tuition:</b> <span style="color: red">@Model.tuition</span> VND <br />
                         </p>
                     </div>
@@ -163,7 +163,7 @@
             <form action="/courses/registercourse/@Model.id" method="post">
                 <input type="hidden" name="courseId" id="courseIdInput" />
                 <button type="button" class="logout-button" id="cancelButton">CANCEL</button>
-                <button type="submit" class="login-button confirm-button">CONFIRM</button>
+                <button type="submit" class="login-button confirm-button" href ="/@ViewBag.metaCourse/@Model.meta/@Model.id">CONFIRM</button>
 
             </form>
         </div>
@@ -187,6 +187,6 @@
 @*Hiển thị hộp thoại khi đăng ký thành công*@
 @if (TempData["SignInComplete"] != null)
 {
-    Html.RenderAction("getModel", "Layout", new { content = TempData["UnsubscribeSuccess"].ToString() });
+    Html.RenderAction("getModel", "Layout", new { content = TempData["SignInComplete"].ToString() });
 }
 

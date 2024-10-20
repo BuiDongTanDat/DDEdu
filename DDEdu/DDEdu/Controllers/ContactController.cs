@@ -21,7 +21,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.metaCourses = "contact";
             var v = from t in _db.contacts
-                    where t.id == 1 //Do trong bảng này chỉ chứa một nội dung duy nhất
+                    where t.id == 1 //Do trong bảng này chỉ chứa một hàng nội dung duy nhất
                     select t;
             return PartialView(v.FirstOrDefault());
         }
@@ -31,7 +31,7 @@ namespace DDEdu.Controllers
         {
             ViewBag.metaCourses = "contact";
             var v = from t in _db.contacts
-                    where t.id == 1 //Do trong bảng này chỉ chứa một nội dung duy nhất
+                    where t.id == 1 //Do trong bảng này chỉ chứa một hàng nội dung duy nhất
                     select t;
             return PartialView(v.FirstOrDefault());
         }

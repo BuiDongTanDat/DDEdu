@@ -37,6 +37,7 @@ namespace DDEdu.Controllers
             ViewBag.metaCourses = "my-courses";
             var v = from t in _db.usercourses
                     where t.idUser == id
+                    orderby t.dateBegin descending
                     select t;
             return PartialView(v.ToList());
         }
@@ -47,7 +48,7 @@ namespace DDEdu.Controllers
             ViewBag.day = day;
             ViewBag.metaGet = "courses";
             var v = from t in _db.courses
-                    where t.id == id
+                    where t.id == id && t.hide == true
                     select t;
             return PartialView(v.FirstOrDefault());
         }
@@ -59,6 +60,7 @@ namespace DDEdu.Controllers
             ViewBag.metaCourses = "my-courses";
             var v = from t in _db.usercourses
                     where t.idUser == id
+                    orderby t.dateBegin descending
                     select t;
             return PartialView(v.ToList());
         }
@@ -95,7 +97,7 @@ namespace DDEdu.Controllers
                     {
                         _db.usercourses.Remove(userCourse);
                         // Giảm số lượng sinh viên đang học
-                        course.currrStudent--;
+                        course.currStudent--;
                         _db.SaveChanges();
                     }
 
@@ -116,6 +118,44 @@ namespace DDEdu.Controllers
             }
 
             
+        }
+
+
+        public ActionResult getTuitionDetail(int id)
+        {
+            ViewBag.metaCourses = "my-courses";
+            var v = from t in _db.usercourses
+                    where t.idUser == id
+                    orderby t.dateBegin descending
+                    select t;
+            ViewBag.total = getTotalTuition(id);
+            return PartialView(v.ToList());
+        }
+
+        public ActionResult getViewTuition(int id, string day, string status)
+        {
+            ViewBag.status=status;
+            ViewBag.day = day;
+            ViewBag.metaGet = "courses";
+            var v = from t in _db.courses
+                    where t.id == id
+                    select t;
+            return PartialView(v.FirstOrDefault());
+        }
+
+        public int getTotalTuition(int id)
+        {
+            //Lấy danh sách các id course chưa đóng học phí
+            var unpaidCourseIds = (from uc in _db.usercourses
+                                   where uc.idUser == id && uc.ispaid == false
+                                   select uc.idCourse).ToList();
+
+            // Tính tổng học phí từ bảng courses dựa trên danh sách CourseId
+            var totalTuition = (from c in _db.courses
+                                where unpaidCourseIds.Contains(c.id)
+                                select c.tuition).Sum() ?? 0; 
+
+            return totalTuition; // Trả về tổng học phí
         }
     }
 }

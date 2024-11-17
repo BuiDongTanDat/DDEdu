@@ -18,11 +18,7 @@ namespace DDEdu.Controllers
         public ActionResult Index()
         {
             ViewBag.meta = "about";
-            var v = (from t in _db.aboutus
-                     where t.image != null && t.hide == true
-                     orderby t.id ascending
-                     select t).Take(2);
-            return View(v.ToList());
+            return View();
         }
 
 
@@ -32,7 +28,7 @@ namespace DDEdu.Controllers
             ViewBag.meta = "about";
             var v = (from t in _db.aboutus
                      where t.isquestion == false && t.hide == true
-                     orderby t.id ascending
+                     orderby t.order ascending
                      select t);
             return PartialView(v.ToList());
         }
@@ -43,9 +39,29 @@ namespace DDEdu.Controllers
             ViewBag.meta = "about";
             var v = (from t in _db.aboutus
                      where t.isquestion == true && t.hide == true
-                     orderby t.id ascending
+                     orderby t.order ascending
                      select t);
             return PartialView(v.ToList());
+        }
+
+
+        //Lấy ảnh nền cho phần giới thiệu
+        public string getImgBG()
+        {
+            var v = (from t in _db.imageaboutus
+                     where t.role == "background" && t.hide == true
+                     select t.image);
+            return v.FirstOrDefault().ToString();
+        }
+
+
+        //Lấy ảnh cho phần câu hỏi
+        public string getImgQ()
+        {
+            var v = (from t in _db.imageaboutus
+                     where t.role == "question" && t.hide == true
+                     select t.image);
+            return v.FirstOrDefault().ToString();
         }
 
 

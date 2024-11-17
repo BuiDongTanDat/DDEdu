@@ -30,43 +30,43 @@
 <body id="top">
     <main>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <!-- Logo và tên thương hiệu -->
-            @{Html.RenderAction("getLogo", "Layout"); }
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo và tên thương hiệu -->
+                @{Html.RenderAction("getLogo", "Layout"); }
 
-            <!-- Nút toggle cho mobile -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Nút toggle cho mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Phần menu chính -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Phần menu chính -->
+                <div class="collapse navbar-collapse" id="navbarNav">
 
-                @{Html.RenderAction("getMenu", "Layout"); }
+                    @{Html.RenderAction("getMenu", "Layout"); }
 
 
-                @*Phần truy cập đăng nhập tài khoản*@
-                <div class="col-2 ms-auto">
-                    @*Nếu đã đăng nhập*@
-                    @if (Session["User"] != null)
-                    {
-                        var user = (DDEdu.Models.user)Session["User"];
-                             <a href="/user/profile" class="login-button align-items-center login-main"><i class="navbar-icon-login bi-person"></i> &#160 &#160 <u>@user.username.ToUpper()</u></a>
-    
-                    }
-                    else
-                    {
-                        <a href="/user/login" class="login-button shadow-lg">LOGIN</a>
-                    }
+                    @*Phần truy cập đăng nhập tài khoản*@
+                    <div class="col-2 ms-auto">
+                        @*Nếu đã đăng nhập*@
+                        @if (Session["User"] != null)
+                        {
+                            var user = (DDEdu.Models.user)Session["User"];
+                            <a href="/user/profile" class="login-button align-items-center login-main"><i class="navbar-icon-login bi-person"></i> &#160 &#160 <u>@user.username.ToUpper()</u></a>
+
+                        }
+                        else
+                        {
+                            <a href="/user/login" class="login-button shadow-lg login-main">LOGIN</a>
+                        }
+                    </div>
                 </div>
-            </div>
-    </nav>
+        </nav>
 
 
 
-    @RenderBody()
+        @RenderBody()
 
     </main>
 
@@ -82,6 +82,7 @@
     <script src="~/Scripts/js/click-scroll.js"></script>
     <script src="~/Scripts/js/custom.js"></script>
     <script src="~/Scripts/js/clickNews.js"></script>
+
 
 </body>
 

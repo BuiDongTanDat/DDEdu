@@ -64,16 +64,7 @@ namespace DDEdu.Controllers
         }
 
 
-        //Lấy thông tin NEWS
-        public ActionResult getNew()
-        {
-            ViewBag.meta = "news";
-            var v = (from t in _db.newPosts
-                    where t.hide == true
-                    orderby t.postDate descending //Nhằm lấy ra 6 tin bài mới nhất
-                    select t).Take(6);
-            return PartialView(v.ToList());
-        }
+
     }
 
 

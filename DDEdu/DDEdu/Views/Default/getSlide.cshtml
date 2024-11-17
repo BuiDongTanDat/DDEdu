@@ -1,12 +1,12 @@
 ﻿@model List<DDEdu.Models.slide>
 
-
 <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
     <div class="carousel-inner">
-        @foreach (var slide in Model)
+        @for (int i = 0; i < Model.Count; i++)
         {
-            <div class="carousel-item @(slide.id == 1 ? "active" : "")">
-                <img src="~/Content/images/@slide.name" class="d-block w-100" alt="Image Slide">
+            var slide = Model[i];
+            <div class="carousel-item @(i == 0 ? "active" : "")">
+                <img src="~/Content/upload/img/slide/@slide.name" class="d-block w-100" alt="Image Slide">
             </div>
         }
     </div>
@@ -19,4 +19,3 @@
         <span class="visually-hidden">Next</span>
     </button>
 </div>
-

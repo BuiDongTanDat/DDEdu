@@ -1387,7 +1387,7 @@ h4 {
 .site-footer {
     background: linear-gradient(30deg, #13547a 0%, #80d0c7 100%);
     margin-top: 50px;
-    border-radius: 30px 30px 0px 0px;
+    
 }
 
 .menu-list {
@@ -1471,7 +1471,7 @@ h4 {
 
 /* Điều chỉnh bảng tin mỗi hàng khi chuyển hướng trang News */
 .row .new-page img {
-    width: 100%;
+    width: 230px;
     height: 150px;
     object-fit: cover;
     transition: 1s ease;
@@ -1799,7 +1799,7 @@ li.title-form {
     height: 100%; /* Full height */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    border: none;
+    
 }
 
 /* Modal Content */
@@ -1813,7 +1813,9 @@ li.title-form {
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+    border: none;
+    border-radius: 20px;
 }
 
 /* Add Animation */
@@ -1863,6 +1865,7 @@ li.title-form {
     display: flex; /* Use flexbox for alignment */
     justify-content: space-between; /* Space between close button and title */
     align-items: center; /* Center items vertically */
+    border-radius: 20px 20px 0px 0px;
 }
 
     .modal-header h3 {

@@ -18,5 +18,7 @@ namespace DDEdu.Models
         public string name { get; set; }
         public Nullable<bool> hide { get; set; }
         public Nullable<int> order { get; set; }
+        public Nullable<System.DateTime> datebegin { get; set; }
+        public string nameI { get; set; }
     }
 }

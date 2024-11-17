@@ -9,9 +9,10 @@
     <Property Name="desc" Type="nvarchar" MaxLength="255" />
     <Property Name="icon" Type="nvarchar" MaxLength="255" />
     <Property Name="isquestion" Type="bit" />
-    <Property Name="image" Type="nvarchar" MaxLength="255" />
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="category">
     <Key>
@@ -24,6 +25,7 @@
     <Property Name="hide" Type="bit" />
     <Property Name="order" Type="int" />
     <Property Name="idMenu" Type="int" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -39,6 +41,7 @@ warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key def
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
     <Property Name="name" Type="nvarchar" MaxLength="255" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="course">
     <Key>
@@ -57,6 +60,18 @@ warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key def
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
     <Property Name="image" Type="nvarchar" MaxLength="255" />
+    <Property Name="datebegin" Type="date" />
+  </EntityType>
+  <EntityType Name="imageaboutus">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="image" Type="nvarchar" MaxLength="255" />
+    <Property Name="role" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <!--Errors Found During Generation:
 warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -72,7 +87,7 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Property Name="hide" Type="bit" />
     <Property Name="text" Type="nvarchar" MaxLength="255" />
     <Property Name="desc" Type="nvarchar" MaxLength="255" />
-    <Property Name="hotline" Type="nvarchar" MaxLength="50" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="menu">
     <Key>
@@ -99,7 +114,8 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Property Name="hide" Type="bit" />
     <Property Name="meta" Type="nvarchar" MaxLength="255" />
     <Property Name="author" Type="nvarchar" MaxLength="255" />
-    <Property Name="type" Type="nvarchar" MaxLength="255" />
+    <Property Name="type" Type="int" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="slide">
     <Key>
@@ -109,6 +125,20 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Property Name="name" Type="nvarchar" MaxLength="255" />
     <Property Name="hide" Type="bit" />
     <Property Name="order" Type="int" />
+    <Property Name="datebegin" Type="date" />
+    <Property Name="nameI" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="typePost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nameType" Type="nvarchar" MaxLength="255" />
+    <Property Name="link" Type="nvarchar" MaxLength="255" />
+    <Property Name="meta" Type="nvarchar" MaxLength="255" />
+    <Property Name="hide" Type="bit" />
+    <Property Name="order" Type="int" />
+    <Property Name="datebegin" Type="date" />
   </EntityType>
   <EntityType Name="user">
     <Key>
@@ -134,14 +164,17 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     <Property Name="dateBegin" Type="date" />
     <Property Name="meta" Type="nvarchar" MaxLength="50" />
     <Property Name="ispaid" Type="bit" />
+    <Property Name="dateedit" Type="date" />
   </EntityType>
   <EntityContainer Name="DDEduModelStoreContainer">
     <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="imageaboutus" EntityType="Self.imageaboutus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="slide" EntityType="Self.slide" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="typePost" EntityType="Self.typePost" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="usercourse" EntityType="Self.usercourse" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
@@ -153,7 +186,8 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     [contact].[hotline] AS [hotline], 
     [contact].[meta] AS [meta], 
     [contact].[hide] AS [hide], 
-    [contact].[name] AS [name]
+    [contact].[name] AS [name], 
+    [contact].[datebegin] AS [datebegin]
     FROM [dbo].[contact] AS [contact]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="logo" EntityType="Self.logo" store:Type="Tables" store:Schema="dbo">
@@ -166,7 +200,7 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
     [logo].[hide] AS [hide], 
     [logo].[text] AS [text], 
     [logo].[desc] AS [desc], 
-    [logo].[hotline] AS [hotline]
+    [logo].[datebegin] AS [datebegin]
     FROM [dbo].[logo] AS [logo]</DefiningQuery>
     </EntitySet>
   </EntityContainer>

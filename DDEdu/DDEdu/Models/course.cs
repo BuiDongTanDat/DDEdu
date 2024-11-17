@@ -27,5 +27,6 @@ namespace DDEdu.Models
         public string meta { get; set; }
         public Nullable<bool> hide { get; set; }
         public string image { get; set; }
+        public Nullable<System.DateTime> datebegin { get; set; }
     }
 }

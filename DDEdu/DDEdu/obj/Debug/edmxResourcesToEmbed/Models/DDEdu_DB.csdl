@@ -14,66 +14,18 @@
   </EntityType>
   <EntityContainer Name="DDEdu_DB" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="menus" EntityType="Self.menu" />
-    <EntitySet Name="categories" EntityType="DDEduModel.category" />
-    <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
-    <EntitySet Name="slides" EntityType="DDEduModel.slide" />
-    <EntitySet Name="newPosts" EntityType="DDEduModel.newPost" />
     <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
     <EntitySet Name="users" EntityType="DDEduModel.user" />
     <EntitySet Name="usercourses" EntityType="DDEduModel.usercourse" />
-    <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
     <EntitySet Name="courses" EntityType="DDEduModel.course" />
+    <EntitySet Name="newPosts" EntityType="DDEduModel.newPost" />
+    <EntitySet Name="typePosts" EntityType="DDEduModel.typePost" />
+    <EntitySet Name="imageaboutus" EntityType="DDEduModel.imageaboutu" />
+    <EntitySet Name="slides" EntityType="DDEduModel.slide" />
+    <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
+    <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
+    <EntitySet Name="categories" EntityType="DDEduModel.category" />
   </EntityContainer>
-  <EntityType Name="category">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="order" Type="Int32" />
-    <Property Name="idMenu" Type="Int32" />
-  </EntityType>
-  <EntityType Name="logo">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hotline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-  </EntityType>
-  <EntityType Name="slide">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="order" Type="Int32" />
-  </EntityType>
-  <EntityType Name="newPost">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="postDate" Type="DateTime" Precision="0" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-  </EntityType>
   <EntityType Name="contact">
     <Key>
       <PropertyRef Name="id" />
@@ -86,6 +38,7 @@
     <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="hide" Type="Boolean" />
     <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="user">
     <Key>
@@ -111,19 +64,7 @@
     <Property Name="dateBegin" Type="DateTime" Precision="0" />
     <Property Name="meta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="ispaid" Type="Boolean" />
-  </EntityType>
-  <EntityType Name="aboutu">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="isquestion" Type="Boolean" />
-    <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
+    <Property Name="dateedit" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="course">
     <Key>
@@ -142,5 +83,97 @@
     <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="hide" Type="Boolean" />
     <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="newPost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="postDate" Type="DateTime" Precision="0" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="author" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="type" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="typePost">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nameType" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="imageaboutu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="image" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="role" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="slide">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+    <Property Name="nameI" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="aboutu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="icon" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="isquestion" Type="Boolean" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="logo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="order" Type="Int32" />
+    <Property Name="idMenu" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
   </EntityType>
 </Schema>

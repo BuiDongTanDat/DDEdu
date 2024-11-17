@@ -14,63 +14,10 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="categories">
-      <EntityTypeMapping TypeName="DDEduModel.category">
-        <MappingFragment StoreEntitySet="category">
-          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
-          <ScalarProperty Name="order" ColumnName="order" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="link" ColumnName="link" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="logoes">
-      <EntityTypeMapping TypeName="DDEduModel.logo">
-        <MappingFragment StoreEntitySet="logo">
-          <ScalarProperty Name="hotline" ColumnName="hotline" />
-          <ScalarProperty Name="desc" ColumnName="desc" />
-          <ScalarProperty Name="text" ColumnName="text" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="link" ColumnName="link" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="logoName" ColumnName="logoName" />
-          <ScalarProperty Name="logoImage" ColumnName="logoImage" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="slides">
-      <EntityTypeMapping TypeName="DDEduModel.slide">
-        <MappingFragment StoreEntitySet="slide">
-          <ScalarProperty Name="order" ColumnName="order" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="newPosts">
-      <EntityTypeMapping TypeName="DDEduModel.newPost">
-        <MappingFragment StoreEntitySet="newPost">
-          <ScalarProperty Name="author" ColumnName="author" />
-          <ScalarProperty Name="type" ColumnName="type" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="postDate" ColumnName="postDate" />
-          <ScalarProperty Name="image" ColumnName="image" />
-          <ScalarProperty Name="detail" ColumnName="detail" />
-          <ScalarProperty Name="desc" ColumnName="desc" />
-          <ScalarProperty Name="title" ColumnName="title" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="contacts">
       <EntityTypeMapping TypeName="DDEduModel.contact">
         <MappingFragment StoreEntitySet="contact">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="hide" ColumnName="hide" />
           <ScalarProperty Name="meta" ColumnName="meta" />
@@ -100,6 +47,7 @@
     <EntitySetMapping Name="usercourses">
       <EntityTypeMapping TypeName="DDEduModel.usercourse">
         <MappingFragment StoreEntitySet="usercourse">
+          <ScalarProperty Name="dateedit" ColumnName="dateedit" />
           <ScalarProperty Name="ispaid" ColumnName="ispaid" />
           <ScalarProperty Name="meta" ColumnName="meta" />
           <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
@@ -109,23 +57,10 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="aboutus">
-      <EntityTypeMapping TypeName="DDEduModel.aboutu">
-        <MappingFragment StoreEntitySet="aboutus">
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="image" ColumnName="image" />
-          <ScalarProperty Name="isquestion" ColumnName="isquestion" />
-          <ScalarProperty Name="icon" ColumnName="icon" />
-          <ScalarProperty Name="desc" ColumnName="desc" />
-          <ScalarProperty Name="title" ColumnName="title" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="courses">
       <EntityTypeMapping TypeName="DDEduModel.course">
         <MappingFragment StoreEntitySet="course">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
           <ScalarProperty Name="image" ColumnName="image" />
           <ScalarProperty Name="hide" ColumnName="hide" />
           <ScalarProperty Name="meta" ColumnName="meta" />
@@ -137,6 +72,104 @@
           <ScalarProperty Name="startOn" ColumnName="startOn" />
           <ScalarProperty Name="detail" ColumnName="detail" />
           <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="newPosts">
+      <EntityTypeMapping TypeName="DDEduModel.newPost">
+        <MappingFragment StoreEntitySet="newPost">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="postDate" ColumnName="postDate" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="detail" ColumnName="detail" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="typePosts">
+      <EntityTypeMapping TypeName="DDEduModel.typePost">
+        <MappingFragment StoreEntitySet="typePost">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="nameType" ColumnName="nameType" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="imageaboutus">
+      <EntityTypeMapping TypeName="DDEduModel.imageaboutu">
+        <MappingFragment StoreEntitySet="imageaboutus">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="slides">
+      <EntityTypeMapping TypeName="DDEduModel.slide">
+        <MappingFragment StoreEntitySet="slide">
+          <ScalarProperty Name="nameI" ColumnName="nameI" />
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aboutus">
+      <EntityTypeMapping TypeName="DDEduModel.aboutu">
+        <MappingFragment StoreEntitySet="aboutus">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="isquestion" ColumnName="isquestion" />
+          <ScalarProperty Name="icon" ColumnName="icon" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logoes">
+      <EntityTypeMapping TypeName="DDEduModel.logo">
+        <MappingFragment StoreEntitySet="logo">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="text" ColumnName="text" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="logoName" ColumnName="logoName" />
+          <ScalarProperty Name="logoImage" ColumnName="logoImage" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="DDEduModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="link" ColumnName="link" />
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>

@@ -247,3 +247,5 @@ D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.csproj.CoreCompileInputs.cache
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.csproj.Up2Date
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.pdb
+D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.dll
+D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.pdb

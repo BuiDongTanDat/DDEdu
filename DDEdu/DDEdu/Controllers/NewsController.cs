@@ -16,13 +16,14 @@ namespace DDEdu.Controllers
             return View();
         }
 
-        public ActionResult getAllNews()
+
+        public ActionResult getTop6News()
         {
             ViewBag.meta = "news";
             var v = (from t in _db.newPosts
                      where t.hide == true
                      orderby t.postDate descending
-                     select t); //Lấy ra toàn bộ tin
+                     select t).Take(6); //Lấy ra 6 tin bài mới nhất
                 return PartialView(v.ToList());        
         }
 
@@ -30,17 +31,18 @@ namespace DDEdu.Controllers
         public ActionResult getType()
         {
             ViewBag.meta = "news";
-            var types = (from t in _db.newPosts
+            var types = (from t in _db.typePosts
                          where t.hide == true
-                         select t.type).Distinct().ToList();
-            return PartialView(types);
+                         select t);
+            return PartialView(types.ToList());
         }
 
 
         //Lấy toàn bộ tin theo type
-        public ActionResult getAllNewsByType(string type)
+        public ActionResult getAllNewsByType(int type)
         {
             ViewBag.meta = "news";
+            ViewBag.type = getTypeString(type).ToString().ToLower();
             var v = (from t in _db.newPosts
                      where t.hide == true && t.type == type
                      orderby t.postDate descending
@@ -48,23 +50,34 @@ namespace DDEdu.Controllers
             return PartialView(v.ToList());
         }
 
-        public ActionResult getNewDetail(int id)
+        public ActionResult getNewDetail(string meta)
         {
-            ViewBag.metaCourses = "news";
+            ViewBag.meta = "news";
             var v = from t in _db.newPosts
-                    where t.id == id
+                    where t.meta.Equals(meta) && t.hide == true
                     select t;
             return View(v.FirstOrDefault());
         }
 
         //Lấy thêm tin để hiển thị ở phần Read More trong NewDetail
-        public ActionResult getMoreNew(int id)
+        public ActionResult getMoreNew(int id, int type)
         {
+            ViewBag.meta = "news";
+            ViewBag.type = getTypeString(type).ToString().ToLower();
             var v = (from t in _db.newPosts
-                     where t.hide == true && t.id != id
+                     where t.hide == true && t.id != id && t.type == type
                      orderby t.postDate descending
                      select t).Take(3); //Lấy ra 3 tin bài mới nhất
             return PartialView(v.ToList());
+        }
+
+
+        public string getTypeString(int type)
+        {
+            var v = (from t in _db.typePosts
+                     where t.id == type
+                     select t.nameType);
+            return v.FirstOrDefault();
         }
 
     }

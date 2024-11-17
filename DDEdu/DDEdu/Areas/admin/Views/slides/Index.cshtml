@@ -1,0 +1,130 @@
+﻿@model IEnumerable<DDEdu.Models.slide>
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Manage Slides";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<style>
+    th, td {
+        text-align: center;
+    }
+
+        td p {
+            height: 50px;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .big-checkbox {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .form-control[readonly] {
+        background-color: white !important;
+    }
+
+    .form-horizontal {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    td {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+</style>
+
+@section _Header
+{
+    <!-- DataTables CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Slides Manager
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <p style="text-align:right">
+                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-plus'></span> Add new slide", "Create", "Create", "slides", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                </p>
+                <table class="table table-striped table-bordered table-hover" id="dataTables-example" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>IMAGE</th>
+                            <th>NAME</th>
+                            <th>DISPLAY</th>
+                            <th>ORDER</th>
+                            <th>LAST MODIFIED</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var Number1 = 1;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.Raw(Number1++)</td>
+
+                                <td>
+                                    <img src="~/Content/upload/img/slide/@item.name" width="100px" />
+                                <td style="text-align:left; white-space:nowrap">@Html.DisplayFor(modelItem => item.nameI)</td>
+                                </td>
+                                <td>@(item.hide.GetValueOrDefault(false) ? "Display" : "Hide")</td>
+                                <td>@Html.DisplayFor(modelItem => item.order)</td>
+                                <td>@(item.datebegin.HasValue ? item.datebegin.Value.ToString("dd/MM/yyyy") : "")</td>
+                                <td>
+                                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-pencil'></span>", "Edit", "Edit", "slides", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-zoom-in'></span>", "Detail", "Details", "slides", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-trash'></span>", "Delete", "Delete", "slides", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+                
+
+
+
+
+                @section _Footer
+{
+
+                    <!-- DataTables JavaScript -->
+                    <script src="/Areas/admin/Content/vendor/datatables/js/jquery.dataTables.min.js"></script>
+                    <script src="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+                    <script src="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.js"></script>
+                    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+                    <script>
+                        $(document).ready(function () {
+                            $('#dataTables-example').DataTable({
+                                responsive: true,
+                                order: [], // Tắt sắp xếp mặc định
+                                columnDefs: [
+                                    { orderable: false, targets: '_all' } // Tắt sắp xếp cho tất cả các cột
+                                ],
+
+                            });
+                        });
+                    </script>
+
+                }

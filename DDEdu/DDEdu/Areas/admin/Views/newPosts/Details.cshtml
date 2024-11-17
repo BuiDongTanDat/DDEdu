@@ -1,0 +1,117 @@
+﻿@model DDEdu.Models.newPost
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Post Detail";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                Post detail
+
+            </div>
+            <div class="panel-body">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.id)
+                        <div class="form-group">
+                            @Html.Label("Upload Image", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-2">
+                                <img src="~/Content/upload/img/news/@Model.image" width="150px" />
+                            </div>
+                           
+
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Title</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.title, new { htmlAttributes = new { @class = "form-control", id = "title", name = "title", @disabled = "disabled" } })
+                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Description</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.TextAreaFor(model => model.desc, new { @class = "form-control", @rows = 1, @disabled = "disabled" })
+                                @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Detail</b>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-control" style="height: 300px; overflow: auto;">
+                                    @Html.Raw(Model.detail)
+                                </div>
+                                @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Author</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.author, new { htmlAttributes = new { @class = "form-control", id = "title", name = "title", @disabled = "disabled" } })
+                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Post type</b>
+                            </div>
+                            <div class="col-md-8 readonly">
+                                <input type="text" value="@ViewBag.typePost" class="form-control" readonly />
+                                @Html.HiddenFor(model => model.type)
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Meta</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.meta, new { htmlAttributes = new { @class = "form-control" ,@disabled = "disabled" } })
+                                @Html.ValidationMessageFor(model => model.meta, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Display</b>
+                            </div>
+                            <div class="col-md-8">
+                                @{
+                                    bool hide = (Model.hide.GetValueOrDefault(false) ? true : false);
+                                }
+                                @Html.CheckBoxFor(model => hide, new { @class = "big-checkbox" , @disabled = "disabled" })
+                                @Html.ValidationMessageFor(model => model.hide, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group text-end">
+                            <div class="col-md-10" style="text-align:end">
+                                @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "newPosts", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                @Html.NoEncodeActionLink("<span>EDIT</span>", "EDIT", "Edit", "newPosts", routeValues: new { id = Model.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                               
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

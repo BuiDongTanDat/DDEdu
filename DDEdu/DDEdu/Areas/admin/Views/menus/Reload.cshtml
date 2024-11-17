@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DDEdu.Models.menu>
+@using DDEdu.Helper
+@{
+    var categoryList = ViewBag.CategoryList as List<DDEdu.Models.category>;
+}
+@{
+    var Number1 = 1;
+}
+@foreach (var item in Model)
+{
+    <tr>
+        <td>@Html.Raw(Number1++)</td>
+        <td style="text-align:left; white-space:nowrap">@Html.DisplayFor(modelItem => item.name)</td>
+        <td>@Html.DisplayFor(modelItem => item.link)</td>
+        <td>@Html.DisplayFor(modelItem => item.meta)</td>
+        <td>@(item.hide.GetValueOrDefault(false) ? "Display" : "Hide")</td>
+        <td>@Html.DisplayFor(modelItem => item.order)</td>
+        <td>@(item.datebegin.HasValue ? item.datebegin.Value.ToString("dd/MM/yyyy") : "")</td>
+        <td>
+            <button class="btn btn-default" onclick="loadEditForm(@item.id, false)">
+                <span class="glyphicon glyphicon-pencil"></span>
+            </button>
+            <button class="btn btn-primary" onclick="loadMenuDetails(@item.id, false)">
+                <span class="glyphicon glyphicon-zoom-in"></span>
+            </button>
+        </td>
+    </tr>
+
+    <!-- Hiển thị submenu nếu có -->
+    foreach (var subMenu in categoryList.Where(c => c.idMenu == item.id))
+    {
+        <tr style="color: green">
+            <td></td> <!-- Không đánh số thứ tự cho menu con -->
+            <td style="padding-left: 30px">-- @subMenu.name</td>
+            <td>@subMenu.link</td>
+            <td>@subMenu.meta</td>
+            <td>@(subMenu.hide.GetValueOrDefault(false) ? "Display" : "Hide")</td>
+            <td>-- @subMenu.order</td>
+            <td>@(subMenu.datebegin.HasValue ? subMenu.datebegin.Value.ToString("dd/MM/yyyy") : "")</td>
+            <td>
+                <button class="btn btn-default" onclick="loadEditForm(@subMenu.id, true)">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </button>
+                <button class="btn btn-primary" onclick="loadMenuDetails(@subMenu.id, true)">
+                    <span class="glyphicon glyphicon-zoom-in"></span>
+                </button>
+                <button class="btn btn-danger" onclick="confirmDelete(@subMenu.id)">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </button>
+            </td>
+        </tr>
+    }
+}
+
+<script src="/Areas/admin/Content/vendor/datatables/js/jquery.dataTables.min.js"></script>
+<script src="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+<script src="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.js"></script>

@@ -20,5 +20,6 @@ namespace DDEdu.Models
         public Nullable<System.DateTime> dateBegin { get; set; }
         public string meta { get; set; }
         public Nullable<bool> ispaid { get; set; }
+        public Nullable<System.DateTime> dateedit { get; set; }
     }
 }

@@ -10,7 +10,7 @@
             <th>NAME</th>
             <th>START ON</th>
             <th>END DATE</th>
-            <th>STUDENS</th>
+            <th>STUDENTS</th>
             <th>TUITION</th>
             <th>DISPLAY</th>
             <th></th>
@@ -22,6 +22,7 @@
         }
         @foreach (var item in Model)
         {
+
             <tr>
                 <td>@Html.Raw(Number1++)</td>
                 <td>
@@ -30,7 +31,14 @@
 
                 <td>@Html.DisplayFor(modelItem => item.name)</td>
                 <td>@(item.startOn.HasValue ? item.startOn.Value.ToString("dd/MM/yyyy") : "")</td>
-                <td>@(item.endDate.HasValue ? item.endDate.Value.ToString("dd/MM/yyyy") : "")</td>
+                @if (item.endDate < DateTime.Now)
+                {
+                    <td style="color:red">CLOSED @item.endDate.Value.ToString("dd/MM/yyyy")</td>
+                }
+                else
+                {
+                    <td>@(item.endDate.HasValue ? item.endDate.Value.ToString("dd/MM/yyyy") : "")</td>
+                }
                 <td>@Html.DisplayFor(modelItem => item.currStudent)/@Html.DisplayFor(modelItem => item.maxStudent)</td>
                 <td>@Html.DisplayFor(modelItem => item.tuition)</td>
                 <td>@(item.hide.GetValueOrDefault(false) ? "Display" : "Hide")</td>
@@ -38,8 +46,9 @@
                     @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-pencil'></span>", "Edit", "Edit", "courses", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
                     @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-zoom-in'></span>", "Detail", "Details", "courses", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
                     @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-trash'></span>", "Delete", "Delete", "courses", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
-                </td>
-            </tr>
+                    </td>
+
+                </tr>
         }
     </tbody>
 </table>

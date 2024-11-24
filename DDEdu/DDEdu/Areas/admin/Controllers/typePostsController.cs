@@ -51,6 +51,7 @@ namespace DDEdu.Areas.admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                typePost.datebegin = DateTime.Now;
                 db.typePosts.Add(typePost);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -83,6 +84,7 @@ namespace DDEdu.Areas.admin.Controllers
         {
             if (ModelState.IsValid)
             {
+                typePost.datebegin = DateTime.Now;
                 db.Entry(typePost).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

@@ -43,7 +43,7 @@
                             <b>Description</b>
                         </div>
                         <div class="col-md-8">
-                            @Html.TextAreaFor(model => model.desc, new { @class = "form-control", @rows = 1, @readonly = "readonly" })
+                            @Html.TextAreaFor(model => model.desc, new { @class = "form-control", @rows = 2, @readonly = "readonly" })
                             @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -52,7 +52,9 @@
                             <b>Detail</b>
                         </div>
                         <div class="col-md-8">
-                            @Html.TextAreaFor(model => model.detail, new { @class = "form-control", @rows = 1, @readonly = "readonly" })
+                            <div class="form-control" style="height: 300px; overflow: auto;">
+                                @Html.Raw(Model.detail)
+                            </div>
                             @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
                         </div>
                     </div>

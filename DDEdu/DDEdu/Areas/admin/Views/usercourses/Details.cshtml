@@ -1,0 +1,67 @@
+﻿@model DDEdu.Models.usercourse
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>usercourse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.idUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idCourse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idCourse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateBegin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateBegin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.meta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.meta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ispaid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ispaid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateedit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateedit)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

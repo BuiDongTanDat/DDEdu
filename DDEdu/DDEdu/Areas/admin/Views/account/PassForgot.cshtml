@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Forgot Password";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout2.cshtml";
+}
+
+@model DDEdu.Models.user
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="text-center">Reset Password</h2>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="form-group">
+
+                            <label for="username">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email" required="">
+                            <div class="col-lg-12 col-12 text-danger notice">
+                                * Enter your account's email to reset your password
+                            </div>
+                        </div>
+                        <br />
+                        <br />
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="@Url.Action("Login", "account")" class="btn btn-default">Back to login</a>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

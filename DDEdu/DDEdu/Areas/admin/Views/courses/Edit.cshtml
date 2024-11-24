@@ -16,133 +16,123 @@
                 @using (Html.BeginForm("Edit", "courses", FormMethod.Post, new { enctype = "multipart/form-data", id = "editMenuForm" }))
                 {
                     @Html.AntiForgeryToken()
-                <div class="form-horizontal">
+                    <div class="form-horizontal">
 
-                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                    @Html.HiddenFor(model => model.id)
-                    <div class="form-group">
-                        @Html.Label("Upload Image", htmlAttributes: new { @class = "control-label col-md-2" })
-                        <div class="col-md-2">
-                            <img src="~/Content/upload/img/course/@Model.image" width="150px" />
-                        </div>
-                        <div class="col-md-3">
-                            <input type="file" name="img" id="img" accept=".jpg,.png,.gif,.jpeg,.bmp" />
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.id)
+                        @Html.HiddenFor(model => model.meta)
+                        <div class="form-group">
+                            @Html.Label("Upload Image", htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-2">
+                                <img src="~/Content/upload/img/course/@Model.image" width="150px" />
+                            </div>
+                            <div class="col-md-3">
+                                <input type="file" name="img" id="img" accept=".jpg,.png,.gif,.jpeg,.bmp" />
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Name</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", id = "title", name = "title" } })
+                                @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
 
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Name</b>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Description</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.TextAreaFor(model => model.desc, new { @class = "form-control", @rows = 2 })
+                                @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", id = "title", name = "title" } })
-                            @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Detail</b>
+                            </div>
+                            <div class="col-md-8">
+                                @Html.TextAreaFor(model => model.detail, new { @class = "form-control", @rows = 1 })
+                                @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Description</b>
-                        </div>
-                        <div class="col-md-8">
-                            @Html.TextAreaFor(model => model.desc, new { @class = "form-control", @rows = 1 })
-                            @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Detail</b>
-                        </div>
-                        <div class="col-md-8">
-                            @Html.TextAreaFor(model => model.detail, new { @class = "form-control", @rows = 1 })
-                            @Html.ValidationMessageFor(model => model.detail, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
 
 
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Certificate</b>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Certificate</b>
+                            </div>
+                            <div class="col-md-8">
+                                <select class="form-control" id="idCategory" name="idCategory" required>
+                                    <option value="">Choose certificate</option>
+                                    @foreach (var type in ViewBag.cert)
+                                    {
+                                        <option value="@type.id" @(type.id == Model.idCategory ? "selected" : "")>@type.name</option>
+                                    }
+                                </select>
+                                @Html.ValidationMessage("idCategory", "", new { @class = "text-danger" })
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <select class="form-control" id="type" name="type" required>
-                                <option value="">Choose certificate</option>
-                                @foreach (var type in ViewBag.cert)
-                                {
-                                    <option value="@type.id" @(type.id == Model.idCategory ? "selected" : "")>@type.name</option>
+
+                        <!-- Max student -->
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="startOn">Max student</label>
+                            <div class="col-md-3">
+                                @Html.EditorFor(model => model.currStudent, new { htmlAttributes = new { @class = "form-control", id = "currStudent", name = "currStudent", @disabled = "disabled" } })
+                                <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
+                            </div>
+                            <label class="control-label col-md-1" for="startOn">/</label>
+                            <div class="col-md-3">
+                                @Html.EditorFor(model => model.maxStudent, new { htmlAttributes = new { @class = "form-control", id = "maxStudent", name = "maxStudent" } })
+                                <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <!-- Tuition -->
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="startOn">Tuition</label>
+                            <div class="col-md-8">
+                                @Html.EditorFor(model => model.tuition, new { htmlAttributes = new { @class = "form-control", id = "tuition", name = "tuition" } })
+                                <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <!-- Start Date -->
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="startOn">Start Date</label>
+                            <div class="col-md-3">
+                                <!-- Ensure correct date format for the input -->
+                                @Html.TextBoxFor(m => m.startOn, new { @class = "form-control", type = "date", @Value = Model.startOn.Value.ToString("yyyy-MM-dd"), required = "" })
+                            </div>
+                            <label class="control-label col-md-1" for="endDate">End Date</label>
+                            <div class="col-md-3">
+                                <!-- Ensure correct date format for the input -->
+                                @Html.TextBoxFor(m => m.endDate, new { @class = "form-control", type = "date", @Value = Model.endDate.Value.ToString("yyyy-MM-dd"), required = "" })
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="control-label col-md-2">
+                                <b>Display</b>
+                            </div>
+                            <div class="col-md-8">
+                                @{
+                                    bool hide = (Model.hide.GetValueOrDefault(false) ? true : false);
                                 }
-                            </select>
-                            @Html.ValidationMessage("idCategory", "", new { @class = "text-danger" })
+                                @Html.CheckBoxFor(model => hide, new { @class = "big-checkbox" })
+                                @Html.ValidationMessageFor(model => model.hide, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group text-end">
+                            <div class="col-md-10" style="text-align:end">
+                                @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "courses", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                <input type="submit" value="SAVE" class="btn btn-primary" />
+                            </div>
                         </div>
                     </div>
-
-                    <!-- Max student -->
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="startOn">Max student</label>
-                        <div class="col-md-3">
-                            @Html.EditorFor(model => model.currStudent, new { htmlAttributes = new { @class = "form-control", id = "currStudent", name = "currStudent" , @disabled = "disabled" } })
-                            <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
-                        </div>
-                        <label class="control-label col-md-1" for="startOn">/</label>
-                        <div class="col-md-3">
-                            @Html.EditorFor(model => model.maxStudent, new { htmlAttributes = new { @class = "form-control", id = "maxStudent", name = "maxStudent" } })
-                            <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-
-                    <!-- Tuition -->
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="startOn">Tuition</label>
-                        <div class="col-md-8">
-                            @Html.EditorFor(model => model.tuition, new { htmlAttributes = new { @class = "form-control", id = "tuition", name = "tuition" } })
-                            <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
-                        </div>
-                    </div>
-                    <!-- Start Date -->
-                    <div class="form-group">
-                        <label class="control-label col-md-2" for="startOn">Start Date</label>
-                        <div class="col-md-3">
-                            <!-- Ensure correct date format for the input -->
-                            @Html.TextBoxFor(m => m.startOn, new { @class = "form-control", type = "date", @Value = Model.startOn.Value.ToString("yyyy-MM-dd"), required = "" })
-                        </div>
-                        <label class="control-label col-md-1" for="endDate">End Date</label>
-                        <div class="col-md-3">
-                            <!-- Ensure correct date format for the input -->
-                            @Html.TextBoxFor(m => m.endDate, new { @class = "form-control", type = "date", @Value = Model.endDate.Value.ToString("yyyy-MM-dd"), required = "" })
-                        </div>
-                 
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Meta</b>
-                        </div>
-                        <div class="col-md-8">
-                            @Html.EditorFor(model => model.meta, new { htmlAttributes = new { @class = "form-control" ,@readonly = "readonly"} })
-                            @Html.ValidationMessageFor(model => model.meta, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="control-label col-md-2">
-                            <b>Display</b>
-                        </div>
-                        <div class="col-md-8">
-                            @{
-                                bool hide = (Model.hide.GetValueOrDefault(false) ? true : false);
-                            }
-                            @Html.CheckBoxFor(model => hide, new { @class = "big-checkbox" })
-                            @Html.ValidationMessageFor(model => model.hide, "", new { @class = "text-danger" })
-                        </div>
-                    </div>
-                    <div class="form-group text-end">
-                        <div class="col-md-10" style="text-align:end">
-                            @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "courses", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
-                            <input type="submit" value="SAVE" class="btn btn-primary" />
-                        </div>
-                    </div>
-                </div>
                 }
             </div>
         </div>
@@ -154,18 +144,25 @@
     <script src="~/Areas/admin/Content/ckfinder/ckfinder.js"></script>
     <script src="~/Areas/admin/Content/ckeditor/ckeditor.js"></script>
     <script type="text/javascript">
-        var editor = CKEDITOR.replace("detail");
-        var editor = CKEDITOR.replace("detail", { height: '600px' });
+        var editor = CKEDITOR.replace("detail", { height: '300px' });
         customConfig: '/Areas/admin/Content/ckeditor/config.js';
     </script>
     <script>
-        $(function () {
-            $("#name").keyup(function () {
-                var text = $.trim($(this).val().toLowerCase());
-                var text_create;
-                text_create = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a").replace(/\ /g, '-').replace(/đ/g, "d").replace(/đ/g, "d").replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y").replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u").replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ.+/g, "o").replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ.+/g, "e").replace(/ì|í|ị|ỉ|ĩ/g, "i");
-                $('#meta').val(text_create);
-            }).keyup();
+        $(document).ready(function () {
+            // Validate maxStudent against currStudent on form submission
+            $('#editMenuForm').submit(function (event) {
+                var currStudent = parseInt($('#currStudent').val(), 10);
+                var maxStudent = parseInt($('#maxStudent').val(), 10);
+
+                // Check if maxStudent is less than currStudent
+                if (maxStudent < currStudent) {
+                    event.preventDefault(); // Prevent form submission
+                    alert("Max student cannot be less than current students.");
+                }
+
+                // Ensure that the value of CKEditor is set to the detail field
+                $("detail").val(editor.getData());
+            });
         });
     </script>
 }

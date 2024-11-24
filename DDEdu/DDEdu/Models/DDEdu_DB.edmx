@@ -32,17 +32,15 @@
           <Property Name="idMenu" Type="int" />
           <Property Name="datebegin" Type="date" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="contact">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="email" Type="nvarchar" MaxLength="255" />
-          <Property Name="address" Type="nvarchar" MaxLength="255" />
+          <Property Name="address" Type="nvarchar(max)" />
           <Property Name="addressGPS" Type="nvarchar(max)" />
-          <Property Name="hotline" Type="nvarchar" MaxLength="255" />
+          <Property Name="hotline" Type="nvarchar" MaxLength="50" />
           <Property Name="meta" Type="nvarchar" MaxLength="255" />
           <Property Name="hide" Type="bit" />
           <Property Name="name" Type="nvarchar" MaxLength="255" />
@@ -78,21 +76,19 @@ warning 6002: The table/view 'DDEdu.dbo.contact' does not have a primary key def
           <Property Name="hide" Type="bit" />
           <Property Name="datebegin" Type="date" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="logo">
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="logoImage" Type="nvarchar" MaxLength="255" />
           <Property Name="logoName" Type="nvarchar" MaxLength="255" />
           <Property Name="meta" Type="nvarchar" MaxLength="255" />
-          <Property Name="link" Type="nvarchar" MaxLength="255" />
+          <Property Name="link" Type="nvarchar(max)" />
           <Property Name="hide" Type="bit" />
           <Property Name="text" Type="nvarchar" MaxLength="255" />
           <Property Name="desc" Type="nvarchar" MaxLength="255" />
-          <Property Name="datebegin" Type="date" />
+          <Property Name="dateBegin" Type="date" />
         </EntityType>
         <EntityType Name="menu">
           <Key>
@@ -158,6 +154,8 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
           <Property Name="meta" Type="nvarchar" MaxLength="255" />
           <Property Name="isAdmin" Type="bit" />
           <Property Name="dateBegin" Type="date" />
+          <Property Name="isActive" Type="bit" />
+          <Property Name="hide" Type="bit" />
         </EntityType>
         <EntityType Name="usercourse">
           <Key>
@@ -174,40 +172,16 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
         <EntityContainer Name="DDEduModelStoreContainer">
           <EntitySet Name="aboutus" EntityType="Self.aboutus" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="contact" EntityType="Self.contact" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="course" EntityType="Self.course" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="imageaboutus" EntityType="Self.imageaboutus" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="logo" EntityType="Self.logo" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="menu" EntityType="Self.menu" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="newPost" EntityType="Self.newPost" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="slide" EntityType="Self.slide" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="typePost" EntityType="Self.typePost" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="usercourse" EntityType="Self.usercourse" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="contact" EntityType="Self.contact" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [contact].[id] AS [id], 
-    [contact].[email] AS [email], 
-    [contact].[address] AS [address], 
-    [contact].[addressGPS] AS [addressGPS], 
-    [contact].[hotline] AS [hotline], 
-    [contact].[meta] AS [meta], 
-    [contact].[hide] AS [hide], 
-    [contact].[name] AS [name], 
-    [contact].[datebegin] AS [datebegin]
-    FROM [dbo].[contact] AS [contact]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="logo" EntityType="Self.logo" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [logo].[id] AS [id], 
-    [logo].[logoImage] AS [logoImage], 
-    [logo].[logoName] AS [logoName], 
-    [logo].[meta] AS [meta], 
-    [logo].[link] AS [link], 
-    [logo].[hide] AS [hide], 
-    [logo].[text] AS [text], 
-    [logo].[desc] AS [desc], 
-    [logo].[datebegin] AS [datebegin]
-    FROM [dbo].[logo] AS [logo]</DefiningQuery>
-          </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -227,7 +201,6 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
         </EntityType>
         <EntityContainer Name="DDEdu_DB" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="menus" EntityType="Self.menu" />
-          <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
           <EntitySet Name="users" EntityType="DDEduModel.user" />
           <EntitySet Name="usercourses" EntityType="DDEduModel.usercourse" />
           <EntitySet Name="courses" EntityType="DDEduModel.course" />
@@ -236,23 +209,10 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
           <EntitySet Name="imageaboutus" EntityType="DDEduModel.imageaboutu" />
           <EntitySet Name="slides" EntityType="DDEduModel.slide" />
           <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
-          <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
           <EntitySet Name="categories" EntityType="DDEduModel.category" />
+          <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
+          <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
         </EntityContainer>
-        <EntityType Name="contact">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="addressGPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="hotline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="hide" Type="Boolean" />
-          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="datebegin" Type="DateTime" Precision="0" />
-        </EntityType>
         <EntityType Name="user">
           <Key>
             <PropertyRef Name="id" />
@@ -266,6 +226,8 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
           <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="isAdmin" Type="Boolean" />
           <Property Name="dateBegin" Type="DateTime" Precision="0" />
+          <Property Name="isActive" Type="Boolean" />
+          <Property Name="hide" Type="Boolean" />
         </EntityType>
         <EntityType Name="usercourse">
           <Key>
@@ -362,20 +324,6 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
           <Property Name="order" Type="Int32" />
           <Property Name="datebegin" Type="DateTime" Precision="0" />
         </EntityType>
-        <EntityType Name="logo">
-          <Key>
-            <PropertyRef Name="id" />
-          </Key>
-          <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="hide" Type="Boolean" />
-          <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-          <Property Name="datebegin" Type="DateTime" Precision="0" />
-        </EntityType>
         <EntityType Name="category">
           <Key>
             <PropertyRef Name="id" />
@@ -387,6 +335,34 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
           <Property Name="hide" Type="Boolean" />
           <Property Name="order" Type="Int32" />
           <Property Name="idMenu" Type="Int32" />
+          <Property Name="datebegin" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="logo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="dateBegin" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="contact">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="addressGPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="hotline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+          <Property Name="hide" Type="Boolean" />
+          <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
           <Property Name="datebegin" Type="DateTime" Precision="0" />
         </EntityType>
       </Schema>
@@ -408,24 +384,11 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="contacts">
-            <EntityTypeMapping TypeName="DDEduModel.contact">
-              <MappingFragment StoreEntitySet="contact">
-                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-                <ScalarProperty Name="name" ColumnName="name" />
-                <ScalarProperty Name="hide" ColumnName="hide" />
-                <ScalarProperty Name="meta" ColumnName="meta" />
-                <ScalarProperty Name="hotline" ColumnName="hotline" />
-                <ScalarProperty Name="addressGPS" ColumnName="addressGPS" />
-                <ScalarProperty Name="address" ColumnName="address" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="id" ColumnName="id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="users">
             <EntityTypeMapping TypeName="DDEduModel.user">
               <MappingFragment StoreEntitySet="user">
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
                 <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
                 <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
                 <ScalarProperty Name="meta" ColumnName="meta" />
@@ -540,10 +503,24 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="categories">
+            <EntityTypeMapping TypeName="DDEduModel.category">
+              <MappingFragment StoreEntitySet="category">
+                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+                <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="hide" ColumnName="hide" />
+                <ScalarProperty Name="meta" ColumnName="meta" />
+                <ScalarProperty Name="link" ColumnName="link" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="logoes">
             <EntityTypeMapping TypeName="DDEduModel.logo">
               <MappingFragment StoreEntitySet="logo">
-                <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+                <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
                 <ScalarProperty Name="desc" ColumnName="desc" />
                 <ScalarProperty Name="text" ColumnName="text" />
                 <ScalarProperty Name="hide" ColumnName="hide" />
@@ -555,16 +532,17 @@ warning 6002: The table/view 'DDEdu.dbo.logo' does not have a primary key define
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="categories">
-            <EntityTypeMapping TypeName="DDEduModel.category">
-              <MappingFragment StoreEntitySet="category">
+          <EntitySetMapping Name="contacts">
+            <EntityTypeMapping TypeName="DDEduModel.contact">
+              <MappingFragment StoreEntitySet="contact">
                 <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-                <ScalarProperty Name="idMenu" ColumnName="idMenu" />
-                <ScalarProperty Name="order" ColumnName="order" />
+                <ScalarProperty Name="name" ColumnName="name" />
                 <ScalarProperty Name="hide" ColumnName="hide" />
                 <ScalarProperty Name="meta" ColumnName="meta" />
-                <ScalarProperty Name="link" ColumnName="link" />
-                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="hotline" ColumnName="hotline" />
+                <ScalarProperty Name="addressGPS" ColumnName="addressGPS" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="email" ColumnName="email" />
                 <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>

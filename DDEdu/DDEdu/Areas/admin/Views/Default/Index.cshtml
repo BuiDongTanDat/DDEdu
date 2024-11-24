@@ -1,8 +1,149 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
     Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
 }
 
-<h2>Welcome to admin</h2>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+            <h2 class="my-4">Welcome to Admin</h2>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Card for Manage Menu -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-success text-white">
+                    Manage Menu
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's menu items</h5>
+                    <a href="@Url.Action("Index", "menus")" class="btn btn-success text-white">Manage Menu</a>
+                </div>
+            </div>
+        </div>
 
+        <!-- Card for Manage Slide -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-primary text-white">
+                    Manage Slide
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's slides</h5>
+                    <a href="@Url.Action("Index", "slides")" class="btn btn-primary text-white">Manage Slide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage News -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-danger text-white">
+                    Manage News
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's news articles</h5>
+                    <a href="@Url.Action("Index", "typePosts")" class="btn btn-danger text-white">Manage Categories</a>
+                    <a href="@Url.Action("Index", "newPosts")" class="btn btn-danger text-white">Manage New Posts</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage Courses -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-warning text-white">
+                    Manage Courses
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your courses and classes</h5>
+                    <a href="@Url.Action("Index", "courses")" class="btn btn-warning text-white">Manage Courses</a>
+                    <a href="@Url.Action("Index", "usercourses")" class="btn btn-warning text-white">Manage Classes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage Users -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-success text-white">
+                    Manage Users
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's users</h5>
+                    <a href="@Url.Action("Index", "users")" class="btn btn-success text-white">Manage Users</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage Logo -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-primary text-white">
+                    Manage Logo
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's logo</h5>
+                    <a href="@Url.Action("Index", "logoes")" class="btn btn-primary text-white">Manage Logo</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage Contact -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-danger text-white">
+                    Manage Contact
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's contact information</h5>
+                    <a href="@Url.Action("Index", "contacts")" class="btn btn-danger text-white">Manage Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card for Manage About -->
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-header bg-warning text-white">
+                    Manage About
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Manage your site's about information</h5>
+                    <a href="@Url.Action("Index", "aboutus")" class="btn btn-warning text-white">Manage About</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Styling -->
+<style>
+    .card {
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+        transition: 0.1s ease;
+    }
+
+    .card-header {
+        font-size:20px;
+        padding:10px;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-body {
+        background-color: white;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    .card:hover {
+        transform: scale(1.08);
+        box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.1);
+    }
+</style>

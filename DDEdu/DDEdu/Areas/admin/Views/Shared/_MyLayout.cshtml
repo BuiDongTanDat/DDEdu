@@ -18,6 +18,8 @@
     <link href="/Areas/admin/Content/vendor/morrisjs/morris.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="/Areas/admin/Content/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -47,7 +49,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/admin/default">Management for DDEDu English Center</a>
+
+                <a class="navbar-brand" href="/admin/default">
+
+                    Management for DDEDu English Center
+                </a>
             </div>
             <!-- /.navbar-header -->
             <ul class="nav navbar-top-links navbar-right">
@@ -58,14 +64,11 @@
                     </a>
                     <ul class="dropdown-menu dropdown-user">
                         <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            <a href="@Url.Action("ProfileInfo","account")"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <a href="@Url.Action("Logout","account")"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -96,111 +99,27 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="@Url.Action("Index","courses") "><i class="fa fa-book fa-fw"></i> Manage Courses<span class="fa arrow"></a>
+                            <a href="# "><i class="fa fa-book fa-fw"></i> Manage Courses<span class="fa arrow"></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="@Url.Action("Index","courses") "><i class="fa fa-newspaper-o fa-fw"></i> Manage Courses PLan</a>
+                                    <a href="@Url.Action("Index","courses") "><i class="fa fa-book fa-fw"></i> Manage Courses PLans</a>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("Index","usercourse") "><i class="fa fa-newspaper-o fa-fw"></i> Manage Registation</a>
+                                    <a href="@Url.Action("Index","usercourses") "><i class="fa fa-book fa-fw"></i> Manage Classes</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="@Url.Action("Index","cart") "><i class="fa fa-user fa-fw"></i> Manage Users</a>
+                            <a href="@Url.Action("Index","users") "><i class="fa fa-user fa-fw"></i> Manage Users</a>
                         </li>
                         <li>
-                            <a href="@Url.Action("Index","contact") "><i class="fa fa-inbox fa-fw"></i> Manage Logo</a>
+                            <a href="@Url.Action("Index","logoes") "><i class="fa fa-inbox fa-fw"></i> Manage Logo</a>
                         </li>
                         <li>
-                            <a href="@Url.Action("Index","contact") "><i class="fa fa-phone fa-fw"></i> Manage Contact</a>
+                            <a href="@Url.Action("Index","contacts") "><i class="fa fa-phone fa-fw"></i> Manage Contact</a>
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-info fa-fw"></i> Manage About</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="icons.html"> Icons</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="@Url.Action("Index","aboutus") "><i class="fa fa-info fa-fw"></i> Manage About</a>
                         </li>
                     </ul>
                 </div>
@@ -210,8 +129,7 @@
         </nav>
         <div id="page-wrapper" style="align-items:center">
             <br/>
-            <br/>
-            <br/>
+
             @RenderBody()
         </div>
         <!-- /#page-wrapper -->

@@ -14,24 +14,11 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="contacts">
-      <EntityTypeMapping TypeName="DDEduModel.contact">
-        <MappingFragment StoreEntitySet="contact">
-          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-          <ScalarProperty Name="name" ColumnName="name" />
-          <ScalarProperty Name="hide" ColumnName="hide" />
-          <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="hotline" ColumnName="hotline" />
-          <ScalarProperty Name="addressGPS" ColumnName="addressGPS" />
-          <ScalarProperty Name="address" ColumnName="address" />
-          <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="id" ColumnName="id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="users">
       <EntityTypeMapping TypeName="DDEduModel.user">
         <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="isActive" ColumnName="isActive" />
           <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
           <ScalarProperty Name="isAdmin" ColumnName="isAdmin" />
           <ScalarProperty Name="meta" ColumnName="meta" />
@@ -146,10 +133,24 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="categories">
+      <EntityTypeMapping TypeName="DDEduModel.category">
+        <MappingFragment StoreEntitySet="category">
+          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="hide" ColumnName="hide" />
+          <ScalarProperty Name="meta" ColumnName="meta" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="logoes">
       <EntityTypeMapping TypeName="DDEduModel.logo">
         <MappingFragment StoreEntitySet="logo">
-          <ScalarProperty Name="datebegin" ColumnName="datebegin" />
+          <ScalarProperty Name="dateBegin" ColumnName="dateBegin" />
           <ScalarProperty Name="desc" ColumnName="desc" />
           <ScalarProperty Name="text" ColumnName="text" />
           <ScalarProperty Name="hide" ColumnName="hide" />
@@ -161,16 +162,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="categories">
-      <EntityTypeMapping TypeName="DDEduModel.category">
-        <MappingFragment StoreEntitySet="category">
+    <EntitySetMapping Name="contacts">
+      <EntityTypeMapping TypeName="DDEduModel.contact">
+        <MappingFragment StoreEntitySet="contact">
           <ScalarProperty Name="datebegin" ColumnName="datebegin" />
-          <ScalarProperty Name="idMenu" ColumnName="idMenu" />
-          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="hide" ColumnName="hide" />
           <ScalarProperty Name="meta" ColumnName="meta" />
-          <ScalarProperty Name="link" ColumnName="link" />
-          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="hotline" ColumnName="hotline" />
+          <ScalarProperty Name="addressGPS" ColumnName="addressGPS" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
       </EntityTypeMapping>

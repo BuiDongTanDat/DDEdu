@@ -1,0 +1,115 @@
+﻿@model DDEdu.Models.aboutu
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Create Information";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+@section _Header
+{
+    <!-- DataTables CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+}
+<div class="row ms-auto">
+    <div class="col-lg-12">
+        <!-- Increased the width to center the panel better -->
+        <div class="panel panel-yellow ms-auto">
+            <!-- Center align the panel -->
+            <div class="panel-heading">
+                Delete Information
+            </div>
+            <div class="col-md-12" style="text-align:center">
+                <h4>Are you sure to delete <span style="color:red"><b>@Model.title</b> </span> ?</h4>
+            </div>
+            <div class="panel-body align-contenr-center">
+                <form action="" enctype="multipart/form-data" id="editMenuForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Title</label>
+                            <div class="col-md-7">
+                                @Html.TextAreaFor(model => model.title, new { @class = "form-control text-box single-line", @readonly = "readonly" })
+                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Description</label>
+                            <div class="col-md-7">
+                                @Html.TextAreaFor(model => model.desc, new { @class = "form-control text-box single-line", @readonly = "readonly" })
+                                @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="Parent_Menu">Choose Display Icon</label>
+                            <div class="col-md-7">
+                                @Html.EditorFor(model => model.icon, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                @Html.ValidationMessageFor(model => model.icon, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="control-label col-md-3">
+                                <b>Display</b>
+                            </div>
+                            <div class="col-md-1">
+                                @{
+                                    bool hide = (Model.hide.GetValueOrDefault(false) ? true : false);
+                                }
+                                @Html.CheckBoxFor(model => hide, new { @class = "big-checkbox", @disabled = "disabled" })
+                            </div>
+                            <div class="control-label col-md-2">
+                                <b>Set as Question</b>
+                            </div>
+                            <div class="col-md-1">
+                                @{
+                                    bool ques = (Model.isquestion.GetValueOrDefault(false) ? true : false);
+                                }
+                                @Html.CheckBoxFor(model => ques, new { @class = "big-checkbox", @disabled = "disabled" })
+                            </div>
+
+                            <div class="control-label col-md-1">
+                                <b>Order</b>
+                            </div>
+                            <div class="col-md-1">
+                                @Html.EditorFor(model => model.order, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            </div>
+                        </div>
+
+                        <div class="form-group text-end">
+
+
+                            <div class="col-md-10" style="text-align:end">
+                                @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "aboutus", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                <input type="submit" value="DELETE" class="btn btn-danger ms-2" />
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section _Footer
+{
+    <script src="~/Areas/admin/Content/ckfinder/ckfinder.js"></script>
+    <script src="~/Areas/admin/Content/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+        var editor = CKEDITOR.replace("detail");
+        var editor = CKEDITOR.replace("detail", { height: '600px' });
+        customConfig: '/Areas/admin/Content/ckeditor/config.js';
+    </script>
+    <script>
+        $(function () {
+            $("#nameType").keyup(function () {
+                var text = $.trim($(this).val().toLowerCase());
+                var text_create;
+                text_create = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a").replace(/\ /g, '-').replace(/đ/g, "d").replace(/đ/g, "d").replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y").replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u").replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ.+/g, "o").replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ.+/g, "e").replace(/ì|í|ị|ỉ|ĩ/g, "i");
+                $('#meta').val(text_create);
+            }).keyup();
+        });
+    </script>
+}

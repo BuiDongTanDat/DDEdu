@@ -1,0 +1,101 @@
+﻿@model DDEdu.Models.aboutu
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Create Information";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+<div class="row ms-auto">
+    <div class="col-lg-12">
+        <!-- Increased the width to center the panel better -->
+        <div class="panel panel-yellow ms-auto">
+            <!-- Center align the panel -->
+            <div class="panel-heading">
+                Create New Information
+            </div>
+            <div class="panel-body align-contenr-center">
+                <form action="/admin/aboutus/Create" enctype="multipart/form-data" id="editMenuForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Title</label>
+                            <div class="col-md-7">
+                                @Html.TextAreaFor(model => model.title, new { @class = "form-control text-box single-line", required = "required" })
+                                @Html.ValidationMessageFor(model => model.title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Description</label>
+                            <div class="col-md-7">
+                                @Html.TextAreaFor(model => model.desc, new { @class = "form-control text-box single-line", required = "required" })
+                                @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="Parent_Menu">Choose Display Icon</label>
+                            <div class="col-md-7">
+                                <select class="form-control" id="icon" name="icon" required>
+                                    <option value="">Choose icon</option>
+                                    <option value="bi-search">bi-search</option>
+                                    <option value="bi-book">bi-book</option>
+                                    <option value="bi-bookmark">bi-bookmark</option>
+                                    <option value="bi-info">bi-info</option>
+                                    <option value="bi-question">bi-question</option>
+
+                                </select>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="icon" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="Display">Display</label>
+                            <div class="col-md-1">
+                                <input class="big-checkbox" data-val="true" data-val-required="The Boolean field is required." id="hide" name="hide" type="checkbox" value="true" />
+                                <input name="hide" type="hidden" value="false" />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="hide" data-valmsg-replace="true"></span>
+                            </div>
+                            <label class="control-label col-md-2" for="Display">Set as Question</label>
+                            <div class="col-md-1">
+                                <input class="big-checkbox" data-val="true" data-val-required="The Boolean field is required." id="isquestion" name="isquestion" type="checkbox" value="true" />
+                                <input name="isquestion" type="hidden" value="false" />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="hide" data-valmsg-replace="true"></span>
+                            </div>
+                            <label class="control-label col-md-1" for="order">Order</label>
+                            <div class="col-md-1">
+                                <input class="form-control text-box single-line" data-val="true" data-val-number="The field order must be a number." id="order" name="order" type="number" value="" />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="order" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group text-end">
+                            <div class="col-md-10" style="text-align:end">
+                                @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "aboutus", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                <input type="submit" value="SAVE" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section _Footer
+{
+    <script src="~/Areas/admin/Content/ckfinder/ckfinder.js"></script>
+    <script src="~/Areas/admin/Content/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+        var editor = CKEDITOR.replace("detail");
+        var editor = CKEDITOR.replace("detail", { height: '600px' });
+        customConfig: '/Areas/admin/Content/ckeditor/config.js';
+    </script>
+    <script>
+        $(function () {
+            $("#nameType").keyup(function () {
+                var text = $.trim($(this).val().toLowerCase());
+                var text_create;
+                text_create = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a").replace(/\ /g, '-').replace(/đ/g, "d").replace(/đ/g, "d").replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y").replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u").replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ.+/g, "o").replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ.+/g, "e").replace(/ì|í|ị|ỉ|ĩ/g, "i");
+                $('#meta').val(text_create);
+            }).keyup();
+        });
+    </script>
+}

@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Change Password";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout2.cshtml";
+}
+<style>
+    .notice{
+        color:red;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm("PassChange", "account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 class="text-center">Change Password</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <!-- Old Password -->
+                                <div class="form-group">
+                                    <div class="notice">@Html.ValidationMessage("oldPassword")</div>
+                                    <label for="oldPassword">Old Password</label>
+                                    <input type="password" name="oldPassword" id="oldPassword" class="form-control" placeholder="Enter old password" required>
+                                </div>
+
+                                <!-- New Password -->
+                                <div class="form-group">
+                                    <div class="notice">@Html.ValidationMessage("newpPassword")</div>
+                                    <label for="newPassword">New Password</label>
+                                    <input type="password" name="newPassword" id="newPassword" class="form-control" placeholder="Enter new password" required>
+                                </div>
+
+                                <!-- Re-enter New Password -->
+                                <div class="form-group">
+                                    <div class="notice">@Html.ValidationMessage("reEnterPassword")</div>
+                                    <label for="reEnterPassword">Re-enter New Password</label>
+                                    <input type="password" name="reEnterPassword" id="reEnterPassword" class="form-control" placeholder="Re-enter new password" required>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6 text-left">
+                                            <a href="@Url.Action("ProfileInfo", "account")" class="btn btn-default">BACK</a>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

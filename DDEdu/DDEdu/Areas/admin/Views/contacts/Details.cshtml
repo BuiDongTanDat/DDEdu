@@ -1,0 +1,75 @@
+﻿@model DDEdu.Models.contact
+@using DDEdu.Helper
+@{
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-red">
+            <div class="panel-heading">
+                Contact Detail
+            </div>
+            <div class="panel-body">
+                <div class="form-horizontal">
+
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            <b>Name</b>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                            @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            <b>Email</b>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                            @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            <b>Hotline</b>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.hotline, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                            @Html.ValidationMessageFor(model => model.hotline, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            <b>Address</b>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.EditorFor(model => model.address, new { htmlAttributes = new { @class = "form-control", @disabled = "disabled" } })
+                            @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="control-label col-md-2">
+                            <b>GPS Address</b>
+                        </div>
+                        <div class="col-md-8">
+                            <!-- Display GPS Address in an iframe -->
+                            <iframe src="@Model.addressGPS" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            @Html.ValidationMessageFor(model => model.address, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+
+                    <div class="form-group text-end">
+                        <div class="col-md-10" style="text-align:end">
+                            @Html.NoEncodeActionLink("<span>EDIT</span>", "EDIT", "Edit", "contacts", routeValues: new { id = Model.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>

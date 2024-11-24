@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout2.cshtml";
+}
+
+@model DDEdu.Models.user
+@using (Html.BeginForm(FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="text-center">LOGIN TO DDEDU</h2>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        @* Display login failure notice *@
+                        @if (ViewBag.LoginFail != null)
+                        {
+                            <div class="alert alert-danger">@ViewBag.LoginFail</div>
+                        }
+
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" class="form-control" placeholder="Username" required=""
+                                   value="@Request.Form["username"]">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" placeholder="Password" required="">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="@Url.Action("PassForgot", "account")" class="btn btn-link">Forgot password?</a>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <button type="submit" class="btn btn-primary">LOGIN</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

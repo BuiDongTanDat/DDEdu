@@ -53,7 +53,7 @@
                         @if (Session["User"] != null)
                         {
                             var user = (DDEdu.Models.user)Session["User"];
-                            <a href="/user/profile" class="login-button align-items-center login-main"><i class="navbar-icon-login bi-person"></i> &#160 &#160 <u>@user.username.ToUpper()</u></a>
+                            <a href="/user/profile" class="login-button align-items-center align-content-center login-main"><i class="navbar-icon-login bi-person"></i> &#160 &#160 @user.username.ToUpper()</a>
 
                         }
                         else

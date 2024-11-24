@@ -5,7 +5,8 @@
     ViewBag.Title = Model.name;
     Layout = "~/Views/Shared/MyLayout.cshtml";
 }
-
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v21.0&appId=940749588073607"></script>
 <header class="site-header d-flex flex-column justify-content-center align-items-center">
     <div class="container">
         <div class="row justify-content-center align-items-center">
@@ -50,7 +51,7 @@
 
             <div class="col-lg-5 col-12">
                 <div class="topics-detail-block bg-white shadow-lg">
-                    <img src="~/Content/images/@Model.image" class="topics-detail-block-image img-fluid">
+                    <img src="~/Content/upload/img/course/@Model.image" class="topics-detail-block-image img-fluid">
                 </div>
             </div>
 
@@ -104,7 +105,7 @@
             <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
                 <div class="row">
                     <!-- Cột bên trái -->
-                    <div class="col-md-6 col-12" style="text-align: justify">
+                    <div class="col-md-4 col-12" style="text-align: justify;">
                         <p>
                             <b>Course name:</b> @Model.name <br />
                             <b>Category:</b> @Model.meta.ToUpper() <br />
@@ -117,10 +118,10 @@
                     </div>
 
                     <!-- Cột bên phải -->
-                    <div class="col-md-6 col-12" style="text-align: justify">
+                    <div class="col-md-4 col-12" style="text-align: justify">
                         <p>
                             <b>Target of course:</b> <br />
-                            @Model.detail
+                            @Html.Raw(Model.detail)
                         </p>
                     </div>
                 </div>
@@ -128,14 +129,14 @@
             <!-- Review Content -->
             <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
                 <div class="row mt-3">
-                    <div class="col-lg-12">
+                    <div class="col-8">
                         <h4>User Reviews</h4>
-                        <p>
-                            This function is ongoing update or there is no review for this This function is ongoing update
-                            or there is no review for thisThis function is ongoing update or there is no review for this
-                        </p>
                     </div>
                 </div>
+                <div class="fb-comments" @*Chú ý: Phần host thay đổi*@ 
+                     data-href="http://yourwebsite.com/courses/details/@Model.id" 
+                     data-width="100%"
+                     data-numposts="5"></div>
             </div>
             <!-- Relative Courses Content -->
             <div class="tab-pane fade" id="relative" role="tabpanel" aria-labelledby="relative-tab">
@@ -163,7 +164,7 @@
             <form action="/courses/registercourse/@Model.id" method="post">
                 <input type="hidden" name="courseId" id="courseIdInput" />
                 <button type="button" class="logout-button" id="cancelButton">CANCEL</button>
-                <button type="submit" class="login-button confirm-button" href ="/@ViewBag.metaCourse/@Model.meta/@Model.id">CONFIRM</button>
+                <button type="submit" class="login-button confirm-button" href="/@ViewBag.metaCourse/@Model.meta/@Model.id">CONFIRM</button>
 
             </form>
         </div>

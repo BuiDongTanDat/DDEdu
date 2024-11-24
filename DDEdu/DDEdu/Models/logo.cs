@@ -22,6 +22,6 @@ namespace DDEdu.Models
         public Nullable<bool> hide { get; set; }
         public string text { get; set; }
         public string desc { get; set; }
-        public Nullable<System.DateTime> datebegin { get; set; }
+        public Nullable<System.DateTime> dateBegin { get; set; }
     }
 }

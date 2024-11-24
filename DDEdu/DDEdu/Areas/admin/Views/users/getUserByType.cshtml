@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DDEdu.Models.user>
+@using DDEdu.Helper
+
+<table class="table table-striped table-bordered table-hover" id="dataTables-example" style="width:100%">
+    <thead>
+        <tr>
+            <th>No.</th>
+            <th>USERNAME</th>
+            <th>FULLNAME</th>
+            <th>EMAIL</th>
+            <th>BIRTH</th>
+            <th>STATUS</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var Number1 = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.Raw(Number1++)</td>
+                <td>@Html.DisplayFor(modelItem => item.username)</td>
+                <td>@Html.DisplayFor(modelItem => item.fullname)</td>
+                <td>@Html.DisplayFor(modelItem => item.email)</td>
+                <td>@(item.birth.HasValue ? item.birth.Value.ToString("dd/MM/yyyy") : "")</td>
+                <td>@(item.isActive.GetValueOrDefault(false) ? "Active" : "Blocked")</td>
+
+                <td>
+                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-pencil'></span>", "Edit", "Edit", "users", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-zoom-in'></span>", "Detail", "Details", "users", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-trash'></span>", "Delete", "Delete", "users", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+<script>
+    $(document).ready(function () {
+        $('#dataTables-example').DataTable({
+            responsive: true,
+            order: [], // Tắt sắp xếp mặc định
+            columnDefs: [
+                { orderable: false, targets: '_all' } // Tắt sắp xếp cho tất cả các cột
+            ],
+
+        });
+    });
+</script>

@@ -1,0 +1,60 @@
+﻿
+@{
+    ViewBag.Title = "Update Profile";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout2.cshtml";
+}
+@model DDEdu.Models.user
+<style>
+    .notice {
+        color: red;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        @using (Html.BeginForm("ProfileChange", "account", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <h2 class="text-center">Update Profile</h2>
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <!-- Fullname -->
+                                <div class="form-group">
+                                    <label for="fullname">Fullname</label>
+                                    @Html.EditorFor(m => Model.fullname, new { htmlAttributes = new { @class = "form-control", placeholder = "Fullname", required = "" } })
+                                </div>
+
+                                <!-- Email -->
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    @Html.EditorFor(m => Model.email, new { htmlAttributes = new { @class = "form-control", placeholder = "Email", required = "" } })
+                                </div>
+
+                                <!-- Date of Birth -->
+                                <div class="form-group">
+                                    <label for="birth">Date of Birth</label>
+                                    @Html.TextBoxFor(m => Model.birth, new { @class = "form-control", type = "date", @Value = Model.birth.HasValue ? Model.birth.Value.ToString("yyyy-MM-dd") : "", required = "" })
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-6 text-left">
+                                            <a href="@Url.Action("ProfileInfo", "account")" class="btn btn-default">BACK</a>
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            <button type="submit" class="btn btn-primary">UPDATE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

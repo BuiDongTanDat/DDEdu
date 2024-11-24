@@ -102,6 +102,7 @@
 
             function getPostsByType() {
                 var selectedTypeId = $("#type").val(); // Get selected post type
+                console.log(selectedTypeId);
 
                 $.ajax({
                     url: "@Url.Action("getAllNewsForTable", "newPosts")",
@@ -109,6 +110,9 @@
                     data: { type: selectedTypeId }, 
                     success: function (data) {
                         $("#getPost").html(data); // You can replace the content of #getPost with the returned HTML
+
+
+
                     },
                     error: function () {
                         alert("Something went wrong while fetching posts.");

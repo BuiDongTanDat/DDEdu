@@ -217,6 +217,7 @@ D:\1. DDEdu_Project\DDEdu\DDEdu\bin\roslyn\vbc.rsp
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\roslyn\VBCSCompiler.exe
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\roslyn\VBCSCompiler.exe.config
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\Antlr3.Runtime.dll
+D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\EntityFramework.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\EntityFramework.SqlServer.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -230,6 +231,7 @@ D:\1. DDEdu_Project\DDEdu\DDEdu\bin\System.Web.WebPages.Deployment.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\System.Web.WebPages.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\System.Web.WebPages.Razor.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\WebGrease.dll
+D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.pdb
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\EntityFramework.xml
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\EntityFramework.SqlServer.xml
 D:\1. DDEdu_Project\DDEdu\DDEdu\bin\System.Web.Helpers.xml
@@ -247,5 +249,3 @@ D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.csproj.CoreCompileInputs.cache
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.csproj.Up2Date
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.dll
 D:\1. DDEdu_Project\DDEdu\DDEdu\obj\Debug\DDEdu.pdb
-D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.dll
-D:\1. DDEdu_Project\DDEdu\DDEdu\bin\CKFinder.pdb

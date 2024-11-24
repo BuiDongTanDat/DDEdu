@@ -75,12 +75,14 @@ namespace DDEdu.Areas.admin.Controllers
                 if (course.startOn.HasValue && course.startOn.Value < DateTime.Now)
                 {
                     ModelState.AddModelError("startOn", "Start date must be in the future.");
+                    return View(course);
                 }
 
                 // Validate End Date
                 if (course.endDate.HasValue && course.startOn.HasValue && course.endDate.Value < course.startOn.Value)
                 {
                     ModelState.AddModelError("endDate", "End date must be after the start date.");
+                    return View(course);
                 }
 
                 // Ensure the model state is valid
@@ -120,7 +122,7 @@ namespace DDEdu.Areas.admin.Controllers
                     }
 
                     // Set additional fields
-                    course.meta = Functions.ConvertToUnSign(getNameCert(course.idCategory)); //meta is the certificate name in lowercase
+                    course.meta = getNameCert(course.idCategory).ToLower(); //meta is the certificate name in lowercase
                     course.currStudent = 0;
                     course.datebegin = DateTime.Now;
 
@@ -181,14 +183,52 @@ namespace DDEdu.Areas.admin.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "id,name,desc,detail,startOn,endDate,maxStudent,currStudent,tuition,idCategory,meta,hide,image,datebegin")] course course)
+        [ValidateInput(false)]
+        public ActionResult Edit([Bind(Include = "id,name,desc,detail,startOn,endDate,maxStudent,currStudent,tuition,idCategory,meta,hide,image,datebegin")] course course, HttpPostedFileBase img)
         {
-            if (ModelState.IsValid)
+            try
             {
-                db.Entry(course).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
+    
+                course temp = getById(course.id); 
+
+                if (ModelState.IsValid)
+                {
+                    // If an image is uploaded, save it and update the image field
+                    if (img != null && img.ContentLength > 0)
+                    {
+                        var filename = DateTime.Now.ToString("dd-MM-yy-HH-mm-ss-") + Path.GetFileName(img.FileName);
+                        var path = Path.Combine(Server.MapPath("~/Content/upload/img/course"), filename);
+                        img.SaveAs(path);
+
+                        temp.image = Path.GetFileName(path);
+                    }
+
+                    // Update the other fields from the model
+                    temp.name = course.name;
+                    temp.desc = course.desc;
+                    temp.detail = course.detail;
+                    temp.hide = course.hide;
+                    temp.meta = getNameCert(course.idCategory).ToLower();
+                    temp.idCategory = course.idCategory;
+                    temp.maxStudent = course.maxStudent;
+                    temp.tuition = course.tuition;
+                    temp.startOn = course.startOn;
+                    temp.endDate = course.endDate;
+                    temp.datebegin = DateTime.Now;
+
+                    // Mark the post as modified and save changes
+                    db.Entry(temp).State = EntityState.Modified;
+                    db.SaveChanges();
+
+                    return RedirectToAction("Index");
+                }
             }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "Có lỗi xảy ra. Vui lòng thử lại.");
+            }
+
+            // If we reached here, there was an error, so return the view again with the model
             return View(course);
         }
 
@@ -199,12 +239,13 @@ namespace DDEdu.Areas.admin.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            course course = db.courses.Find(id);
-            if (course == null)
+            course courses = db.courses.Find(id);
+            if (courses == null)
             {
                 return HttpNotFound();
             }
-            return View(course);
+            ViewBag.typeCert = db.categories.Find(courses.idCategory).name;
+            return View(courses);
         }
 
         // POST: admin/courses/Delete/5
@@ -242,6 +283,27 @@ namespace DDEdu.Areas.admin.Controllers
 
         //Lấy toàn bộ tin theo chứng chỉ
         public ActionResult getAllCoursesForTable(int? type)
+        {
+            if (type == null)
+            {
+                var v = (from t in db.courses
+                         where t.hide == true
+                         orderby t.startOn descending
+                         select t);
+                return PartialView(v.ToList());
+            }
+            var m = (from t in db.courses
+                     where t.hide == true && t.idCategory == type
+                     orderby t.startOn descending
+                     select t); //Lấy ra toàn bộ khóa học theo danh mục
+            ViewBag.meta = "courses";
+            return PartialView(m.ToList());
+        }
+
+
+
+
+        public ActionResult getAllCoursesForClass(int? type)
         {
             if (type == null)
             {

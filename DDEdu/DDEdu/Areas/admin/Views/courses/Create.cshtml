@@ -63,22 +63,23 @@
                             </div>
                         </div>
                         <!-- Start Date -->
+                        <!-- Start Date -->
                         <div class="form-group">
                             <label class="control-label col-md-2" for="startOn">Start Date</label>
                             <div class="col-md-3">
-                                <input class="form-control text-box single-line" id="startOn" name="startOn" type="date" value="" />
+                                <input class="form-control text-box single-line" id="startOn" name="startOn" type="date" value="" min="@DateTime.Now.ToString("yyyy-MM-dd")" required />
                                 <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
                             </div>
                             <label class="control-label col-md-1" for="endDate">End Date</label>
                             <div class="col-md-3">
-                                <input class="form-control text-box single-line" id="endDate" name="endDate" type="date" value="" />
+                                <input class="form-control text-box single-line" id="endDate" name="endDate" type="date" value="" min="@DateTime.Now.ToString("yyyy-MM-dd") required />
                                 <span class="field-validation-valid text-danger" data-valmsg-for="endDate" data-valmsg-replace="true"></span>
                             </div>
                         </div>
 
                         <!-- End Date -->
                         <div class="form-group">
-                            
+
                         </div>
                         <div class="form-group">
                             <div class="control-label col-md-2">
@@ -123,26 +124,23 @@
     <script src="~/Areas/admin/Content/ckeditor/ckeditor.js"></script>
 
     <script type="text/javascript">
-        var editor = CKEDITOR.replace("detail");
-        var editor = CKEDITOR.replace("detail", { height: '600px' });
+        var editor = CKEDITOR.replace("detail", { height: '300px' });
         customConfig: '/Areas/admin/Content/ckeditor/config.js';
     </script>
     <script>
-        $(function () {
-            $("#name").keyup(function () {
-                var text = $.trim($(this).val().toLowerCase());
-                var text_create;
-                text_create = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a").replace(/\ /g, '-').replace(/đ/g, "d").replace(/đ/g, "d").replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y").replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u").replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ.+/g, "o").replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ.+/g, "e").replace(/ì|í|ị|ỉ|ĩ/g, "i");
-                $('#meta').val(text_create);
-            }).keyup();
-        });
-
         $(document).ready(function () {
-            // Khởi tạo CKEditor
-            var editor = CKEDITOR.replace("detail", { height: '600px' });
+            // Validate endDate on form submission
+            $('#editMenuForm').submit(function (event) {
+                var startOn = new Date($('#startOn').val());
+                var endDate = new Date($('#endDate').val());
 
-            $('#editMenuForm').submit(function () {
-                // Đảm bảo rằng giá trị của CKEditor được gán vào trường 'detail' trước khi submit form
+                // Check if endDate is less than or equal to startOn
+                if (endDate <= startOn) {
+                    event.preventDefault(); // Prevent form submission
+                    alert("End date must be later than start date.");
+                }
+
+                // Ensure that the value of CKEditor is set to the detail field
                 $("detail").val(editor.getData());
             });
         });

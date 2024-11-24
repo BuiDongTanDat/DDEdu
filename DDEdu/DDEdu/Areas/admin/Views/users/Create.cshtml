@@ -1,0 +1,102 @@
+﻿@model DDEdu.Models.user
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Create User";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<div class="row ms-auto">
+    <div class="col-lg-12">
+        <!-- Increased the width to center the panel better -->
+        <div class="panel panel-green ms-auto">
+            <!-- Center align the panel -->
+            <div class="panel-heading">
+                Create New User
+            </div>
+            <div class="panel-body align-contenr-center">
+                <form action="/admin/users/Create" enctype="multipart/form-data" id="editMenuForm" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Username</label>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(model => model.username, new { @class = "form-control text-box single-line", required = "required" })
+                                @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Password</label>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(model => model.password, new { @class = "form-control text-box single-line" , type="password", required = "required" })
+                                @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="fullname">Fullname</label>
+                            <div class="col-md-7">
+                                <input class="form-control text-box single-line" id="fullname" name="fullname" type="text" value="" required />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="meta" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group ms-auto">
+                            <label class="control-label col-md-3" for="username">Email</label>
+                            <div class="col-md-7">
+                                @Html.TextBoxFor(model => model.email, new { @class = "form-control text-box single-line", required = "required" })
+                                @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-md-3" for="birth">Birthday</label>
+                            <div class="col-md-7">
+                                <input class="form-control text-box single-line" id="birth" name="birth" type="date" value="" required />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="startOn" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label col-md-5" for="isActive">Status</label>
+                            <div class="col-md-1">
+                                <input class="big-checkbox" id="isActive" name="isActive" type="checkbox" value="true" />
+                                <input name="isActive" type="hidden" value="false" />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="isActive" data-valmsg-replace="true"></span>
+                            </div>
+                            <label class="control-label col-md-1" for="isAdmin">Is Admin</label>
+                            <div class="col-md-1">
+                                <input class="big-checkbox" id="isAdmin" name="isAdmin" type="checkbox" value="true" />
+                                <input name="isAdmin" type="hidden" value="false" />
+                                <span class="field-validation-valid text-danger" data-valmsg-for="isAdmin" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group text-end">
+                            <div class="col-md-10" style="text-align:end">
+                                @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "users", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                <input type="submit" value="SAVE" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section _Footer
+{
+    <script src="~/Areas/admin/Content/ckfinder/ckfinder.js"></script>
+    <script src="~/Areas/admin/Content/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript">
+        var editor = CKEDITOR.replace("detail");
+        var editor = CKEDITOR.replace("detail", { height: '600px' });
+        customConfig: '/Areas/admin/Content/ckeditor/config.js';
+    </script>
+    <script>
+        $(function () {
+            $("#nameType").keyup(function () {
+                var text = $.trim($(this).val().toLowerCase());
+                var text_create;
+                text_create = text.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a").replace(/\ /g, '-').replace(/đ/g, "d").replace(/đ/g, "d").replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y").replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u").replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ.+/g, "o").replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ.+/g, "e").replace(/ì|í|ị|ỉ|ĩ/g, "i");
+                $('#meta').val(text_create);
+            }).keyup();
+        });
+    </script>
+}

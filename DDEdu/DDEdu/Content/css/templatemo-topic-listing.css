@@ -1184,6 +1184,16 @@ blockquote {
     margin: 10px 0px 10px 0px; /* Khoảng cách giữa ảnh và nội dung */
     overflow: hidden;
 }
+
+    .new-img-container .desc {
+        max-height: 54px; /* Adjust as needed */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* Adjust the number of lines */
+        white-space: normal; /* Allow wrapping */
+    }
 .posted-date {
     font-size: 11px;
     color: #888;
@@ -1225,7 +1235,7 @@ blockquote {
 }
 
     .course-box img {
-        width: 100%;
+        width: 200px;
         height: 200px;
         border-radius: 10px;
         object-fit: cover; /*Đảm bảo ảnh tràn đầy khung*/
@@ -1237,6 +1247,16 @@ blockquote {
         box-shadow: rgb(14, 138, 196) 0px 0px 0px 1px;
         transform: scale(1.05);
         background-color: #f8fbfb;
+    }
+
+    .course-box .desc {
+        max-height: 72px; /* Adjust as needed */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3; /* Adjust the number of lines */
+        white-space: normal; /* Allow wrapping */
     }
 
 .row {

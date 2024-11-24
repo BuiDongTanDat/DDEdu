@@ -59,7 +59,7 @@
 
                 <p style="text-align:right">
                     <div style="display: flex; align-items: center; justify-content: flex-end;">
-                        <select class="form-control" id="type" name="type" required style="width: 250px; margin-right: 10px;">
+                        <select class="form-control" id="course" name="course" required style="width: 250px; margin-right: 10px;">
                             <option value="">All courses</option>
                             @foreach (var cert in ViewBag.cert)
                             {
@@ -102,12 +102,12 @@
             });
 
             function getCoursesByType() {
-                var selectedTypeId = $("#type").val(); // Get selected post type
+                var selectedCourseId = $("#course").val(); // Get selected
 
                 $.ajax({
                     url: "@Url.Action("getAllCoursesForTable", "courses")",
                     type: "GET",
-                    data: { type: selectedTypeId },
+                    data: { type: selectedCourseId },
                     success: function (data) {
                         $("#getCourses").html(data); 
                     },
@@ -117,7 +117,7 @@
                 });
             }
 
-            $("#type").change(function () {
+            $("#course").change(function () {
                 getCoursesByType();
             });
             getCoursesByType();

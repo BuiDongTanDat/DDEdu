@@ -101,13 +101,25 @@ namespace DDEdu.Controllers
             var username = user.username;
             var password = MD5Hash(user.password); // Mã hóa mật khẩu người dùng nhập vào
 
-
             var userCheck = _db.users.SingleOrDefault(x => x.username.Equals(username) && x.password.Equals(password));
 
             if (userCheck != null)
             {
-                Session["User"] = userCheck;
-                return RedirectToAction("Index", "Default"); // Đảm bảo có 'return' ở đây
+                if (userCheck.isActive == false)
+                {
+                    ViewBag.LoginFail = "* Your account is locked.";
+                    return View(); // Trả về view đăng nhập cùng với thông báo tài khoản bị khóa
+                }
+                if (userCheck.isAdmin == true)
+                {
+                    ViewBag.LoginFail = "* Username or Password is incorrect";
+                    return View();
+                }
+                else
+                {
+                    Session["User"] = userCheck;
+                    return RedirectToAction("Index", "Default"); // Redirect đến trang người dùng thường
+                }
             }
             else
             {

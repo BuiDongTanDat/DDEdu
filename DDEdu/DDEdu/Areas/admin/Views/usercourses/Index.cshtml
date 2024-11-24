@@ -1,0 +1,126 @@
+﻿@model IEnumerable<DDEdu.Models.course>
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Manage Classes";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+
+<style>
+    th, td {
+        text-align: center;
+    }
+
+        td p {
+            height: 50px;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .big-checkbox {
+        width: 30px;
+        height: 30px;
+    }
+
+
+    .form-control[readonly] {
+        background-color: white !important;
+    }
+
+    .form-horizontal {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    td {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+</style>
+
+
+@section _Header
+{
+    <!-- DataTables CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+}
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                Manage Classes
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                <p style="text-align:right">
+                    <div style="display: flex; align-items: center; justify-content: flex-end;">
+                        <select class="form-control" id="course" name="course" required style="width: 250px; margin-right: 10px;">
+                            <option value="">All courses</option>
+                            @foreach (var cert in ViewBag.cert)
+                            {
+                                <option value="@cert.id">@cert.name</option>
+                            }
+                        </select>
+
+                        @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-plus'></span> Add new courses", "Create", "Create", "courses", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                    </div>
+                </p>
+                <div id="getCourses"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+@section _Footer
+{
+
+    <!-- DataTables JavaScript -->
+    <script src="/Areas/admin/Content/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+
+    <script>
+        $(document).ready(function () {
+            // Initialize DataTable
+            $('#dataTables-example').DataTable({
+                responsive: true,
+                order: [],
+                columnDefs: [
+                    { orderable: false, targets: '_all' } // Disable sorting on all columns
+                ]
+            });
+
+            function getCoursesByType() {
+                var selectedCourseId = $("#course").val(); // Get selected
+
+                $.ajax({
+                    url: "@Url.Action("getAllCoursesForClass", "courses")", //Đổi lại tên action
+                    type: "GET",
+                    data: { type: selectedCourseId },
+                    success: function (data) {
+                        $("#getCourses").html(data);
+                    },
+                    error: function () {
+                        alert("Something went wrong while fetching posts.");
+                    }
+                });
+            }
+
+            $("#course").change(function () {
+                getCoursesByType();
+            });
+            getCoursesByType();
+        });
+    </script>
+}

@@ -3,7 +3,7 @@
 @foreach (var cou in Model)
 {
     <div class="course-box col-lg-3 col-md-6 col-8">
-        <img src="~/Content/images/@cou.image" alt="Course Graphic">
+        <img src="~/Content/upload/img/course/@cou.image" alt="Course Graphic">
         <div class="title"><a href="/@ViewBag.metaGet/@cou.meta/@cou.id">@cou.name</a></div>
         <div class="desc">@cou.desc</div>
         <div class="desc">

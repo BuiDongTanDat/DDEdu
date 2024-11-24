@@ -1,0 +1,76 @@
+﻿@model IEnumerable<DDEdu.Models.logo>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.logoImage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.logoName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.meta)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.link)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.hide)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.text)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateBegin)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.logoImage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.logoName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.meta)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.link)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.hide)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.desc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateBegin)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

@@ -14,7 +14,6 @@
   </EntityType>
   <EntityContainer Name="DDEdu_DB" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="menus" EntityType="Self.menu" />
-    <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
     <EntitySet Name="users" EntityType="DDEduModel.user" />
     <EntitySet Name="usercourses" EntityType="DDEduModel.usercourse" />
     <EntitySet Name="courses" EntityType="DDEduModel.course" />
@@ -23,23 +22,10 @@
     <EntitySet Name="imageaboutus" EntityType="DDEduModel.imageaboutu" />
     <EntitySet Name="slides" EntityType="DDEduModel.slide" />
     <EntitySet Name="aboutus" EntityType="DDEduModel.aboutu" />
-    <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
     <EntitySet Name="categories" EntityType="DDEduModel.category" />
+    <EntitySet Name="logoes" EntityType="DDEduModel.logo" />
+    <EntitySet Name="contacts" EntityType="DDEduModel.contact" />
   </EntityContainer>
-  <EntityType Name="contact">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="address" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="addressGPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="hotline" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="datebegin" Type="DateTime" Precision="0" />
-  </EntityType>
   <EntityType Name="user">
     <Key>
       <PropertyRef Name="id" />
@@ -53,6 +39,8 @@
     <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="isAdmin" Type="Boolean" />
     <Property Name="dateBegin" Type="DateTime" Precision="0" />
+    <Property Name="isActive" Type="Boolean" />
+    <Property Name="hide" Type="Boolean" />
   </EntityType>
   <EntityType Name="usercourse">
     <Key>
@@ -149,20 +137,6 @@
     <Property Name="order" Type="Int32" />
     <Property Name="datebegin" Type="DateTime" Precision="0" />
   </EntityType>
-  <EntityType Name="logo">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" />
-    <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="link" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="hide" Type="Boolean" />
-    <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
-    <Property Name="datebegin" Type="DateTime" Precision="0" />
-  </EntityType>
   <EntityType Name="category">
     <Key>
       <PropertyRef Name="id" />
@@ -174,6 +148,34 @@
     <Property Name="hide" Type="Boolean" />
     <Property Name="order" Type="Int32" />
     <Property Name="idMenu" Type="Int32" />
+    <Property Name="datebegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="logo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="logoImage" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="logoName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="text" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="desc" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="dateBegin" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="contact">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="addressGPS" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="hotline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="meta" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="hide" Type="Boolean" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="datebegin" Type="DateTime" Precision="0" />
   </EntityType>
 </Schema>

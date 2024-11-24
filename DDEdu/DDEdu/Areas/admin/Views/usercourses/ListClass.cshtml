@@ -1,0 +1,170 @@
+﻿@model IEnumerable<DDEdu.Models.usercourse>
+@using DDEdu.Helper
+@{
+    ViewBag.Title = "Class List";
+    Layout = "~/Areas/admin/Views/Shared/_MyLayout.cshtml";
+}
+
+<style>
+    th, td {
+        text-align: center;
+    }
+
+        td p {
+            height: 50px;
+            overflow-y: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .big-checkbox {
+        width: 30px;
+        height: 30px;
+    }
+
+    .form-control[readonly] {
+        background-color: white !important;
+    }
+
+    .form-horizontal {
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    td {
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+    }
+</style>
+
+@section _Header
+{
+    <!-- DataTables CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-yellow">
+            <div class="panel-heading">
+                Manage Class
+            </div>
+
+            <div class="panel-body">
+                <div>
+                    <b>Current Course Detail</b>
+                </div>
+                <table class="table table-striped table-bordered table-hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>IMAGE</th>
+                            <th>NAME</th>
+                            <th>START ON</th>
+                            <th>END DATE</th>
+                            <th>STUDENTS</th>
+                            <th>TUITION</th>
+                            <th>DISPLAY</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="~/Content/upload/img/course/@ViewBag.currCourse.image" width="100px" />
+                            </td>
+                            <td>@ViewBag.currCourse.name</td>
+                            <td> @(ViewBag.currCourse.startOn.ToString("dd/MM/yyyy"))</td>
+                            <td> @(ViewBag.currCourse.endDate.ToString("dd/MM/yyyy"))</td>
+                            <td>@ViewBag.currCourse.currStudent / @ViewBag.currCourse.maxStudent</td>
+                            <td>@ViewBag.currCourse.tuition</td>
+                            <td>@(ViewBag.currCourse.hide ? "Display" : "Hide")</td>
+                            <td>
+                                @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-pencil'></span>", "Edit", "Edit", "courses", routeValues: new { id = @ViewBag.currCourse.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+                                @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-zoom-in'></span>", "Detail", "Details", "courses", routeValues: new { id = @ViewBag.currCourse.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                @if (ViewBag.currCourse.endDate < DateTime.Now)
+                {
+                    <p style="text-align:right">
+                        <button class="btn btn-danger">This course have been CLOSED</button>
+                    </p>
+                }
+                else
+                {
+                    <p style="text-align:right">
+                        @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-plus'></span> Add student to class", "Create", "Create", "usercourses", routeValues: new { idC = @ViewBag.currCourse.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                    </p>
+                }
+                @*Chú ý truyền idC vào create*@
+
+
+                <div>
+                    <b>List of students</b>
+                </div>
+                <table class="table table-striped table-bordered table-hover" id="dataTables-example" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>STUDENT</th>
+                            <th>JOINED</th>
+                            <th>TUITION</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            var number = 1;
+                        }
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.Raw(number++)</td>
+                                <td>@Html.Action("getStudentName", "usercourses", new { id = item.idUser }).ToString()</td>
+                                <td>@(item.dateBegin.HasValue ? item.dateBegin.Value.ToString("dd/MM/yyyy") : "")</td>
+                                <td>@(item.ispaid.GetValueOrDefault(false) ? "Paid at " + (item.dateedit.HasValue?item.dateBegin.Value.ToString("dd/MM/yyyy") : ""): "Unpaid")</td>
+                                <td>
+                                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-pencil'></span>", "Set Tuition Status", "Edit", "usercourses", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-primary" })
+                                    @Html.NoEncodeActionLink("<span class='glyphicon glyphicon-trash'></span>", "Delete", "Delete", "usercourses", routeValues: new { id = item.id }, htmlAttributes: new { data_modal = "", @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <div class="form-group text-end">
+                    <div class="col-md-12" style="text-align:end">
+                        @Html.NoEncodeActionLink("<span>BACK</span>", "BACK", "Index", "usercourses", routeValues: new { }, htmlAttributes: new { data_modal = "", @class = "btn btn-default" })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section _Footer
+{
+    <!-- DataTables JavaScript -->
+    <script src="/Areas/admin/Content/vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="/Areas/admin/Content/vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="/Areas/admin/Content/vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').DataTable({
+                responsive: true,
+                order: [],
+                columnDefs: [
+                    { orderable: false, targets: '_all' }
+                ],
+            });
+        });
+    </script>
+}

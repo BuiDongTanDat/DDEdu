@@ -23,5 +23,7 @@ namespace DDEdu.Models
         public string meta { get; set; }
         public Nullable<bool> isAdmin { get; set; }
         public Nullable<System.DateTime> dateBegin { get; set; }
+        public Nullable<bool> isActive { get; set; }
+        public Nullable<bool> hide { get; set; }
     }
 }

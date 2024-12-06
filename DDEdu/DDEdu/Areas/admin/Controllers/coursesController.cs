@@ -21,11 +21,16 @@ namespace DDEdu.Areas.admin.Controllers
         // GET: admin/courses
         public ActionResult Index()
         {
-            var v = (from t in db.categories
-                     where t.hide == true && t.idMenu == 2 //Id của COURSE
-                     select t);
-            ViewBag.cert = v.ToList();
-            return View(db.courses.ToList());
+            var categories = db.categories
+                        .Where(t => t.hide == true && t.idMenu == 2)
+                        .ToList();
+            ViewBag.cert = categories;
+            
+            var courses = db.courses
+                            .OrderByDescending(t => t.startOn)
+                            .ToList();
+
+            return View(courses);
         }
 
         // GET: admin/courses/Details/5
@@ -51,11 +56,9 @@ namespace DDEdu.Areas.admin.Controllers
         // GET: admin/courses/Create
         public ActionResult Create()
         {
-            var v = (from t in db.categories
-                     where t.hide == true && t.idMenu == 2 //Id của COURSE
-                     select t);
-            ViewBag.certList = v.ToList(); // Populate certList
-            return View();
+            var categories = db.categories.Where(t => t.hide == true && t.idMenu == 2).ToList();
+            ViewBag.certList = categories;
+            return View(); 
         }
 
         // POST: admin/courses/Create
@@ -71,19 +74,7 @@ namespace DDEdu.Areas.admin.Controllers
                 var path = "";
                 var filename = "";
 
-                // Validate Start Date
-                if (course.startOn.HasValue && course.startOn.Value < DateTime.Now)
-                {
-                    ModelState.AddModelError("startOn", "Start date must be in the future.");
-                    return View(course);
-                }
-
-                // Validate End Date
-                if (course.endDate.HasValue && course.startOn.HasValue && course.endDate.Value < course.startOn.Value)
-                {
-                    ModelState.AddModelError("endDate", "End date must be after the start date.");
-                    return View(course);
-                }
+ 
 
                 // Ensure the model state is valid
                 if (ModelState.IsValid)

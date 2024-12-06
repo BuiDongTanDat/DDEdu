@@ -86,14 +86,21 @@
                                 <b>Certificate</b>
                             </div>
                             <div class="col-md-8">
-                                <select class="form-control" id="idCategory" name="idCategory" required>
+                                <select class="form-control" id="idCategory" name="idCategory" for="idCategory" required>
                                     <option value="">Choose certificate</option>
-                                    @foreach (var type in ViewBag.certList)
+                                    @if (ViewBag.certList != null)
                                     {
-                                        <option value="@type.id">@type.name</option>
+                                        foreach (var type in ViewBag.certList)
+                                        {
+                                            <option value="@type.id">@type.name</option>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <option value="">No certificates available</option>
                                     }
                                 </select>
-                                @Html.ValidationMessage("certificated", "", new { @class = "text-danger" })
+                                @Html.ValidationMessage("idCategory", "", new { @class = "text-danger" })
                             </div>
                         </div>
                         <div class="form-group">

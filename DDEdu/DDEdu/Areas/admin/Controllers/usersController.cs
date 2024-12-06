@@ -115,7 +115,8 @@ namespace DDEdu.Areas.admin.Controllers
                     ModelState.AddModelError("username", "Username already exists.");
                     return View(user);
                 }
-                if (user.password.Length<6)
+
+                if (user.password!=null && user.password.Length<6)
                 {
                     ModelState.AddModelError("password", "Password must be at least 6 character.");
                     return View(user);
@@ -125,10 +126,17 @@ namespace DDEdu.Areas.admin.Controllers
                     ModelState.AddModelError("email", "Email address already exists.");
                     return View(user);
                 }
-
-                // Cập nhật các trường khác
+                if (user.password == null)
+                {
+                    user.password = existingUser.password;
+                }
+                else
+                {
+                    user.password = MD5Hash(user.password);
+                }
                 existingUser.username = user.username;
                 existingUser.fullname = user.fullname;
+                existingUser.password = user.password;
                 existingUser.email = user.email;
                 existingUser.birth = user.birth;
                 existingUser.isAdmin = user.isAdmin;

@@ -295,9 +295,9 @@ namespace DDEdu.Controllers
                 }
 
                 // Tạo mật khẩu mới
-                string newPassword = GenerateRandomPassword(8); // Tạo một hàm để tạo mật khẩu ngẫu nhiên
-                user.password = MD5Hash(newPassword); // Mã hóa mật khẩu trước khi lưu
-                _db.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+                string newPassword = GenerateRandomPassword(8); 
+                user.password = MD5Hash(newPassword); 
+                _db.SaveChanges(); 
 
 
                 string body = "Hi " + user.username + "! Your password have been reset.";
@@ -306,7 +306,7 @@ namespace DDEdu.Controllers
                 body += "\nBy the way, we hope you will find your dream course in here!\n";
                 string subject = "[DDEDu English Center] Reset password successfully";
                 // Gửi email với mật khẩu mới
-                SendEmail(email, subject, body); // Gọi phương thức gửi email mà bạn đã tạo trước đó
+                SendEmail(email, subject, body); 
                 TempData["Success"] = "New password have been sent to your email";
                 return View();
             }
@@ -331,7 +331,7 @@ namespace DDEdu.Controllers
                 {
                     sb.Append(hashBytes[i].ToString("X2"));
                 }
-                return sb.ToString();
+                return sb.ToString().ToLower();
             }
         }
 

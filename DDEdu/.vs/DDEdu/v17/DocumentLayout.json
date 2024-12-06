@@ -3,11 +3,99 @@
   "WorkspaceRootPath": "D:\\1. DDEdu_Project\\DDEdu\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|d:\\1. ddedu_project\\ddedu\\ddedu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\getnewdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\news\\getnewdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\content\\css\\templatemo-topic-listing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\css\\templatemo-topic-listing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\content\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\getdetailcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\mycourses\\getdetailcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\getcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\mycourses\\getcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\aboutuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\aboutuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\gettop6news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\news\\gettop6news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\default\\getnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\default\\getnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\layout\\getlogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\layout\\getlogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\layoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\layoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\courses\\getdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\courses\\getdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|d:\\1. ddedu_project\\ddedu\\ddedu\\areas\\admin\\views\\usercourses\\listclass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\usercourses\\listclass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\usercourses\\listclass.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -25,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\getallnewsfortable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -63,20 +147,12 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\default\\getnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\default\\getnew.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\default\\getcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\default\\getcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\default\\getcategorydf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\default\\getcategorydf.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\getdetailcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\mycourses\\getdetailcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\getidinprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -97,14 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\mycourses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\mycourses\\getcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\mycourses\\getcoursesbyuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\gettop6news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\news\\gettop6news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\gettype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -135,10 +203,6 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\layout\\getlogo_welcome.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\layout\\getlogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\layout\\getlogo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\layout\\getfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\layout\\getfooter.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -147,16 +211,8 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\layout\\getcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\getnewdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\news\\getnewdetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\news\\getallnewsbytype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\news\\getallnewsbytype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\courses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\usercourses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -167,20 +223,12 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\usercourses\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\shared\\_mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\shared\\_mylayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\aboutuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\aboutuscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\aboutus\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -223,20 +271,12 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\aboutus\\getalltagbytype.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\contacts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\contacts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\aboutus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\aboutus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\controllers\\contactscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -291,10 +331,6 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\users\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\slides\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\slides\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -327,14 +363,6 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\typeposts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\layoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\layoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\typeposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\typeposts\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -359,10 +387,6 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\user\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\courses\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -373,14 +397,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\courses\\getviewbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\views\\courses\\getviewbycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\views\\newposts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\views\\newposts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\content\\css\\templatemo-topic-listing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\css\\templatemo-topic-listing.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\views\\courses\\getallcoursebycategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -433,14 +449,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\content\\ckfinder\\ckfinder_v1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\areas\\admin\\content\\ckfinder\\ckfinder_v1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\controllers\\mycoursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\areas\\admin\\content\\ckfinder\\ckfinder.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -590,10 +598,6 @@
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\content\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\css\\bootstrap.min.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|D:\\1. DDEdu_Project\\DDEdu\\ddedu\\content\\css\\bootstrap-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{90467AFB-97B1-40A6-AF27-1FDE2297DC14}|DDEdu\\DDEdu.csproj|solutionrelative:ddedu\\content\\css\\bootstrap-icons.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -633,11 +637,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 12,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 78,
               "Title": "DefaultController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\DefaultController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\DefaultController.cs",
@@ -646,11 +650,12 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T10:08:59.912Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 48,
               "Title": "getMenu.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getMenu.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getMenu.cshtml",
@@ -659,11 +664,12 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-17T10:31:55.009Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 19,
               "Title": "LayoutController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\LayoutController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\LayoutController.cs",
@@ -672,23 +678,25 @@
               "ViewState": "AQIAAEgAAAAAAAAAAAAowFUAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T10:19:32.824Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
-              "Title": "DDEdu_DB.edmx",
+              "DocumentIndex": 77,
+              "Title": "DDEdu_DB.edmx [Diagram1]",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.edmx",
               "RelativeDocumentMoniker": "DDEdu\\Models\\DDEdu_DB.edmx",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.edmx",
-              "RelativeToolTip": "DDEdu\\Models\\DDEdu_DB.edmx",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.edmx [Diagram1]",
+              "RelativeToolTip": "DDEdu\\Models\\DDEdu_DB.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
               "WhenOpened": "2024-09-21T13:50:36.642Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 35,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\Index.cshtml",
@@ -697,20 +705,22 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-09-17T10:09:45.253Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 0,
               "Title": "RouteConfig.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\App_Start\\RouteConfig.cs",
               "RelativeDocumentMoniker": "DDEdu\\App_Start\\RouteConfig.cs",
               "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\App_Start\\RouteConfig.cs",
               "RelativeToolTip": "DDEdu\\App_Start\\RouteConfig.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAQwHwAAAA6AAAA",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAQwHYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T10:05:42.727Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -723,43 +733,266 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ListClass.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
-              "ViewState": "AQIAAIEAAAAAAAAAAAAAAE0AAAAhAAAA",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\UserController.cs",
+              "RelativeToolTip": "DDEdu\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAQBAAAAAAAAAAAQwA0BAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T06:10:40.79Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "getNewDetail.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getNewDetail.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getNewDetail.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getNewDetail.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\News\\getNewDetail.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAMAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-24T02:20:57.434Z",
+              "WhenOpened": "2024-11-16T13:31:47.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "getDetailCoursesByUser.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T12:39:50.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "bootstrap.min.css",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\bootstrap.min.css",
+              "RelativeDocumentMoniker": "DDEdu\\Content\\css\\bootstrap.min.css",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\bootstrap.min.css",
+              "RelativeToolTip": "DDEdu\\Content\\css\\bootstrap.min.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-01T07:00:43.391Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "getAllCoursesForTable.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T13:51:24.004Z"
+              "Title": "templatemo-topic-listing.css",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\templatemo-topic-listing.css",
+              "RelativeDocumentMoniker": "DDEdu\\Content\\css\\templatemo-topic-listing.css",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\templatemo-topic-listing.css",
+              "RelativeToolTip": "DDEdu\\Content\\css\\templatemo-topic-listing.css",
+              "ViewState": "AQIAALwEAAAAAAAAAAAtwMgEAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-17T04:30:48.702Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADcAAAASAAAA",
+              "DocumentIndex": 6,
+              "Title": "getCoursesByUser.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T15:16:37.943Z"
+              "WhenOpened": "2024-10-18T12:29:27.497Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAFMAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T15:19:36.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "categoriesController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA2wCUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-28T05:01:03.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T15:19:34.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "accountController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\accountController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\accountController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\accountController.cs",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\accountController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T15:48:18.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAowJoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T09:08:59.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "coursesController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAwBQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T08:13:53.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "getNew.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getNew.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\getNew.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getNew.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\Default\\getNew.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-16T12:52:36.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "aboutusController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAHMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:49:41.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "usersController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
+              "ViewState": "AQIAAHIAAAAAAAAAAAAQwIYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T08:26:58.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
+              "ViewState": "AQIAADgAAAAAAAAAAAAowEQAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-11T14:38:56.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "getLogo.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getLogo.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getLogo.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getLogo.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\Layout\\getLogo.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-07T03:37:43.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MyCoursesController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\MyCoursesController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Controllers\\MyCoursesController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\MyCoursesController.cs",
+              "RelativeToolTip": "DDEdu\\Controllers\\MyCoursesController.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAiwKAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T06:09:24.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "getTop6News.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getTop6News.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getTop6News.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getTop6News.cshtml",
+              "RelativeToolTip": "DDEdu\\Views\\News\\getTop6News.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAsAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-25T08:53:24.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "DDEdu\\Controllers\\CoursesController.cs",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "DDEdu\\Controllers\\CoursesController.cs",
+              "ViewState": "AQIAAH0AAAAAAAAAAAAAAJcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T05:36:38.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "getAllCoursesForClass.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForClass.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForClass.cshtml",
@@ -767,11 +1000,38 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForClass.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAACoAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T15:21:54.093Z"
+              "WhenOpened": "2024-11-23T15:21:54.093Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Index.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAADcAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T15:16:37.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "getAllCoursesForTable.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\getAllCoursesForTable.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-23T13:51:24.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "getDetail.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Courses\\getDetail.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Courses\\getDetail.cshtml",
@@ -784,7 +1044,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 23,
+              "Title": "ListClass.cshtml",
+              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
+              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
+              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
+              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\usercourses\\ListClass.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAAE0AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-24T02:20:57.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "usercoursesController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\usercoursesController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\usercoursesController.cs",
@@ -792,23 +1065,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\usercoursesController.cs",
               "ViewState": "AQIAAIIAAAAAAAAAAAAkwIcAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T15:14:24.253Z"
+              "WhenOpened": "2024-11-23T15:14:24.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "usersController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\usersController.cs",
-              "ViewState": "AQIAAJ4AAAAAAAAAAAAkwNYAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T08:26:58.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 28,
               "Title": "getAllNewsForTable.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\getAllNewsForTable.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\getAllNewsForTable.cshtml",
@@ -816,11 +1078,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\getAllNewsForTable.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T10:48:45.741Z"
+              "WhenOpened": "2024-11-21T10:48:45.741Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\usercourses\\Index.cshtml",
@@ -828,11 +1091,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\usercourses\\Index.cshtml",
               "ViewState": "AQIAADAAAAAAAAAAAAAAAEUAAADsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T15:15:21.036Z"
+              "WhenOpened": "2024-11-23T15:15:21.036Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\slides\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\slides\\Index.cshtml",
@@ -840,11 +1104,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\slides\\Index.cshtml",
               "ViewState": "AQIAACgAAAAAAAAAAAAAADIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T06:46:46.518Z"
+              "WhenOpened": "2024-11-04T06:46:46.518Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 31,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Index.cshtml",
@@ -852,11 +1117,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Index.cshtml",
               "ViewState": "AQIAACoAAAAAAAAAAAAAAJoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T10:06:35.141Z"
+              "WhenOpened": "2024-10-22T10:06:35.141Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\categories\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\categories\\Index.cshtml",
@@ -864,11 +1130,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\categories\\Index.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T16:06:18.222Z"
+              "WhenOpened": "2024-11-23T16:06:18.222Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 37,
               "Title": "getCategoryDF.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getCategoryDF.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\getCategoryDF.cshtml",
@@ -876,11 +1143,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Default\\getCategoryDF.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T07:33:34.144Z"
+              "WhenOpened": "2024-10-07T07:33:34.144Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 33,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\categories\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\categories\\Create.cshtml",
@@ -888,11 +1156,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\categories\\Create.cshtml",
               "ViewState": "AQIAACYAAAAAAAAAAAAowEQAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T10:47:15.126Z"
+              "WhenOpened": "2024-10-28T10:47:15.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 34,
               "Title": "getSlide.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getSlide.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\getSlide.cshtml",
@@ -900,11 +1169,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Default\\getSlide.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T03:53:22.619Z"
+              "WhenOpened": "2024-10-07T03:53:22.619Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 36,
               "Title": "getCourse.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getCourse.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\getCourse.cshtml",
@@ -912,35 +1182,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Default\\getCourse.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T12:50:31.463Z"
+              "WhenOpened": "2024-11-16T12:50:31.463Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "getNew.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getNew.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\Default\\getNew.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Default\\getNew.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\Default\\getNew.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T12:52:36.757Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "getDetailCoursesByUser.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getDetailCoursesByUser.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADAAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:39:50.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 38,
               "Title": "getIdInProfile.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getIdInProfile.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getIdInProfile.cshtml",
@@ -948,11 +1195,12 @@
               "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getIdInProfile.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAB9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T14:02:12.686Z"
+              "WhenOpened": "2024-10-18T14:02:12.686Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 39,
               "Title": "getListId.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getListId.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getListId.cshtml",
@@ -960,11 +1208,12 @@
               "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getListId.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T14:02:38.136Z"
+              "WhenOpened": "2024-10-18T14:02:38.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 40,
               "Title": "getViewTuition.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getViewTuition.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getViewTuition.cshtml",
@@ -972,11 +1221,12 @@
               "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getViewTuition.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T07:19:14.491Z"
+              "WhenOpened": "2024-10-19T07:19:14.491Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 41,
               "Title": "getTuitionDetail.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getTuitionDetail.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getTuitionDetail.cshtml",
@@ -984,11 +1234,12 @@
               "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getTuitionDetail.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-19T07:06:30.88Z"
+              "WhenOpened": "2024-10-19T07:06:30.88Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\Index.cshtml",
@@ -996,35 +1247,12 @@
               "RelativeToolTip": "DDEdu\\Views\\MyCourses\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T06:19:34.803Z"
+              "WhenOpened": "2024-10-01T06:19:34.803Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "getCoursesByUser.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\MyCourses\\getCoursesByUser.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T12:29:27.497Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "getTop6News.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getTop6News.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getTop6News.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getTop6News.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\News\\getTop6News.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-25T08:53:24.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 43,
               "Title": "getType.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getType.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getType.cshtml",
@@ -1032,11 +1260,12 @@
               "RelativeToolTip": "DDEdu\\Views\\News\\getType.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-25T09:06:46.48Z"
+              "WhenOpened": "2024-10-25T09:06:46.48Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 44,
               "Title": "MyLayout.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Shared\\MyLayout.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Shared\\MyLayout.cshtml",
@@ -1044,11 +1273,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Shared\\MyLayout.cshtml",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T10:04:49.597Z"
+              "WhenOpened": "2024-09-17T10:04:49.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 45,
               "Title": "changePassword.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\changePassword.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\changePassword.cshtml",
@@ -1056,11 +1286,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\changePassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T09:21:57.422Z"
+              "WhenOpened": "2024-10-16T09:21:57.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 46,
               "Title": "getModel.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getModel.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getModel.cshtml",
@@ -1068,11 +1299,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getModel.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T11:56:19.03Z"
+              "WhenOpened": "2024-10-18T11:56:19.03Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 47,
               "Title": "getMenuFooter.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getMenuFooter.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getMenuFooter.cshtml",
@@ -1080,11 +1312,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getMenuFooter.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T12:58:07.636Z"
+              "WhenOpened": "2024-11-21T12:58:07.636Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 49,
               "Title": "getLogo_Welcome.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getLogo_Welcome.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getLogo_Welcome.cshtml",
@@ -1092,23 +1325,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getLogo_Welcome.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T12:58:03.035Z"
+              "WhenOpened": "2024-11-21T12:58:03.035Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "getLogo.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getLogo.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getLogo.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getLogo.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\Layout\\getLogo.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T03:37:43.362Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "getFooter.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getFooter.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getFooter.cshtml",
@@ -1116,11 +1338,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getFooter.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T06:35:52.572Z"
+              "WhenOpened": "2024-10-07T06:35:52.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 51,
               "Title": "getCategory.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getCategory.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getCategory.cshtml",
@@ -1128,23 +1351,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getCategory.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-03T13:43:16.626Z"
+              "WhenOpened": "2024-10-03T13:43:16.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "getNewDetail.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getNewDetail.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getNewDetail.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getNewDetail.cshtml",
-              "RelativeToolTip": "DDEdu\\Views\\News\\getNewDetail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T13:31:47.805Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 52,
               "Title": "getAllNewsByType.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getAllNewsByType.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getAllNewsByType.cshtml",
@@ -1152,23 +1364,12 @@
               "RelativeToolTip": "DDEdu\\Views\\News\\getAllNewsByType.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-25T09:14:26.136Z"
+              "WhenOpened": "2024-10-25T09:14:26.136Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Create.cshtml",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAHgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T09:08:59.78Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 53,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\usercourses\\Delete.cshtml",
@@ -1176,11 +1377,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\usercourses\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T15:47:04.767Z"
+              "WhenOpened": "2024-11-23T15:47:04.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 54,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\usercourses\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\usercourses\\Create.cshtml",
@@ -1188,23 +1390,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\usercourses\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T15:20:28.243Z"
+              "WhenOpened": "2024-11-23T15:20:28.243Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "coursesController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\coursesController.cs",
-              "ViewState": "AQIAACcBAAAAAAAAAADwvzEBAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T08:13:53.292Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 55,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Index.cshtml",
@@ -1212,11 +1403,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Index.cshtml",
               "ViewState": "AQIAAEkAAAAAAAAAAAAmwFIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T10:42:23.044Z"
+              "WhenOpened": "2024-11-21T10:42:23.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 56,
               "Title": "_MyLayout.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\Shared\\_MyLayout.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\Shared\\_MyLayout.cshtml",
@@ -1224,23 +1416,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\Shared\\_MyLayout.cshtml",
               "ViewState": "AQIAAFsAAAAAAAAAAAAswG0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T09:45:27.138Z"
+              "WhenOpened": "2024-10-22T09:45:27.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "aboutusController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\aboutusController.cs",
-              "ViewState": "AQIAAHAAAAAAAAAAAAAIwHMAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T13:49:41.943Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 61,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\Edit.cshtml",
@@ -1248,11 +1429,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\Edit.cshtml",
               "ViewState": "AQIAADkAAAAAAAAAAAAAAEMAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:43:34.317Z"
+              "WhenOpened": "2024-11-23T14:43:34.317Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 57,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\Create.cshtml",
@@ -1260,11 +1442,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:17:31.3Z"
+              "WhenOpened": "2024-11-23T14:17:31.3Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 59,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\Details.cshtml",
@@ -1272,11 +1455,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:38:54.559Z"
+              "WhenOpened": "2024-11-23T14:38:54.559Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 58,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\Delete.cshtml",
@@ -1284,11 +1468,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\Delete.cshtml",
               "ViewState": "AQIAAEIAAAAAAAAAAAAAAE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:43:25.248Z"
+              "WhenOpened": "2024-11-23T14:43:25.248Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 62,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\categories\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\categories\\Edit.cshtml",
@@ -1296,11 +1481,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\categories\\Edit.cshtml",
               "ViewState": "AQIAAFQAAAAAAAAAAAAAAGEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T05:05:45.29Z"
+              "WhenOpened": "2024-10-28T05:05:45.29Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 60,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\categories\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\categories\\Delete.cshtml",
@@ -1308,11 +1494,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\categories\\Delete.cshtml",
               "ViewState": "AQIAAEgAAAAAAAAAAAAAAFwAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T10:16:48.908Z"
+              "WhenOpened": "2024-10-28T10:16:48.908Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 66,
               "Title": "getAllTagByType.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\getAllTagByType.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\getAllTagByType.cshtml",
@@ -1320,11 +1507,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\getAllTagByType.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T13:51:34.138Z"
+              "WhenOpened": "2024-11-23T13:51:34.138Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 65,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\aboutus\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\aboutus\\Index.cshtml",
@@ -1332,11 +1520,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\aboutus\\Index.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAACsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:30:11.449Z"
+              "WhenOpened": "2024-11-23T14:30:11.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 63,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\logoes\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\logoes\\Create.cshtml",
@@ -1344,11 +1533,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\logoes\\Create.cshtml",
               "ViewState": "AQIAAEMAAAAAAAAAAAAtwFIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:16:10.459Z"
+              "WhenOpened": "2024-11-23T14:16:10.459Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 64,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\categories\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\categories\\Details.cshtml",
@@ -1356,23 +1546,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\categories\\Details.cshtml",
               "ViewState": "AQIAADcAAAAAAAAAAAAIwEkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T04:12:15.902Z"
+              "WhenOpened": "2024-10-28T04:12:15.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Create.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAFMAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:38:56.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 67,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\contacts\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\contacts\\Create.cshtml",
@@ -1380,11 +1559,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\contacts\\Create.cshtml",
               "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-23T14:14:55.739Z"
+              "WhenOpened": "2024-11-23T14:14:55.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 68,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\AboutUs\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\AboutUs\\Index.cshtml",
@@ -1392,23 +1572,12 @@
               "RelativeToolTip": "DDEdu\\Views\\AboutUs\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T02:23:17.274Z"
+              "WhenOpened": "2024-10-16T02:23:17.274Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "categoriesController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\categoriesController.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAACUAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T05:01:03.154Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 71,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Edit.cshtml",
@@ -1416,11 +1585,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Edit.cshtml",
               "ViewState": "AQIAAIAAAAAAAAAAAAAQwI0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T09:20:54.685Z"
+              "WhenOpened": "2024-11-17T09:20:54.685Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 72,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Edit.cshtml",
@@ -1428,11 +1598,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T15:56:59.572Z"
+              "WhenOpened": "2024-11-11T15:56:59.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 69,
               "Title": "contactsController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\contactsController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\contactsController.cs",
@@ -1440,11 +1611,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\contactsController.cs",
               "ViewState": "AQIAAE4AAAAAAAAAAAAowFUAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:07:04.417Z"
+              "WhenOpened": "2024-11-21T14:07:04.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 70,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\contacts\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\contacts\\Edit.cshtml",
@@ -1452,11 +1624,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\contacts\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T14:27:18.852Z"
+              "WhenOpened": "2024-11-21T14:27:18.852Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 79,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\slides\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\slides\\Edit.cshtml",
@@ -1464,11 +1637,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\slides\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T07:08:31.428Z"
+              "WhenOpened": "2024-11-04T07:08:31.428Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 75,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Details.cshtml",
@@ -1476,11 +1650,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Details.cshtml",
               "ViewState": "AQIAAE8AAAAAAAAAAAAQwGIAAACmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T09:42:32.165Z"
+              "WhenOpened": "2024-11-17T09:42:32.165Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 76,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\logoes\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\logoes\\Index.cshtml",
@@ -1488,11 +1663,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\logoes\\Index.cshtml",
               "ViewState": "AQIAADAAAAAAAAAAAAAIwD8AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T12:31:00.98Z"
+              "WhenOpened": "2024-11-21T12:31:00.98Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 73,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\contacts\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\contacts\\Details.cshtml",
@@ -1500,11 +1676,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\contacts\\Details.cshtml",
               "ViewState": "AQIAACQAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T14:07:42.417Z"
+              "WhenOpened": "2024-11-21T14:07:42.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 74,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\contacts\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\contacts\\Index.cshtml",
@@ -1512,11 +1689,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\contacts\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T14:07:40.074Z"
+              "WhenOpened": "2024-11-21T14:07:40.074Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 80,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Details.cshtml",
@@ -1524,11 +1702,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-27T13:27:24.084Z"
+              "WhenOpened": "2024-10-27T13:27:24.084Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 81,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\users\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\users\\Edit.cshtml",
@@ -1536,23 +1715,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\users\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEYAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T09:48:50.629Z"
+              "WhenOpened": "2024-11-21T09:48:50.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Details.cshtml",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFoAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T15:19:36.555Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 83,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\slides\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\slides\\Delete.cshtml",
@@ -1560,11 +1728,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\slides\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T08:21:16.474Z"
+              "WhenOpened": "2024-11-04T08:21:16.474Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 82,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\slides\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\slides\\Details.cshtml",
@@ -1572,11 +1741,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\slides\\Details.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T08:10:02.941Z"
+              "WhenOpened": "2024-11-04T08:10:02.941Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 84,
               "Title": "typePostsController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\typePostsController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\typePostsController.cs",
@@ -1584,11 +1754,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\typePostsController.cs",
               "ViewState": "AQIAAFsAAAAAAAAAAAAmwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T10:49:29.616Z"
+              "WhenOpened": "2024-11-21T10:49:29.616Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 85,
               "Title": "getUserByType.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\users\\getUserByType.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\users\\getUserByType.cshtml",
@@ -1596,11 +1767,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\users\\getUserByType.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T10:37:00.843Z"
+              "WhenOpened": "2024-11-21T10:37:00.843Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 86,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\typePosts\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\typePosts\\Edit.cshtml",
@@ -1608,11 +1780,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\typePosts\\Edit.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAqwDwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:07:58.536Z"
+              "WhenOpened": "2024-11-11T14:07:58.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 87,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\users\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\users\\Details.cshtml",
@@ -1620,11 +1793,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\users\\Details.cshtml",
               "ViewState": "AQIAADsAAAAAAAAAAAAAAEsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T08:52:33.945Z"
+              "WhenOpened": "2024-11-21T08:52:33.945Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 88,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\users\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\users\\Delete.cshtml",
@@ -1632,11 +1806,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\users\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T09:04:39.668Z"
+              "WhenOpened": "2024-11-21T09:04:39.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 89,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\typePosts\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\typePosts\\Create.cshtml",
@@ -1644,23 +1819,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\typePosts\\Create.cshtml",
               "ViewState": "AQIAACIAAAAAAAAAAAAqwBcAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:06:47.557Z"
+              "WhenOpened": "2024-11-11T14:06:47.557Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\UserController.cs",
-              "RelativeToolTip": "DDEdu\\Controllers\\UserController.cs",
-              "ViewState": "AQIAADsBAAAAAAAAAAAqwFABAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:10:40.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 90,
               "Title": "Details.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\typePosts\\Details.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\typePosts\\Details.cshtml",
@@ -1668,11 +1832,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\typePosts\\Details.cshtml",
               "ViewState": "AQIAAC0AAAAAAAAAAAAAAD8AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:00:33.768Z"
+              "WhenOpened": "2024-11-11T14:00:33.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 91,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\typePosts\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\typePosts\\Delete.cshtml",
@@ -1680,11 +1845,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\typePosts\\Delete.cshtml",
               "ViewState": "AQIAADQAAAAAAAAAAAAqwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T14:12:08.078Z"
+              "WhenOpened": "2024-11-11T14:12:08.078Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 92,
               "Title": "DefaultController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\DefaultController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\DefaultController.cs",
@@ -1692,11 +1858,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\DefaultController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T10:00:40.107Z"
+              "WhenOpened": "2024-10-22T10:00:40.107Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 95,
               "Title": "forgotPassword.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\forgotPassword.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\forgotPassword.cshtml",
@@ -1704,11 +1871,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\forgotPassword.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAC0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T15:20:45.605Z"
+              "WhenOpened": "2024-10-16T15:20:45.605Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 93,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Shared\\_Layout.cshtml",
@@ -1716,11 +1884,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-21T08:24:02.27Z"
+              "WhenOpened": "2024-11-21T08:24:02.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 94,
               "Title": "changeProfile.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\changeProfile.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\changeProfile.cshtml",
@@ -1728,11 +1897,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\changeProfile.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAACwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T10:14:11.239Z"
+              "WhenOpened": "2024-10-16T10:14:11.239Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 96,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\courses\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\courses\\Delete.cshtml",
@@ -1740,11 +1910,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\courses\\Delete.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADwAAACIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T09:42:55.694Z"
+              "WhenOpened": "2024-11-17T09:42:55.694Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 97,
               "Title": "menusController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\menusController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\menusController.cs",
@@ -1752,11 +1923,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\menusController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T04:09:50.095Z"
+              "WhenOpened": "2024-10-28T04:09:50.095Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 98,
               "Title": "getViewByCategory.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Courses\\getViewByCategory.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Courses\\getViewByCategory.cshtml",
@@ -1764,23 +1936,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Courses\\getViewByCategory.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T13:56:47.53Z"
+              "WhenOpened": "2024-11-16T13:56:47.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
-              "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
-              "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\newPosts\\Delete.cshtml",
-              "ViewState": "AQIAAGYAAAAAAAAAAAAAAHMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-11T15:19:34.703Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 99,
               "Title": "getAllCourseByCategory.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Courses\\getAllCourseByCategory.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Courses\\getAllCourseByCategory.cshtml",
@@ -1788,23 +1949,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Courses\\getAllCourseByCategory.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T13:28:02.119Z"
+              "WhenOpened": "2024-10-18T13:28:02.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
-              "Title": "templatemo-topic-listing.css",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\templatemo-topic-listing.css",
-              "RelativeDocumentMoniker": "DDEdu\\Content\\css\\templatemo-topic-listing.css",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\templatemo-topic-listing.css",
-              "RelativeToolTip": "DDEdu\\Content\\css\\templatemo-topic-listing.css",
-              "ViewState": "AQIAAI4EAAAAAAAAAAAiwJkEAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-17T04:30:48.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 100,
               "Title": "getRelativeCourses.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Courses\\getRelativeCourses.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Courses\\getRelativeCourses.cshtml",
@@ -1812,11 +1962,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Courses\\getRelativeCourses.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-18T13:28:08.311Z"
+              "WhenOpened": "2024-10-18T13:28:08.311Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 101,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Create.cshtml",
@@ -1824,11 +1975,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Create.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T15:12:55.175Z"
+              "WhenOpened": "2024-10-26T15:12:55.175Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 102,
               "Title": "Functions.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Helper\\Functions.cs",
               "RelativeDocumentMoniker": "DDEdu\\Helper\\Functions.cs",
@@ -1836,11 +1988,12 @@
               "RelativeToolTip": "DDEdu\\Helper\\Functions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T14:55:44.35Z"
+              "WhenOpened": "2024-10-25T14:55:44.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 103,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Edit.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Edit.cshtml",
@@ -1848,11 +2001,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Edit.cshtml",
               "ViewState": "AQIAACEAAAAAAAAAAAAAAEwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T04:10:43.393Z"
+              "WhenOpened": "2024-10-28T04:10:43.393Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 104,
               "Title": "NewsController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\NewsController.cs",
@@ -1860,11 +2014,12 @@
               "RelativeToolTip": "DDEdu\\Controllers\\NewsController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAzwCgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T13:30:48.471Z"
+              "WhenOpened": "2024-11-16T13:30:48.471Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 105,
               "Title": "getMoreNew.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\getMoreNew.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\News\\getMoreNew.cshtml",
@@ -1872,11 +2027,12 @@
               "RelativeToolTip": "DDEdu\\Views\\News\\getMoreNew.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T09:03:00.719Z"
+              "WhenOpened": "2024-10-15T09:03:00.719Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 106,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\News\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\News\\Index.cshtml",
@@ -1884,11 +2040,12 @@
               "RelativeToolTip": "DDEdu\\Views\\News\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T08:01:31.362Z"
+              "WhenOpened": "2024-10-01T08:01:31.362Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 107,
               "Title": "slidesController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Controllers\\slidesController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Controllers\\slidesController.cs",
@@ -1896,11 +2053,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Controllers\\slidesController.cs",
               "ViewState": "AQIAAHkAAAAAAAAAAAAiwKcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T06:45:42.906Z"
+              "WhenOpened": "2024-11-04T06:45:42.906Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 108,
               "Title": "adminAreaRegistration.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\adminAreaRegistration.cs",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\adminAreaRegistration.cs",
@@ -1908,11 +2066,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\adminAreaRegistration.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T09:29:04.501Z"
+              "WhenOpened": "2024-10-22T09:29:04.501Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 109,
               "Title": "config.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckeditor\\config.js",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckeditor\\config.js",
@@ -1920,11 +2079,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\ckeditor\\config.js",
               "ViewState": "AQIAADwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-16T15:20:44.292Z"
+              "WhenOpened": "2024-11-16T15:20:44.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 110,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Delete.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Delete.cshtml",
@@ -1932,11 +2092,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Delete.cshtml",
               "ViewState": "AQIAABsAAAAAAAAAAAAAAAcAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T15:10:38.957Z"
+              "WhenOpened": "2024-10-26T15:10:38.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 111,
               "Title": "ckfinder_v1.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder_v1.js",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder_v1.js",
@@ -1944,23 +2105,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder_v1.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAkBAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-11T16:11:03.929Z"
+              "WhenOpened": "2024-11-11T16:11:03.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Controllers\\CoursesController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "DDEdu\\Controllers\\CoursesController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAAwJcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T05:36:38.01Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 112,
               "Title": "ckfinder.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder.js",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder.js",
@@ -1968,23 +2118,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\ckfinder\\ckfinder.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAD6IQAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-11T16:11:00.515Z"
+              "WhenOpened": "2024-11-11T16:11:00.515Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
-              "Title": "MyCoursesController.cs",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\MyCoursesController.cs",
-              "RelativeDocumentMoniker": "DDEdu\\Controllers\\MyCoursesController.cs",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\MyCoursesController.cs",
-              "RelativeToolTip": "DDEdu\\Controllers\\MyCoursesController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAowKAAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T06:09:24.572Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 113,
               "Title": "clickNews.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Scripts\\js\\clickNews.js",
               "RelativeDocumentMoniker": "DDEdu\\Scripts\\js\\clickNews.js",
@@ -1992,35 +2131,36 @@
               "RelativeToolTip": "DDEdu\\Scripts\\js\\clickNews.js",
               "ViewState": "AQIAABcAAAAAAAAAAAAawCUAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-13T09:25:35.499Z"
+              "WhenOpened": "2024-10-13T09:25:35.499Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 115,
               "Title": "config.ascx",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\config.ascx",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckfinder\\config.ascx",
               "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\config.ascx",
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\ckfinder\\config.ascx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
-              "WhenOpened": "2024-11-11T16:11:07.818Z"
+              "WhenOpened": "2024-11-11T16:11:07.818Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 116,
               "Title": "connector.aspx",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\core\\connector\\aspx\\connector.aspx",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckfinder\\core\\connector\\aspx\\connector.aspx",
               "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\core\\connector\\aspx\\connector.aspx",
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\ckfinder\\core\\connector\\aspx\\connector.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-11-11T16:13:14.065Z"
+              "WhenOpened": "2024-11-11T16:13:14.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 114,
               "Title": "CKFinder.dll",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\ckfinder\\bin\\Debug\\CKFinder.dll",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\ckfinder\\bin\\Debug\\CKFinder.dll",
@@ -2031,7 +2171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 117,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\slides\\Create.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\slides\\Create.cshtml",
@@ -2039,11 +2179,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\slides\\Create.cshtml",
               "ViewState": "AQIAABIAAAAAAAAAAAAAABwAAABsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-04T07:04:28.297Z"
+              "WhenOpened": "2024-11-04T07:04:28.297Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 118,
               "Title": "adminLayout.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
@@ -2051,11 +2192,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\Shared\\adminLayout.cshtml",
               "ViewState": "AQIAACYBAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T09:45:58.315Z"
+              "WhenOpened": "2024-10-22T09:45:58.315Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 119,
               "Title": "Reload.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\menus\\Reload.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\menus\\Reload.cshtml",
@@ -2063,11 +2205,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\menus\\Reload.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-28T15:01:06.886Z"
+              "WhenOpened": "2024-10-28T15:01:06.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 122,
               "Title": "aboutu.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\aboutu.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\aboutu.cs",
@@ -2075,11 +2218,12 @@
               "RelativeToolTip": "DDEdu\\Models\\aboutu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-28T10:36:39.261Z"
+              "WhenOpened": "2024-10-28T10:36:39.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 120,
               "Title": "category.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\category.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\category.cs",
@@ -2087,11 +2231,12 @@
               "RelativeToolTip": "DDEdu\\Models\\category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T14:42:15.323Z"
+              "WhenOpened": "2024-10-03T14:42:15.323Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 121,
               "Title": "user.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\user.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\user.cs",
@@ -2099,11 +2244,12 @@
               "RelativeToolTip": "DDEdu\\Models\\user.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T06:14:31.45Z"
+              "WhenOpened": "2024-10-16T06:14:31.45Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 123,
               "Title": "DDEdu_DB.tt",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.tt",
               "RelativeDocumentMoniker": "DDEdu\\Models\\DDEdu_DB.tt",
@@ -2111,11 +2257,12 @@
               "RelativeToolTip": "DDEdu\\Models\\DDEdu_DB.tt",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-16T06:14:28.107Z"
+              "WhenOpened": "2024-10-16T06:14:28.107Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 124,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\Default\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\Default\\Index.cshtml",
@@ -2123,11 +2270,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\Default\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T10:00:55.837Z"
+              "WhenOpened": "2024-10-22T10:00:55.837Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 125,
               "Title": "sb-admin-2.css",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.css",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.css",
@@ -2135,11 +2283,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.css",
               "ViewState": "AQIAAOQrAAAAAAAAAAAAALMPAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-22T10:35:43.446Z"
+              "WhenOpened": "2024-10-22T10:35:43.446Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 126,
               "Title": "sb-admin-2.min.css",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.min.css",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.min.css",
@@ -2147,11 +2296,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Content\\css_\\sb-admin-2.min.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-22T10:35:58.465Z"
+              "WhenOpened": "2024-10-22T10:35:58.465Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 127,
               "Title": "AboutUsController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\AboutUsController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\AboutUsController.cs",
@@ -2159,11 +2309,12 @@
               "RelativeToolTip": "DDEdu\\Controllers\\AboutUsController.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAQwCAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T02:22:29.34Z"
+              "WhenOpened": "2024-10-16T02:22:29.34Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 128,
               "Title": "ContactController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\ContactController.cs",
@@ -2171,11 +2322,12 @@
               "RelativeToolTip": "DDEdu\\Controllers\\ContactController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwB0AAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T06:08:55.215Z"
+              "WhenOpened": "2024-10-01T06:08:55.215Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 129,
               "Title": "getQuestion.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\AboutUs\\getQuestion.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\AboutUs\\getQuestion.cshtml",
@@ -2183,11 +2335,12 @@
               "RelativeToolTip": "DDEdu\\Views\\AboutUs\\getQuestion.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-25T14:30:03.268Z"
+              "WhenOpened": "2024-10-25T14:30:03.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 130,
               "Title": "jquery.min.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Scripts\\js\\jquery.min.js",
               "RelativeDocumentMoniker": "DDEdu\\Scripts\\js\\jquery.min.js",
@@ -2195,11 +2348,12 @@
               "RelativeToolTip": "DDEdu\\Scripts\\js\\jquery.min.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-25T10:09:51.415Z"
+              "WhenOpened": "2024-10-25T10:09:51.415Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 131,
               "Title": "custom.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Scripts\\js\\custom.js",
               "RelativeDocumentMoniker": "DDEdu\\Scripts\\js\\custom.js",
@@ -2207,11 +2361,12 @@
               "RelativeToolTip": "DDEdu\\Scripts\\js\\custom.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-16T02:36:27.012Z"
+              "WhenOpened": "2024-10-16T02:36:27.012Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 132,
               "Title": "web.config",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Areas\\admin\\Views\\web.config",
               "RelativeDocumentMoniker": "DDEdu\\Areas\\admin\\Views\\web.config",
@@ -2219,11 +2374,12 @@
               "RelativeToolTip": "DDEdu\\Areas\\admin\\Views\\web.config",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-22T09:50:02.674Z"
+              "WhenOpened": "2024-10-22T09:50:02.674Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 133,
               "Title": "getContactInfo.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Contact\\getContactInfo.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Contact\\getContactInfo.cshtml",
@@ -2231,11 +2387,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Contact\\getContactInfo.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T10:02:20.804Z"
+              "WhenOpened": "2024-10-15T10:02:20.804Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 134,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Contact\\Index.cshtml",
@@ -2243,11 +2400,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Contact\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-01T06:15:27.989Z"
+              "WhenOpened": "2024-10-01T06:15:27.989Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 135,
               "Title": "UserInfo.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\UserInfo.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\UserInfo.cshtml",
@@ -2255,11 +2413,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\UserInfo.cshtml",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAACQAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T08:01:48.594Z"
+              "WhenOpened": "2024-10-16T08:01:48.594Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 136,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\Index.cshtml",
@@ -2267,11 +2426,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T04:39:50.228Z"
+              "WhenOpened": "2024-10-16T04:39:50.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
+              "DocumentIndex": 137,
               "Title": "Login.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\Login.cshtml",
@@ -2279,11 +2439,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\Login.cshtml",
               "ViewState": "AQIAACcAAAAAAAAAAAAAADgAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T06:30:40.902Z"
+              "WhenOpened": "2024-10-16T06:30:40.902Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 138,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\User\\Register.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\User\\Register.cshtml",
@@ -2291,11 +2452,12 @@
               "RelativeToolTip": "DDEdu\\Views\\User\\Register.cshtml",
               "ViewState": "AQIAADYAAAAAAAAAAAAAABgAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-16T06:18:51.889Z"
+              "WhenOpened": "2024-10-16T06:18:51.889Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 139,
               "Title": "course.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\course.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\course.cs",
@@ -2303,21 +2465,23 @@
               "RelativeToolTip": "DDEdu\\Models\\course.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAA5wA0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-07T09:14:42.245Z"
+              "WhenOpened": "2024-10-07T09:14:42.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 140,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\c6cabbe9fa4de34e9ce8f7926dcfc7879b154c22057abad882c5761472240e8b\\UserController.cs",
               "ToolTip": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\c6cabbe9fa4de34e9ce8f7926dcfc7879b154c22057abad882c5761472240e8b\\UserController.cs [Read Only]",
               "ViewState": "AQIAAPIAAAAAAAAAAAAWwAMBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T09:38:15.596Z"
+              "WhenOpened": "2024-10-18T09:38:15.596Z",
+              "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 141,
               "Title": "click-scroll.js",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Scripts\\js\\click-scroll.js",
               "RelativeDocumentMoniker": "DDEdu\\Scripts\\js\\click-scroll.js",
@@ -2325,11 +2489,12 @@
               "RelativeToolTip": "DDEdu\\Scripts\\js\\click-scroll.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-10-13T09:25:40.713Z"
+              "WhenOpened": "2024-10-13T09:25:40.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 142,
               "Title": "getContactInfoForFooter.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Contact\\getContactInfoForFooter.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Contact\\getContactInfoForFooter.cshtml",
@@ -2337,11 +2502,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Contact\\getContactInfoForFooter.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T10:14:27.666Z"
+              "WhenOpened": "2024-10-15T10:14:27.666Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 143,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "DDEdu\\Controllers\\HomeController.cs",
@@ -2349,11 +2515,12 @@
               "RelativeToolTip": "DDEdu\\Controllers\\HomeController.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T10:07:30.236Z"
+              "WhenOpened": "2024-09-17T10:07:30.236Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 144,
               "Title": "newPost.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\newPost.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\newPost.cs",
@@ -2361,11 +2528,12 @@
               "RelativeToolTip": "DDEdu\\Models\\newPost.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T08:21:50.151Z"
+              "WhenOpened": "2024-10-13T08:21:50.151Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 145,
               "Title": "DDEdu_DB.Context.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.Context.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\DDEdu_DB.Context.cs",
@@ -2373,11 +2541,12 @@
               "RelativeToolTip": "DDEdu\\Models\\DDEdu_DB.Context.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:52:11.041Z"
+              "WhenOpened": "2024-09-21T13:52:11.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 156,
               "Title": "getMenuRight.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Layout\\getMenuRight.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Layout\\getMenuRight.cshtml",
@@ -2385,11 +2554,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Layout\\getMenuRight.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-07T04:36:49.684Z"
+              "WhenOpened": "2024-10-07T04:36:49.684Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 146,
               "Title": "Error.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Shared\\Error.cshtml",
@@ -2397,11 +2567,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Shared\\Error.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-21T13:59:53.758Z"
+              "WhenOpened": "2024-09-21T13:59:53.758Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 147,
               "Title": "BundleConfig.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\App_Start\\BundleConfig.cs",
               "RelativeDocumentMoniker": "DDEdu\\App_Start\\BundleConfig.cs",
@@ -2409,11 +2580,12 @@
               "RelativeToolTip": "DDEdu\\App_Start\\BundleConfig.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T05:22:16.968Z"
+              "WhenOpened": "2024-09-20T05:22:16.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 149,
               "Title": "bootstrap-icons.css",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\bootstrap-icons.css",
               "RelativeDocumentMoniker": "DDEdu\\Content\\css\\bootstrap-icons.css",
@@ -2421,23 +2593,12 @@
               "RelativeToolTip": "DDEdu\\Content\\css\\bootstrap-icons.css",
               "ViewState": "AQIAAC0BAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-01T07:00:42.735Z"
+              "WhenOpened": "2024-10-01T07:00:42.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
-              "Title": "bootstrap.min.css",
-              "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\bootstrap.min.css",
-              "RelativeDocumentMoniker": "DDEdu\\Content\\css\\bootstrap.min.css",
-              "ToolTip": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\css\\bootstrap.min.css",
-              "RelativeToolTip": "DDEdu\\Content\\css\\bootstrap.min.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-01T07:00:43.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 148,
               "Title": "Site.css",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Content\\Site.css",
               "RelativeDocumentMoniker": "DDEdu\\Content\\Site.css",
@@ -2445,11 +2606,12 @@
               "RelativeToolTip": "DDEdu\\Content\\Site.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-01T07:17:00.36Z"
+              "WhenOpened": "2024-10-01T07:17:00.36Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 150,
               "Title": "FilterConfig.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\App_Start\\FilterConfig.cs",
               "RelativeDocumentMoniker": "DDEdu\\App_Start\\FilterConfig.cs",
@@ -2457,11 +2619,12 @@
               "RelativeToolTip": "DDEdu\\App_Start\\FilterConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T07:01:26.747Z"
+              "WhenOpened": "2024-10-01T07:01:26.747Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 151,
               "Title": "menu.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\menu.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\menu.cs",
@@ -2469,11 +2632,12 @@
               "RelativeToolTip": "DDEdu\\Models\\menu.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:51:36.569Z"
+              "WhenOpened": "2024-09-21T13:51:36.569Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 152,
               "Title": "DDEdu_DB.cs",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Models\\DDEdu_DB.cs",
               "RelativeDocumentMoniker": "DDEdu\\Models\\DDEdu_DB.cs",
@@ -2481,11 +2645,12 @@
               "RelativeToolTip": "DDEdu\\Models\\DDEdu_DB.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-21T13:51:33.944Z"
+              "WhenOpened": "2024-09-21T13:51:33.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
+              "DocumentIndex": 154,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Home\\Contact.cshtml",
@@ -2493,11 +2658,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Home\\Contact.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T10:07:59.371Z"
+              "WhenOpened": "2024-09-17T10:07:59.371Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 153,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Home\\Index.cshtml",
@@ -2505,11 +2671,12 @@
               "RelativeToolTip": "DDEdu\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T10:07:39.065Z"
+              "WhenOpened": "2024-09-17T10:07:39.065Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 155,
               "Title": "About.cshtml",
               "DocumentMoniker": "D:\\1. DDEdu_Project\\DDEdu\\DDEdu\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "DDEdu\\Views\\Home\\About.cshtml",
@@ -2517,7 +2684,8 @@
               "RelativeToolTip": "DDEdu\\Views\\Home\\About.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-17T10:07:56.58Z"
+              "WhenOpened": "2024-09-17T10:07:56.58Z",
+              "EditorCaption": ""
             }
           ]
         }
